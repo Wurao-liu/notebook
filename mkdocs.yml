@@ -50,17 +50,6 @@ theme:
     - content.code.annotate 
   language: zh # 一些提示性的文字会变成中文
 
-
-  
-
-
-
-
-
-  
- 
-  
-
 markdown_extensions:
   - abbr
   - attr_list
