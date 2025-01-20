@@ -23,3 +23,5 @@ int main (){
     return 0;
 }
 ```
+if we have the following equation:
+我们会选择$O(NlogN)$的算法$O(N^2)$
