@@ -1,14 +1,17 @@
 #[Info]
 site_name: 勿扰的小世界
 nav:
-  - 主页: index.md
-  - 测试: test.md
-  - test: 
-    - 测试1: test/test1.md
-    - 测试2: test/test2.md
-    - 深度测试:
-      - 深度测试1: test/deep-test/deep1.md
-      - 深度测试2: test/deep-test/deep2.md
+  - Home: index.md
+  - Computer Science:
+    - 数据结构基础(FDS): Computer Science\数据结构基础(FDS).md
+  - OtherCourses: 
+    - 线性代数: OtherCourses\线性代数.md
+  - Tools:
+    - LaTeX: Tools\LaTeX.md
+    - Markdown: Tools\markdown.md
+  - Life:
+    - 大一秋冬总结: Life\大一秋冬总结.md
+
 site_url: https://wurao-liu.github.io/
 site_author: 勿扰
 #[UI]
@@ -59,8 +62,23 @@ theme:
     - content.action.edit
     - content.action.view
     - content.code.annotate 
-    - toc.integrate
+    #- toc.integrate #左侧目录
+    - toc.follow  # 目录（TOC）跟随滚动，高亮当前阅读部分
   language: zh # 一些提示性的文字会变成中文
+  icon:
+    admonition:
+      note: octicons/tag-16
+      abstract: octicons/checklist-16
+      info: octicons/info-16
+      tip: octicons/squirrel-16
+      success: octicons/check-16
+      question: octicons/question-16
+      warning: octicons/alert-16
+      failure: octicons/x-circle-16
+      danger: octicons/zap-16
+      bug: octicons/bug-16
+      example: octicons/beaker-16
+      quote: octicons/quote-16
 
 copyright: Copyright &copy; 2024~2025 Wurao-liu/All Rights Reserved. # 左下角的版权声明
 
@@ -73,8 +91,11 @@ plugins:
   - offline
   #- changelog
   - git-revision-date-localized:
-      type: iso_date
+      type: datetime
+      timezone: Asia/Shanghai
+      locale: zh
       enable_creation_date: true
+      strict: false
   #- git-authors:
   #    exclude:
   #     - index.md
@@ -129,6 +150,13 @@ markdown_extensions:
   - pymdownx.snippets
   - pymdownx.smartsymbols
   - pymdownx.tilde
+  - pymdownx.progressbar  # 支持进度条
+  - pymdownx.striphtml  # 去除HTML标签
+  - pymdownx.saneheaders  # 优化标题解析，避免冲突
+  - pymdownx.keys  # 支持按键表示
+  - pymdownx.escapeall:
+      hardbreak: True  # 硬换行
+      nbsp: True  # 不断行空格
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
@@ -137,7 +165,12 @@ markdown_extensions:
   - pymdownx.arithmatex:  # latex支持
       generic: true
   - toc:
-      permalink: true # 固定标题位置为当前位置
+      permalink: true        # 添加段落链接
+      toc_depth: 3          # 目录深度
+      separator: "_"        # 标题锚点分隔符
+      title: "目录"         # 目录标题
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds: {case: lower} # URL 转换规则
   - pymdownx.highlight: # 代码块高亮
       anchor_linenums: true
       linenums: true # 显示行号
