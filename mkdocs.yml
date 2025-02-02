@@ -1,30 +1,23 @@
 #[Info]
 site_name: 勿扰的小世界
-nav:
-  - Home: index.md
-  - Computer Science:
-    - 数据结构基础(FDS): Computer Science\数据结构基础(FDS).md
-  - OtherCourses: 
-    - 线性代数: OtherCourses\线性代数.md
-  - Tools:
-    - LaTeX: Tools\LaTeX.md
-    - Markdown: Tools\markdown.md
-  - Life:
-    - 大一秋冬总结: Life\大一秋冬总结.md
-
-site_url: https://wurao-liu.github.io/
+site_url: https://wurao-liu.github.io/notebook
 site_author: 勿扰
+site_description: 勿扰的小世界
+
+repo_url: https://github.com/Wurao-liu/notebook
+repo_name: Wurao-liu/Notebook
+
+copyright: Copyright &copy; 2024~2025 Wurao-liu/All Rights Reserved. # 左下角的版权声明
 #[UI]
 theme:
   name: material
-
-  logo: logo.png 
+  logo: assets/logo.png 
+  favicon: assets/logo.png
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default # 日间模式
       primary: cyan # 主色调
       accent: indigo # 链接等可交互元件的高亮色
-      # teal 
       toggle:
         icon: material/weather-night # 图标
         name: 切换至夜间模式 # 鼠标悬浮提示
@@ -32,7 +25,6 @@ theme:
       scheme: slate # 夜间模式
       primary: black 
       accent: indigo
-      # teal
       toggle:
         icon: material/weather-sunny
         name: 切换至日间模式
@@ -66,6 +58,10 @@ theme:
     - toc.follow  # 目录（TOC）跟随滚动，高亮当前阅读部分
   language: zh # 一些提示性的文字会变成中文
   icon:
+    repo: fontawesome/brands/git-alt
+    view: material/eye
+    previous: fontawesome/solid/angle-left
+    next: fontawesome/solid/angle-right
     admonition:
       note: octicons/tag-16
       abstract: octicons/checklist-16
@@ -80,7 +76,7 @@ theme:
       example: octicons/beaker-16
       quote: octicons/quote-16
 
-copyright: Copyright &copy; 2024~2025 Wurao-liu/All Rights Reserved. # 左下角的版权声明
+
 
 plugins:
   # - glightbox
@@ -117,13 +113,6 @@ plugins:
     #  tags_file: tag.md  #分类标签
 
 extra:
-  alternate:
-    - name: English
-      link: https://wurao-liu.github.io//en/
-      lang: en
-    - name: 中国(台湾)
-      link: https://wurao-liu.github.io//zh-TW/
-      lang: zh-TW
   generator: false  #删除页脚显示“使用 MkDocs 材料制造”
   social:
     - icon: fontawesome/brands/github
@@ -194,3 +183,16 @@ extra_javascript:
 
 extra_css:
   - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css
+
+nav:
+  - Home: index.md
+  - Computer Science:
+    - 数据结构基础(FDS): Computer Science\数据结构基础(FDS).md
+  - OtherCourses: 
+    - 线性代数: OtherCourses\线性代数.md
+  - Tools:
+    - LaTeX: Tools\LaTeX.md
+    - Markdown: Tools\markdown.md
+    - Shell: Tools\Shell.md
+  - Life:
+    - 大一秋冬总结: Life\大一秋冬总结.md
