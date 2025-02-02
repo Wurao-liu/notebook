@@ -13,6 +13,7 @@ theme:
   name: material
   logo: assets/logo.png 
   favicon: assets/logo.png
+  custom_dir: overrides
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default # 日间模式
