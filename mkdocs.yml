@@ -59,7 +59,7 @@ theme:
   language: zh # 一些提示性的文字会变成中文
   icon:
     repo: fontawesome/brands/git-alt
-    view: material/eye
+    # view: material/eye
     previous: fontawesome/solid/angle-left
     next: fontawesome/solid/angle-right
     admonition:
@@ -186,13 +186,14 @@ extra_css:
 
 nav:
   - Home: index.md
-  - Computer Science:
-    - 数据结构基础(FDS): Computer Science\数据结构基础(FDS).md
+  - Computer Science: 
+    - Computer Science/index.md
   - OtherCourses: 
-    - 线性代数: OtherCourses\线性代数.md
+    - OtherCourses/index.md
   - Tools:
-    - LaTeX: Tools\LaTeX.md
-    - Markdown: Tools\markdown.md
-    - Shell: Tools\Shell.md
+    - Tools/index.md
+    - LaTeX: Tools/LaTeX.md
+    - Markdown: Tools/markdown.md
+    - Shell: Tools/Shell.md
   - Life:
-    - 大一秋冬总结: Life\大一秋冬总结.md
+    - Life/index.md
