@@ -7,7 +7,7 @@ site_description: 勿扰的小世界
 repo_url: https://github.com/Wurao-liu/notebook
 repo_name: Wurao-liu/Notebook
 
-copyright: Copyright &copy; 2024~2025 Wurao-liu/All Rights Reserved. # 左下角的版权声明
+copyright: Copyright &copy; 2024~2025 Wurao-liu # 左下角的版权声明
 #[UI]
 theme:
   name: material
@@ -36,18 +36,19 @@ theme:
 
   features: 
     - announce.dismiss #呈现可标记为由用户读取的临时公告，可以包含一个用于取消当前公告的按钮
-    - navigation.instant 
+    - navigation.instant #导航选项卡将立即打开，而不是在悬停时显示
+    - navigation.instant.progress #导航选项卡将立即打开，而不是在悬停时显示，并且在加载时显示进度条
     - header.autohide  #自动隐藏
     - navigation.tracking #地址栏中的 URL 将自动更新为在目录中突出显示的活动锚点
     - navigation.tabs #顶级部分将呈现在上面视口标题下方的菜单层中，但在移动设备上保持原样
     - navigation.tabs.sticky  #启用粘性选项卡后，导航选项卡将锁定在标题下方，并在向下滚动时始终保持可见
-    - navigation.sections #启用部分后，顶级部分在边栏中呈现为1220px以上视口的组，但在移动设备上保持原样
+    # - navigation.sections #启用部分后，顶级部分在边栏中呈现为粗体，但在移动设备上保持原样
     - navigation.top # 返回顶部的按钮 在上滑时出现
     - navigation.footer #页脚将呈现在边栏中，但在移动设备上保持原样
     - search.suggest # 搜索输入一些字母时推荐补全整个单词
     - search.highlight # 搜索出的文章关键词加入高亮
     - search.share #搜索分享按钮
-    - navigation.expand # 打开Tab时左侧目录全部展开
+    # - navigation.expand # 打开Tab时左侧目录全部展开
     - navigation.indexes #启用节索引页后，可以将文档直接附加到节
     - content.tabs.link
     - content.tooltips
@@ -55,12 +56,12 @@ theme:
     - content.action.edit
     - content.action.view
     - content.code.annotate 
-    #- toc.integrate #左侧目录
+    # - toc.integrate #左侧目录
     - toc.follow  # 目录（TOC）跟随滚动，高亮当前阅读部分
   language: zh # 一些提示性的文字会变成中文
   icon:
     repo: fontawesome/brands/git-alt
-    # view: material/eye
+    view: material/eye
     previous: fontawesome/solid/angle-left
     next: fontawesome/solid/angle-right
     admonition:
@@ -88,33 +89,31 @@ plugins:
   - offline
   #- changelog
   - git-revision-date-localized:
-      type: datetime
-      timezone: Asia/Shanghai
-      locale: zh
       enable_creation_date: true
-      strict: false
+      type: timeago
+  - statistics
   #- git-authors:
   #    exclude:
   #     - index.md
-  #- blog:
-  #    post_date_format: full #时间
-   #   draft: true
-    #  draft_if_future_date: true #自动将具有未来日期的帖子标记为草稿
-     # post_readtime: true
-      #post_readtime_words_per_minute: 265  #计算帖子的阅读时间时读者每分钟预计阅读的字数
-      #post_url_format: "{date}/{slug}"
-      # categories_slugify: !!python/object/apply:pymdownx.slugs.slugify
-      #   kwds:
-      #     case: lower
-      # categories_toc: true
-      # pagination_per_page: 5
-      #pagination_url_format: "page/{page}"
-      #authors_file: "{blog}/.authors.yml"  #作者信息
-  #- tags:
-    #  tags_file: tag.md  #分类标签
 
 extra:
-  generator: false  #删除页脚显示“使用 MkDocs 材料制造”
+  generator: True  #删除页脚显示“使用 MkDocs 材料制造”
+  analytics: 
+    provider: google
+    property: G-P4RDTQRMYJ
+    feedback:
+          title: 如果有用的话，请给我个赞和Star吧！
+          ratings:
+              - icon: material/emoticon-happy-outline
+                name: This page was helpful
+                data: 1
+                note: >-
+                    感谢支持！如果能点个Star就更好啦！
+              - icon: material/emoticon-sad-outline
+                name: This page could be improved
+                data: 0
+                note: >-
+                    感谢反馈！可以在下方评论区留言哦！
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/Wurao-liu
