@@ -92,6 +92,8 @@ plugins:
       enable_creation_date: true
       type: timeago
   - statistics
+  - heti:
+      disable_serve: false
   #- git-authors:
   #    exclude:
   #     - index.md
