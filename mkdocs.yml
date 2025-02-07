@@ -31,8 +31,8 @@ theme:
         name: 切换至日间模式
 
   font:
-    text: JetBrains Mono
-    code: Roboto Mono
+    text: JetBrains Mono, LXGW WenKai Screen GB Screen 
+    code: JetBrains Mono, Consolas
 
   features: 
     - announce.dismiss #呈现可标记为由用户读取的临时公告，可以包含一个用于取消当前公告的按钮
@@ -164,7 +164,11 @@ extra_javascript:
   - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js
 
 extra_css:
+  - css/custom.css  #自定义css
   - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css
+  - https://gcore.jsdelivr.net/npm/lxgw-wenkai-screen-webfont@1.1.0/style.css
+  - https://gcore.jsdelivr.net/npm/lxgw-wenkai-webfont@1.1.0/style.css
+  - https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap
 
 nav:
   - Home: index.md
