@@ -163,3 +163,6 @@ img:not([src$=".svg"]) {
 .heimu:active .new, .heimu .new:active, .new:active .heimu {
   color: #BA0000 !important;
 }
+html {
+  scroll-behavior: smooth;
+}
