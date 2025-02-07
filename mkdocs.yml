@@ -89,8 +89,10 @@ plugins:
   # - offline
   # - changelog
   - git-revision-date-localized:
+      type: datetime
+      timezone: Asia/Shanghai
+      locale: zh
       enable_creation_date: true
-      type: timeago
   - statistics
   - heti:
       disable_serve: false
@@ -131,6 +133,7 @@ markdown_extensions:
   - pymdownx.keys
   - pymdownx.mark
   - pymdownx.tilde
+  - pymdownx.saneheaders  # 优化标题解析，避免冲突
   - attr_list
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
@@ -160,11 +163,14 @@ markdown_extensions:
 extra_javascript:
   - javascripts/extra.js  #自定义javascript
   - javascripts/katex.js  #Latex支持
+  - javascripts/toc.js  #目录支持
   - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js  
   - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js
 
 extra_css:
   - css/custom.css  #自定义css
+  - css/counter.css  #自定义css
+  - css/card.css  #自定义css
   - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css
   - https://gcore.jsdelivr.net/npm/lxgw-wenkai-screen-webfont@1.1.0/style.css
   - https://gcore.jsdelivr.net/npm/lxgw-wenkai-webfont@1.1.0/style.css

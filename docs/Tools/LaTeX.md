@@ -1,6 +1,9 @@
 # $\LaTeX$
-## 1. 安装及使用
-### 1.1 安装
+
+## 安装及使用
+
+### 安装
+
 - 本地编译推荐安装TexLive
   - 因为TexLive是全平台通用的
 - 安装VScode
@@ -8,19 +11,25 @@
 - 安装插件：LaTeX Workshop
 - 配置环境变量
 - 配置VScode
-### 1.2 Online
+
+### Online
+
 - [Overleaf](https://www.overleaf.com/)
 可以线上直接编译，不需要配置复杂的环境，还有各类模板可以使用。
-### 1.3 使用
+
+### 使用
+
 - 新建文件，保存为.tex
 - 编写代码
 - 编译
   - 可以直接在VScode中点击编译按钮，也可以使用命令行编译，在命令行中输入`xelatex 文件名.tex`即可编译 
 - 导出：导出后为排版好的pdf文件
-### 1.4 发行版说明
+
+### 发行版说明
+
 对于各种不同的发行版和宏包管理不做说明，不是本次学习的重点，下面我们把重点放在$\LaTeX$的语法学习上。
 
-### 1.5 命令及代码结构
+### 命令及代码结构
 - $\LaTeX$的命令以反斜杠`\`开头，后面跟着命令名，且对大小写敏感
 - 有些命令会对后续内容产生影响，可以用 {} 限定作用范围
 - 命令可以接收参数，[] 中为可选参数，{} 中为必选参数，逗号分隔。比如对于环境的命令：
@@ -40,7 +49,7 @@
 % 正文区，文档内容
 \end{document} % 结束文档
 ```
-### 1.6 文档类与宏包
+### 文档类与宏包
 - 文档类：`documentclass`命令用于指定文档的类型，常用的文档类有：
   - `article`：用于短文，报告，论文等
   - `report`：用于长篇报告，论文等
@@ -70,22 +79,24 @@
     - `lettrine`：段落首字母大写
     - `indentfirst`：首行缩进
     - ···宏包实在太多，可以用`texdoc 宏包名`查看具体宏包文档
-## 2. 基础语法
-### 2.1 段落特点及排版样式
-#### 2.1.1 段落
+## 基础语法
+
+### 段落特点及排版样式
+
+#### 段落
 - 连续的多个空白字符视为一个空格，行首的空格忽略
 - 行尾的换行符视为一个空格（中文语境除外）
 - 分段落
     - 使用一个或多个空行分隔段落
     - 行尾使用`\par`命令分隔段落
-#### 2.1.2 断行和断页
+#### 断行和断页
 - 断行：使用`\\`或者`newline`命令强制换行
   - 需要注意这里的断行相当于段落内换行，不会产生新的段落
   - 故而断行的下一行不会自动缩进
 - 断页：使用`\newpage`命令强制换页
   - 也可以使用`\clearpage`命令
   - 如果使用双栏，则两者有一定区别
-#### 2.1.3 字符和标点
+#### 字符和标点
 - 转义字符：`\`后面跟% & # { }等，表示其相应的字符；`\textbackslash`表示`\`,因为`\\`是换行符
 - 标点符号（西文的一般会有一些特殊性，中文的一般比较正常）
   - 单引号 ` '，双引号 `` ''
@@ -93,7 +104,7 @@
   - 省略号相比三个点更推荐`\ldots`
 - 防止西文连字
   - 通过{}分隔即可避免连字，如`difficult dif{}f{}icult`
-#### 2.1.4 字体样式和字号
+#### 字体样式和字号
 - 字体样式
   - `\textbf{content}`：粗体
   - `\textit{content}`：斜体
@@ -124,7 +135,7 @@ This is the next line and \quad space and \hspace{3em} more and
 
 \vspace{-1em}Next paragraph.\\[1em] and next line.
 ```
-#### 2.1.5 页边距和分栏
+#### 页边距和分栏
 - 通过 geometry 宏包设置页边距
 ```latex
 \usepackage[left=1in,right=1in,top=1in,bottom=1in]{geometry}
@@ -141,8 +152,8 @@ This is the next line and \quad space and \hspace{3em} more and
 - 分栏：使用`twocolumn`文档类选项，或者使用`multicols`宏包
   - 全局分栏：`\documentclass[twocolumn]{article}`，`\oneclumn`
   - 局部分栏：`\begin{multicols}{2}`，`\end{multicols}`
-### 2.2 各种文档元素
-#### 2.2.1 章节和目录
+### 各种文档元素
+#### 章节和目录
 - 章节：`\chapter{title}`、`\section[别名]{title}`、`\subsection{title}`、`\subsubsection{title}`、`\paragraph{title}`、`\subparagraph{title}`
   - 其中`\chapter`只能在book和report文档类中使用
   - 可以加入可选参数表示短标题（显示在目录和页眉页脚中）
@@ -152,14 +163,14 @@ This is the next line and \quad space and \hspace{3em} more and
   - 生成目录需要编译两次
   - 可以通过`\addcontentsline{toc}{section}{name}`手动添加目录项
 - `\appendix`之后为附录，编号从A开始
-#### 2.2.2 生成标题页
+#### 生成标题页
 - 一般在导言区设置信息
   - `\title{title}`设置标题（必需）
   - `\author{author}`设置作者（不写会警告），可以使用`\and`分隔多个作者，`\thanks{thanks}`添加脚注
   - `\date{date}`设置日期（不写会自动生成当前日期）
 - `\maketitle` 生成标题页（一般在正文开始前，在bigin后）
 - `\titlepage` 生成独立的标题页
-#### 2.2.3 脚注
+#### 脚注
 - 使用`\footnote{content}`生成脚注
   - 脚注的编号是全局自动排序的
 - 表格环境中不能自动正确生成脚注，需要手动
@@ -175,7 +186,7 @@ some text\footnote{footnote}
 \end{tabular}
 \footnotetext{footnote}
 ```
-#### 2.2.4 图片
+#### 图片
 - 插入图片需要使用`graphicx`宏包
 - 使用`\includegraphics[options]{filename}`插入图片
   - options：
@@ -197,8 +208,8 @@ some text\footnote{footnote}
 - 可以为graphicx或文档类设置draft选项
   - 显示图片框架而不加载图片
   - `\documentclass[draft]{article}` or `\usepackage[draft]{graphicx}`
-### 2.3 常用环境
-#### 2.3.1 列表
+### 常用环境
+#### 列表
 - `itemize`无序列表，`enumerate`有序列表,`description`描述列表
   - `\usepackage{enumitem}`可选 [(1)] [i.] [a)] 等指定编号格式
   - `\setcounter{enumi}{i}`后下一个 item 从 i+1 开始编号
@@ -224,7 +235,7 @@ try：
     \end{enumerate}
 \end{itemize}
 ```
-#### 2.3.2 对齐环境
+#### 对齐环境
 - `flushleft`左对齐，`flushright`右对齐，`center`居中
   - 这里的对齐环境是一个环境，不是一个命令
   - 会在环境上下添加额外的垂直间距
@@ -245,7 +256,7 @@ try：
 
 \raggedleft some text
 ```
-#### 2.3.3 代码环境
+#### 代码环境
 - `verbatim`环境：原样输出，不解释命令
   - 不能嵌套在其他环境中
   - 可以使用`\verb`命令，输出行内代码，如`\verb|text|`
@@ -269,7 +280,7 @@ int main() {
 
 \verb|\LaTeX| and \verb*|printf("Hello, world!\n");|
 ```
-#### 2.3.4 表格
+#### 表格
 - 表格使用`tabular`环境，有时可以使用`array`环境提供辅助
 - 直接使用`tabular`环境会和文本混排，一般使用`table`环境包裹变成浮动体
 - `\begin{tabular}{cols}`，`\end{tabular}`，其中列格式 cols：
@@ -295,7 +306,7 @@ try：
     \caption{A table} %生成表格序号，表格标题
 \end{table}
 ```
-#### 2.3.5 浮动体
+#### 浮动体
 - 使得图片和表格脱离文本，独立寻找合适的位置排放
 - `figure`环境：插入图片；`\table`环境：包裹表格
 ```latex
@@ -308,7 +319,7 @@ try：
   - 限制包括：每页浮动体数量，占页面比例，浮动体间距等
 - 可以使用`\caption{caption}`添加标题（后可以接`\label{...}`用于引用）
 - 可以`\listoffigures` `\listofftables`生成目录
-#### 2.3.6 引用和标签
+#### 引用和标签
 - 使用`\label{label}`为对象添加标签，使用`\ref{label}`引用,`\pageref{label}`引用页码
 - 可以使用`\label`记录的位置：
   - 章节标题后紧挨着使用，如`\section{title}\label{sec:label}`
@@ -320,8 +331,8 @@ try：
   - 引用的编号会自动更新
 - 可以使用`hyperref`宏包，`\usepackage{hyperref}`，生成超链接
 - 不会记录编号的命令不可以使用（比如`\section*`）
-## 3. 数学公式语法
-### 3.1 数学模式
+## 数学公式语法
+### 数学模式
 - 编写数学公式首先推荐载入`amsmath`宏包
 - 两种排版方式
   - 行内公式，用一对`$`包裹，如`$a^2+b^2=c^2$`
@@ -350,9 +361,9 @@ try：
 - 有两种样式`\displaystyle`和`\textstyle`，即行间和行内，可以在不同情形下进行调整
   - 例如`\sum`的上下标位置,`\int`（积分）的高度，`\frac`的分数样式等会有不同
   - 也可以使用`\limits`和`\nolimits`改变上下标位置
-### 3.2 常用数学符号
+### 常用数学符号
 - 太多了，可以参考[LaTeX数学符号表](https://www.latexlive.com/) 
-### 3.3 特殊数学字体
+### 特殊数学字体
 - 公式环境中不能使用`\textbf`等命令，可以使用`\mathbf`、`\mathit`、`\mathsf`、`\mathtt`等命令
 - 针对于数学环境中特定的命令
 
@@ -369,8 +380,8 @@ try：
 |\mathrm{ABCDE}|$\mathrm{ABCDE}$|罗马体|
 |\mathtt{ABCDE}|$\mathtt{ABCDE}$|等宽字体|
 
-### 3.4 数学环境
-#### 3.4.1 align/aligned对齐环境
+### 数学环境
+#### align/aligned对齐环境
 - 最常用align环境进行多行公式对齐
 - 用 `&` 分割或标记对齐位置，`\\`换行
 ```latex
@@ -382,7 +393,7 @@ a &= b + c  &     g &= h + i \\
 - 用`\notag`取消编号，用`\nonumber`取消整个公式的编号,或使用`align*`环境
 - 可以使用`aligned`环境嵌套在其他环境中(如equation)进行对齐
   - aligned环境本身并不会进入数学模式，不会自动编号，需要在数学模式中嵌套使用 
-#### 3.4.2 矩阵环境
+#### 矩阵环境
 - 可以使用内置的 array 环境，用法类似 tabular，左右需手动加括号
 - 推荐使用 amsmath 的矩阵环境
   - matrix 不带定界符
@@ -401,7 +412,7 @@ a_{n1} & a_{n2} & \cdots & a_{nn}\\
 \end{bmatrix}
 \]
 ```
-### 3.5 规范写法
+### 规范写法
 - 一般来说，公式中的字母都是变量，不是常数，所以应该使用斜体
 - 特定函数一定要用专门命令，或写为正体
 - 除了变量以外都要用正体，特别是微分算子
@@ -409,14 +420,14 @@ a_{n1} & a_{n2} & \cdots & a_{nn}\\
   - ❌`(x^2)^2` $(x^2)^2$ ✅`\left(x^2\right)^2` $\left(x^2\right)^2$
 - 行间公式上方不加空行(不然行间公式算新一段落，会导致上方间距过大)
 - 一个锻炼写数学公式的网站：[TeXnique](https://texnique.xyz/)
-## 4. 更多
-### 4.1 模板
+## 更多
+### 模板
 - [ElegantLaTeX](https://github.com/ElegantLaTeX)系列模板
 - beamer：用于制作幻灯片的模板
-### 4.2 参考网站
+### 参考网站
 - [一份（不太）简短的 LaTeX2e 介绍](https://mirrors.ustc.edu.cn/CTAN/info/lshort/chinese/lshort-zh-cn.pdf)
 - [一个清晰简单的说明](https://liam.page/2014/09/08/latex-introduction/)
-- [学长的技能拾遗PPT！](https://slides.tonycrane.cc/PracticalSkillsTutorial/2023-spring-cs/lec4/#/)
+- [xg的技能拾遗PPT！](https://slides.tonycrane.cc/PracticalSkillsTutorial/2023-spring-cs/lec4/#/)
 - [LaTeX数学符号表](https://www.latexlive.com/)
 - [支持手写识别和文档识别的公式编辑软件平台](https://simpletex.cn/)
 - [简洁的LaTeX的数学公式速查手册](https://latex.emoryhuang.cn/)
