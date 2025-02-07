@@ -8,8 +8,8 @@
 - 安装插件：LaTeX Workshop
 - 配置环境变量
 - 配置VScode
-### 1.2 online
-- [overleaf](https://www.overleaf.com/)
+### 1.2 Online
+- [Overleaf](https://www.overleaf.com/)
 可以线上直接编译，不需要配置复杂的环境，还有各类模板可以使用。
 ### 1.3 使用
 - 新建文件，保存为.tex
