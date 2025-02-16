@@ -12,9 +12,9 @@
         return {
             l: w,
             z: o(v, "zIndex", -1),
-            o: o(v, "opacity", 0.5),
+            o: o(v, "opacity", 0.4),     // 降低整体不透明度从 0.5 到 0.4
             c: o(v, "color", "0,0,0"),
-            n: o(v, "count", 99)
+            n: o(v, "count", 55)         // 减少粒子数量从 99 到 55
         }
     }
     function k() {
@@ -37,7 +37,7 @@
                     B = i.x - x.x,
                     z = i.y - x.y,
                     y = B * B + z * z;
-                    y < x.max && (x === f && y >= x.max / 2 && (i.x -= 0.03 * B, i.y -= 0.03 * z), A = (x.max - y) / x.max, e.beginPath(), e.lineWidth = A / 2, e.strokeStyle = "rgba(" + s.c + "," + (A + 0.2) + ")", e.moveTo(i.x, i.y), e.lineTo(x.x, x.y), e.stroke())
+                    y < x.max && (x === f && y >= x.max / 2 && (i.x -= 0.03 * B, i.y -= 0.03 * z), A = (x.max - y) / x.max, e.beginPath(), e.lineWidth = A / 3, e.strokeStyle = "rgba(" + s.c + "," + (A + 0.1) + ")", e.moveTo(i.x, i.y), e.lineTo(x.x, x.y), e.stroke())
                 }
             }
             w.splice(w.indexOf(i), 1)
@@ -58,7 +58,7 @@
     f = {
         x: null,
         y: null,
-        max: 20000
+        max: 15000                       // 减小鼠标互动距离从 20000 到 15000
     };
     u.id = c;
     u.style.cssText = "position:fixed;top:0;left:0;z-index:" + s.z + ";opacity:" + s.o;
@@ -84,7 +84,7 @@
             y: g,
             xa: q,
             ya: d,
-            max: 6000
+            max: 4000                    // 减小连线最大距离从 6000 到 4000
         })
     }
     setTimeout(function() {
