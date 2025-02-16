@@ -6,6 +6,7 @@ site_description: 勿扰的小世界
 
 repo_url: https://github.com/Wurao-liu/notebook
 repo_name: Wurao-liu/Notebook
+edit_uri: edit/main/docs
 
 copyright: Copyright &copy; 2024~2025 Wurao-liu # 左下角的版权声明
 #[UI]
@@ -17,15 +18,15 @@ theme:
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default # 日间模式
-      primary: cyan # 主色调
-      accent: indigo # 链接等可交互元件的高亮色
+      # primary: cyan # 主色调
+      # accent: indigo # 链接等可交互元件的高亮色
       toggle:
         icon: material/weather-night # 图标
         name: 切换至夜间模式 # 鼠标悬浮提示
     - media: "(prefers-color-scheme: dark)"
       scheme: slate # 夜间模式
-      primary: black 
-      accent: indigo
+      # primary: black 
+      # accent: indigo
       toggle:
         icon: material/weather-sunny
         name: 切换至日间模式
@@ -64,20 +65,6 @@ theme:
     view: material/eye
     previous: fontawesome/solid/angle-left
     next: fontawesome/solid/angle-right
-    admonition:
-      note: octicons/tag-16
-      abstract: octicons/checklist-16
-      info: octicons/info-16
-      tip: octicons/squirrel-16
-      success: octicons/check-16
-      question: octicons/question-16
-      warning: octicons/alert-16
-      failure: octicons/x-circle-16
-      danger: octicons/zap-16
-      bug: octicons/bug-16
-      example: octicons/beaker-16
-      quote: octicons/quote-16
-
 
 
 plugins:
@@ -127,7 +114,7 @@ extra:
 markdown_extensions:
   - pymdownx.arithmatex:
       generic: true
-  - pymdownx.betterem
+  #  pymdownx.betterem
   - pymdownx.critic
   - pymdownx.caret
   - pymdownx.keys
@@ -145,10 +132,11 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.tabbed:
       alternate_style: true
-  - pymdownx.highlight: # 代码块高亮
+  - pymdownx.highlight:
       anchor_linenums: true
-      linenums: true # 显示行号
-      auto_title: true # 显示编程语言名称
+      line_spans: __span
+      pygments_lang_class: true
+      # linenums: true
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.tasklist:
@@ -158,6 +146,7 @@ markdown_extensions:
       title: 目录
       slugify: !!python/object/apply:pymdownx.slugs.slugify {kwds: {case: lower}} # enable Unicode link
   - md_in_html
+  - footnotes
   
   
 extra_javascript:
@@ -180,12 +169,26 @@ nav:
   - Home: index.md
   - Computer Science: 
     - Computer Science/index.md
+    - 数据结构基础:
+      - Computer Science/FDS/index.md
+    - 数字逻辑设计:
+      - Computer Science/DLD/index.md
   - Other Courses: 
     - OtherCourses/index.md
+    - 数学相关:
+      - OtherCourses/math/index.md
+      - 微积分（甲）II:
+        - OtherCourses/math/calc/index.md
+      - 离散数学及其应用:
+        - OtherCourses/math/dm/index.md
   - Tools:
     - Tools/index.md
-    - LaTeX: Tools/LaTeX.md
-    - Markdown: Tools/markdown.md
-    - Shell: Tools/Shell.md
+    - LaTeX: Tools/LaTeX.md 
+    - MkDocs: Tools/mkdocs.md
   - Life:
     - Life/index.md
+    - 生活记录:
+      - Life/record/index.md
+      - 大一秋冬小记: Life/record/record_1.md
+    - 美剧记录: Life/series.md
+    - 关于本站: Life/about.md
