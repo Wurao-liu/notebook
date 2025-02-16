@@ -12,22 +12,28 @@
         return {
             l: w,
             z: o(v, "zIndex", -1),
-            o: o(v, "opacity", 0.4),     // 降低整体不透明度从 0.5 到 0.4
+            o: o(v, "opacity", 0.4),     // 降低透明度
             c: o(v, "color", "0,0,0"),
-            n: o(v, "count", 55)         // 减少粒子数量从 99 到 55
+            n: o(v, "count", 55)         // 在移动端减少粒子数量
         }
     }
+
     function k() {
         r = u.width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth,
-        n = u.height = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight
+        n = u.height = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+        
+        // 根据屏幕大小调整粒子数量
+        if (r < 768) {  // 移动设备
+            s.n = Math.floor(s.n * 0.5);
+        }
     }
     function b() {
         e.clearRect(0, 0, r, n);
         var w = [f].concat(t);
         var x, v, A, B, z, y;
         t.forEach(function(i) {
-            i.x += i.xa,
-            i.y += i.ya,
+            i.x += i.xa * 0.5,              // 降低水平运动速度
+            i.y += i.ya * 0.5,              // 降低垂直运动速度
             i.xa *= i.x > r || i.x < 0 ? -1 : 1,
             i.ya *= i.y > n || i.y < 0 ? -1 : 1,
             e.fillRect(i.x - 0.5, i.y - 0.5, 1, 1);
@@ -37,7 +43,8 @@
                     B = i.x - x.x,
                     z = i.y - x.y,
                     y = B * B + z * z;
-                    y < x.max && (x === f && y >= x.max / 2 && (i.x -= 0.03 * B, i.y -= 0.03 * z), A = (x.max - y) / x.max, e.beginPath(), e.lineWidth = A / 3, e.strokeStyle = "rgba(" + s.c + "," + (A + 0.1) + ")", e.moveTo(i.x, i.y), e.lineTo(x.x, x.y), e.stroke())
+                    y < x.max && (x === f && y >= x.max / 2 && (i.x -= 0.02 * B, i.y -= 0.02 * z), // 降低鼠标互动影响
+                    A = (x.max - y) / x.max, e.beginPath(), e.lineWidth = A / 3, e.strokeStyle = "rgba(" + s.c + "," + (A + 0.1) + ")", e.moveTo(i.x, i.y), e.lineTo(x.x, x.y), e.stroke())
                 }
             }
             w.splice(w.indexOf(i), 1)
@@ -91,4 +98,11 @@
         b()
     },
     100)
-} ();
+
+    // 添加移动端检测和适配
+    var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    if (isMobile) {
+        s.n = Math.floor(s.n * 0.5);    // 移动端粒子数量减半
+        s.o = s.o * 0.8;                // 移动端降低透明度
+    }
+}();
