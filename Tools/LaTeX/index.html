@@ -7,13 +7,12 @@
 <meta content="勿扰" name="author"/>
 <link href="https://wurao-liu.github.io/notebook/Tools/LaTeX/" rel="canonical"/>
 <link href="../" rel="prev"/>
-<link href="../markdown/" rel="next"/>
+<link href="../mkdocs/" rel="next"/>
 <link href="../../assets/logo.png" rel="icon"/>
-<meta content="mkdocs-1.6.1, mkdocs-material-9.6.3" name="generator"/>
+<meta content="mkdocs-1.6.1, mkdocs-material-9.6.4" name="generator"/>
 <title>LaTeX - 勿扰的小世界</title>
-<link href="../../assets/stylesheets/main.d7758b05.min.css" rel="stylesheet"/>
+<link href="../../assets/stylesheets/main.8608ea7d.min.css" rel="stylesheet"/>
 <link href="../../assets/stylesheets/palette.06af60db.min.css" rel="stylesheet"/>
-<style>:root{--md-admonition-icon--note:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M1 7.775V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 0 1 0 2.474l-5.026 5.026a1.75 1.75 0 0 1-2.474 0l-6.25-6.25A1.75 1.75 0 0 1 1 7.775m1.5 0c0 .066.026.13.073.177l6.25 6.25a.25.25 0 0 0 .354 0l5.025-5.025a.25.25 0 0 0 0-.354l-6.25-6.25a.25.25 0 0 0-.177-.073H2.75a.25.25 0 0 0-.25.25ZM6 5a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/></svg>');--md-admonition-icon--abstract:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M2.5 1.75v11.5c0 .138.112.25.25.25h3.17a.75.75 0 0 1 0 1.5H2.75A1.75 1.75 0 0 1 1 13.25V1.75C1 .784 1.784 0 2.75 0h8.5C12.216 0 13 .784 13 1.75v7.736a.75.75 0 0 1-1.5 0V1.75a.25.25 0 0 0-.25-.25h-8.5a.25.25 0 0 0-.25.25m13.274 9.537zl-4.557 4.45a.75.75 0 0 1-1.055-.008l-1.943-1.95a.75.75 0 0 1 1.062-1.058l1.419 1.425 4.026-3.932a.75.75 0 1 1 1.048 1.074M4.75 4h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1 0-1.5M4 7.75A.75.75 0 0 1 4.75 7h2a.75.75 0 0 1 0 1.5h-2A.75.75 0 0 1 4 7.75"/></svg>');--md-admonition-icon--info:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13M6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75M8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2"/></svg>');--md-admonition-icon--tip:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.499.75a.75.75 0 0 1 1.5 0v.996C5.9 2.903 6.793 3.65 7.662 4.376l.24.202c-.036-.694.055-1.422.426-2.163C9.1.873 10.794-.045 12.622.26 14.408.558 16 1.94 16 4.25c0 1.278-.954 2.575-2.44 2.734l.146.508.065.22c.203.701.412 1.455.476 2.226.142 1.707-.4 3.03-1.487 3.898C11.714 14.671 10.27 15 8.75 15h-6a.75.75 0 0 1 0-1.5h1.376a4.5 4.5 0 0 1-.563-1.191 3.84 3.84 0 0 1-.05-2.063 4.65 4.65 0 0 1-2.025-.293.75.75 0 0 1 .525-1.406c1.357.507 2.376-.006 2.698-.318l.009-.01a.747.747 0 0 1 1.06 0 .75.75 0 0 1-.012 1.074c-.912.92-.992 1.835-.768 2.586.221.74.745 1.337 1.196 1.621H8.75c1.343 0 2.398-.296 3.074-.836.635-.507 1.036-1.31.928-2.602-.05-.603-.216-1.224-.422-1.93l-.064-.221c-.12-.407-.246-.84-.353-1.29a2.4 2.4 0 0 1-.507-.441 3.1 3.1 0 0 1-.633-1.248.75.75 0 0 1 1.455-.364c.046.185.144.436.31.627.146.168.353.305.712.305.738 0 1.25-.615 1.25-1.25 0-1.47-.95-2.315-2.123-2.51-1.172-.196-2.227.387-2.706 1.345-.46.92-.27 1.774.019 3.062l.042.19.01.05c.348.443.666.949.94 1.553a.75.75 0 1 1-1.365.62c-.553-1.217-1.32-1.94-2.3-2.768L6.7 5.527c-.814-.68-1.75-1.462-2.692-2.619a3.7 3.7 0 0 0-1.023.88c-.406.495-.663 1.036-.722 1.508.116.122.306.21.591.239.388.038.797-.06 1.032-.19a.75.75 0 0 1 .728 1.31c-.515.287-1.23.439-1.906.373-.682-.067-1.473-.38-1.879-1.193L.75 5.677V5.5c0-.984.48-1.94 1.077-2.664.46-.559 1.05-1.055 1.673-1.353z"/></svg>');--md-admonition-icon--success:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.75.75 0 0 1 .018-1.042.75.75 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0"/></svg>');--md-admonition-icon--question:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13M6.92 6.085h.001a.749.749 0 1 1-1.342-.67c.169-.339.436-.701.849-.977C6.845 4.16 7.369 4 8 4a2.76 2.76 0 0 1 1.637.525c.503.377.863.965.863 1.725 0 .448-.115.83-.329 1.15-.205.307-.47.513-.692.662-.109.072-.22.138-.313.195l-.006.004a6 6 0 0 0-.26.16 1 1 0 0 0-.276.245.75.75 0 0 1-1.248-.832c.184-.264.42-.489.692-.661q.154-.1.313-.195l.007-.004c.1-.061.182-.11.258-.161a1 1 0 0 0 .277-.245C8.96 6.514 9 6.427 9 6.25a.61.61 0 0 0-.262-.525A1.27 1.27 0 0 0 8 5.5c-.369 0-.595.09-.74.187a1 1 0 0 0-.34.398M9 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/></svg>');--md-admonition-icon--warning:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M6.457 1.047c.659-1.234 2.427-1.234 3.086 0l6.082 11.378A1.75 1.75 0 0 1 14.082 15H1.918a1.75 1.75 0 0 1-1.543-2.575Zm1.763.707a.25.25 0 0 0-.44 0L1.698 13.132a.25.25 0 0 0 .22.368h12.164a.25.25 0 0 0 .22-.368Zm.53 3.996v2.5a.75.75 0 0 1-1.5 0v-2.5a.75.75 0 0 1 1.5 0M9 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/></svg>');--md-admonition-icon--failure:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M2.344 2.343za8 8 0 0 1 11.314 11.314A8.002 8.002 0 0 1 .234 10.089a8 8 0 0 1 2.11-7.746m1.06 10.253a6.5 6.5 0 1 0 9.108-9.275 6.5 6.5 0 0 0-9.108 9.275M6.03 4.97 8 6.94l1.97-1.97a.749.749 0 0 1 1.275.326.75.75 0 0 1-.215.734L9.06 8l1.97 1.97a.749.749 0 0 1-.326 1.275.75.75 0 0 1-.734-.215L8 9.06l-1.97 1.97a.749.749 0 0 1-1.275-.326.75.75 0 0 1 .215-.734L6.94 8 4.97 6.03a.75.75 0 0 1 .018-1.042.75.75 0 0 1 1.042-.018"/></svg>');--md-admonition-icon--danger:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M9.504.43a1.516 1.516 0 0 1 2.437 1.713L10.415 5.5h2.123c1.57 0 2.346 1.909 1.22 3.004l-7.34 7.142a1.25 1.25 0 0 1-.871.354h-.302a1.25 1.25 0 0 1-1.157-1.723L5.633 10.5H3.462c-1.57 0-2.346-1.909-1.22-3.004zm1.047 1.074L3.286 8.571A.25.25 0 0 0 3.462 9H6.75a.75.75 0 0 1 .694 1.034l-1.713 4.188 6.982-6.793A.25.25 0 0 0 12.538 7H9.25a.75.75 0 0 1-.683-1.06l2.008-4.418.003-.006-.004-.009-.006-.006-.008-.001q-.005 0-.009.004"/></svg>');--md-admonition-icon--bug:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M4.72.22a.75.75 0 0 1 1.06 0l1 .999a3.5 3.5 0 0 1 2.441 0l.999-1a.748.748 0 0 1 1.265.332.75.75 0 0 1-.205.729l-.775.776c.616.63.995 1.493.995 2.444v.327q0 .15-.025.292c.408.14.764.392 1.029.722l1.968-.787a.75.75 0 0 1 .556 1.392L13 7.258V9h2.25a.75.75 0 0 1 0 1.5H13v.5q-.002.615-.141 1.186l2.17.868a.75.75 0 0 1-.557 1.392l-2.184-.873A5 5 0 0 1 8 16a5 5 0 0 1-4.288-2.427l-2.183.873a.75.75 0 0 1-.558-1.392l2.17-.868A5 5 0 0 1 3 11v-.5H.75a.75.75 0 0 1 0-1.5H3V7.258L.971 6.446a.75.75 0 0 1 .558-1.392l1.967.787c.265-.33.62-.583 1.03-.722a1.7 1.7 0 0 1-.026-.292V4.5c0-.951.38-1.814.995-2.444L4.72 1.28a.75.75 0 0 1 0-1.06m.53 6.28a.75.75 0 0 0-.75.75V11a3.5 3.5 0 1 0 7 0V7.25a.75.75 0 0 0-.75-.75ZM6.173 5h3.654A.17.17 0 0 0 10 4.827V4.5a2 2 0 1 0-4 0v.327c0 .096.077.173.173.173"/></svg>');--md-admonition-icon--example:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M5 5.782V2.5h-.25a.75.75 0 0 1 0-1.5h6.5a.75.75 0 0 1 0 1.5H11v3.282l3.666 5.76C15.619 13.04 14.543 15 12.767 15H3.233c-1.776 0-2.852-1.96-1.899-3.458Zm-2.4 6.565a.75.75 0 0 0 .633 1.153h9.534a.75.75 0 0 0 .633-1.153L12.225 10.5h-8.45ZM9.5 2.5h-3V6c0 .143-.04.283-.117.403L4.73 9h6.54L9.617 6.403A.75.75 0 0 1 9.5 6Z"/></svg>');--md-admonition-icon--quote:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M1.75 2.5h10.5a.75.75 0 0 1 0 1.5H1.75a.75.75 0 0 1 0-1.5m4 5h8.5a.75.75 0 0 1 0 1.5h-8.5a.75.75 0 0 1 0-1.5m0 5h8.5a.75.75 0 0 1 0 1.5h-8.5a.75.75 0 0 1 0-1.5M2.5 7.75v6a.75.75 0 0 1-1.5 0v-6a.75.75 0 0 1 1.5 0"/></svg>');}</style>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css?family=JetBrains+Mono,+LXGW+WenKai+Screen+GB+Screen:300,300i,400,400i,700,700i%7CJetBrains+Mono,+Consolas:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
 <style>:root{--md-text-font:"JetBrains Mono, LXGW WenKai Screen GB Screen";--md-code-font:"JetBrains Mono, Consolas"}</style>
@@ -38,7 +37,7 @@
     body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
     body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
     body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
-<body data-md-color-accent="indigo" data-md-color-primary="cyan" data-md-color-scheme="default" dir="ltr">
+<body data-md-color-accent="indigo" data-md-color-primary="indigo" data-md-color-scheme="default" dir="ltr">
 <input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
@@ -74,11 +73,11 @@
 </div>
 </div>
 <form class="md-header__option" data-md-component="palette">
-<input aria-label="切换至夜间模式" class="md-option" data-md-color-accent="indigo" data-md-color-media="(prefers-color-scheme: light)" data-md-color-primary="cyan" data-md-color-scheme="default" id="__palette_0" name="__palette" type="radio"/>
+<input aria-label="切换至夜间模式" class="md-option" data-md-color-accent="indigo" data-md-color-media="(prefers-color-scheme: light)" data-md-color-primary="indigo" data-md-color-scheme="default" id="__palette_0" name="__palette" type="radio"/>
 <label class="md-header__button md-icon" for="__palette_1" hidden="" title="切换至夜间模式">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"></path></svg>
 </label>
-<input aria-label="切换至日间模式" class="md-option" data-md-color-accent="indigo" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-primary="black" data-md-color-scheme="slate" id="__palette_1" name="__palette" type="radio"/>
+<input aria-label="切换至日间模式" class="md-option" data-md-color-accent="indigo" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-primary="indigo" data-md-color-scheme="slate" id="__palette_1" name="__palette" type="radio"/>
 <label class="md-header__button md-icon" for="__palette_0" hidden="" title="切换至日间模式">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"></path></svg>
 </label>
@@ -227,6 +226,9 @@
     
   </span>
 </a>
+<label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+<span class="md-nav__icon md-icon"></span>
+</label>
 </div>
 <nav aria-expanded="false" aria-labelledby="__nav_2_label" class="md-nav" data-md-level="1">
 <label class="md-nav__title" for="__nav_2">
@@ -234,6 +236,44 @@
             Computer Science
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_2_2" type="checkbox"/>
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="../../Computer%20Science/FDS/">
+<span class="md-ellipsis">
+    数据结构基础
+    
+  </span>
+</a>
+</div>
+<nav aria-expanded="false" aria-labelledby="__nav_2_2_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_2">
+<span class="md-nav__icon md-icon"></span>
+            数据结构基础
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_2_3" type="checkbox"/>
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="../../Computer%20Science/DLD/">
+<span class="md-ellipsis">
+    数字逻辑设计
+    
+  </span>
+</a>
+</div>
+<nav aria-expanded="false" aria-labelledby="__nav_2_3_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_2_3">
+<span class="md-nav__icon md-icon"></span>
+            数字逻辑设计
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+</ul>
+</nav>
+</li>
 </ul>
 </nav>
 </li>
@@ -246,6 +286,9 @@
     
   </span>
 </a>
+<label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+<span class="md-nav__icon md-icon"></span>
+</label>
 </div>
 <nav aria-expanded="false" aria-labelledby="__nav_3_label" class="md-nav" data-md-level="1">
 <label class="md-nav__title" for="__nav_3">
@@ -253,6 +296,66 @@
             Other Courses
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_2" type="checkbox"/>
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="../../OtherCourses/math/">
+<span class="md-ellipsis">
+    数学相关
+    
+  </span>
+</a>
+<label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-expanded="false" aria-labelledby="__nav_3_2_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_3_2">
+<span class="md-nav__icon md-icon"></span>
+            数学相关
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_2_2" type="checkbox"/>
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="../../OtherCourses/math/calc/">
+<span class="md-ellipsis">
+    微积分（甲）II
+    
+  </span>
+</a>
+</div>
+<nav aria-expanded="false" aria-labelledby="__nav_3_2_2_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_3_2_2">
+<span class="md-nav__icon md-icon"></span>
+            微积分（甲）II
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_3_2_3" type="checkbox"/>
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="../../OtherCourses/math/dm/">
+<span class="md-ellipsis">
+    离散数学及其应用
+    
+  </span>
+</a>
+</div>
+<nav aria-expanded="false" aria-labelledby="__nav_3_2_3_label" class="md-nav" data-md-level="3">
+<label class="md-nav__title" for="__nav_3_2_3">
+<span class="md-nav__icon md-icon"></span>
+            离散数学及其应用
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
 </ul>
 </nav>
 </li>
@@ -375,7 +478,7 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#断行和断页">
 <span class="md-ellipsis">
-      断行和断页
+      断行和断页；
     </span>
 </a>
 </li>
@@ -605,17 +708,9 @@
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../markdown/">
+<a class="md-nav__link" href="../mkdocs/">
 <span class="md-ellipsis">
-    Markdown
-    
-  </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../Shell/">
-<span class="md-ellipsis">
-    Shell
+    MkDocs
     
   </span>
 </a>
@@ -632,6 +727,9 @@
     
   </span>
 </a>
+<label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+<span class="md-nav__icon md-icon"></span>
+</label>
 </div>
 <nav aria-expanded="false" aria-labelledby="__nav_5_label" class="md-nav" data-md-level="1">
 <label class="md-nav__title" for="__nav_5">
@@ -639,6 +737,52 @@
             Life
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_5_2" type="checkbox"/>
+<div class="md-nav__link md-nav__container">
+<a class="md-nav__link" href="../../Life/record/">
+<span class="md-ellipsis">
+    生活记录
+    
+  </span>
+</a>
+<label class="md-nav__link" for="__nav_5_2" id="__nav_5_2_label" tabindex="0">
+<span class="md-nav__icon md-icon"></span>
+</label>
+</div>
+<nav aria-expanded="false" aria-labelledby="__nav_5_2_label" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_5_2">
+<span class="md-nav__icon md-icon"></span>
+            生活记录
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Life/record/record_1/">
+<span class="md-ellipsis">
+    大一秋冬小记
+    
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Life/series/">
+<span class="md-ellipsis">
+    美剧记录
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../Life/about/">
+<span class="md-ellipsis">
+    关于本站
+    
+  </span>
+</a>
+</li>
 </ul>
 </nav>
 </li>
@@ -735,7 +879,7 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#断行和断页">
 <span class="md-ellipsis">
-      断行和断页
+      断行和断页；
     </span>
 </a>
 </li>
@@ -968,101 +1112,100 @@
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<a class="md-content__button md-icon" href="https://github.com/Wurao-liu/notebook/edit/master/docs/Tools/LaTeX.md" title="编辑此页">
+<a class="md-content__button md-icon" href="https://github.com/Wurao-liu/notebook/edit/main/docs/Tools/LaTeX.md" title="编辑此页">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"></path></svg>
 </a>
-<a class="md-content__button md-icon" href="https://github.com/Wurao-liu/notebook/raw/master/docs/Tools/LaTeX.md" title="查看本页的源代码">
+<a class="md-content__button md-icon" href="https://github.com/Wurao-liu/notebook/raw/main/docs/Tools/LaTeX.md" title="查看本页的源代码">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0 8a5 5 0 0 1-5-5 5 5 0 0 1 5-5 5 5 0 0 1 5 5 5 5 0 0 1-5 5m0-12.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5"></path></svg>
 </a>
 <h1 id="latex"><span class="arithmatex">\(\LaTeX\)</span><a class="headerlink" href="#latex" title="Permanent link">⚓︎</a></h1>
 <div style="margin-top: -30px; font-size: 0.75em; opacity: 0.7;">
-<p><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z"></path></svg></span> 约<span class="heti-skip"><span class="heti-spacing"> </span>3776<span class="heti-spacing"> </span></span>个字 <span class="twemoji"><svg viewbox="0 0 640 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6m80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3l89.3 89.4-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3"></path></svg></span> <span>81<span class="heti-spacing"> </span></span>行代码 <span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z"></path></svg></span> 预计阅读时间<span class="heti-skip"><span class="heti-spacing"> </span>14<span class="heti-spacing"> </span></span>分钟</p>
+<p><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z"></path></svg></span> 约<span class="heti-skip"><span class="heti-spacing"> </span>3900<span class="heti-spacing"> </span></span>个字 <span class="twemoji"><svg viewbox="0 0 640 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6m80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3l89.3 89.4-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3"></path></svg></span> <span>81<span class="heti-spacing"> </span></span>行代码 <span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z"></path></svg></span> 预计阅读时间<span class="heti-skip"><span class="heti-spacing"> </span>14<span class="heti-spacing"> </span></span>分钟</p>
 </div>
 <h2 id="安装及使用">安装及使用<a class="headerlink" href="#安装及使用" title="Permanent link">⚓︎</a></h2>
 <h3 id="安装">安装<a class="headerlink" href="#安装" title="Permanent link">⚓︎</a></h3>
+<p>对于环境的配置不是本文的重点，因此这里可能只会有极为简要的说明。</p>
 <ul>
-<li>本地编译推荐安装<span><span class="heti-spacing"> </span>TexLive</span></li>
-<li>因为<span class="heti-skip"><span class="heti-spacing"> </span>TexLive<span class="heti-spacing"> </span></span>是全平台通用的</li>
-<li>安装<span><span class="heti-spacing"> </span>VScode</span><blockquote>
-<p>使用<span class="heti-skip"><span class="heti-spacing"> </span>VScode<span class="heti-spacing"> </span></span>的原因是可以使用<span class="heti-skip"><span class="heti-spacing"> </span>copilot<span class="heti-spacing"> </span></span>进行自动补全，提高编写效率。也可以使用<span><span class="heti-spacing"> </span>TeXworks</span>，这是<span class="heti-skip"><span class="heti-spacing"> </span>TeX Live<span class="heti-spacing"> </span></span>自带的编辑器，且功能界面简洁。</p>
+<li>本地编译推荐安装<span><span class="heti-spacing"> </span>TexLive</span> ；</li>
+<li>因为<span class="heti-skip"><span class="heti-spacing"> </span>TexLive<span class="heti-spacing"> </span></span>是全平台通用的；</li>
+<li>安装<span><span class="heti-spacing"> </span>VScode</span> ；<blockquote>
+<p>使用<span class="heti-skip"><span class="heti-spacing"> </span>VScode<span class="heti-spacing"> </span></span>的原因是可以使用<span class="heti-skip"><span class="heti-spacing"> </span>copilot<span class="heti-spacing"> </span></span>进行自动补全，提高编写效率。也可以使用<span><span class="heti-spacing"> </span>TeXworks</span> ，这是<span class="heti-skip"><span class="heti-spacing"> </span>TeX Live<span class="heti-spacing"> </span></span>自带的编辑器，但是功能较为简单。</p>
 </blockquote>
 </li>
-<li>安装插件：LaTeX Workshop</li>
-<li>配置环境变量</li>
-<li>配置<span><span class="heti-spacing"> </span>VScode</span></li>
+<li>安装插件：LaTeX Workshop；</li>
+<li>配置环境变量；</li>
 </ul>
 <h3 id="online">Online<a class="headerlink" href="#online" title="Permanent link">⚓︎</a></h3>
 <ul>
-<li><a href="https://www.overleaf.com/">Overleaf</a>
-可以线上直接编译，不需要配置复杂的环境，还有各类模板可以使用。</li>
+<li><a href="https://www.overleaf.com/" target="_blank"><span>Overleaf<span class="heti-spacing"> </span></span></a>可以线上直接编译，不需要配置复杂的环境，还有各类模板可以使用，容易进行上手；</li>
 </ul>
 <h3 id="使用">使用<a class="headerlink" href="#使用" title="Permanent link">⚓︎</a></h3>
 <ul>
-<li>新建文件，保存为<span><span class="heti-spacing"> </span>.tex</span></li>
-<li>编写代码</li>
-<li>编译</li>
-<li>可以直接在<span class="heti-skip"><span class="heti-spacing"> </span>VScode<span class="heti-spacing"> </span></span>中点击编译按钮，也可以使用命令行编译，在命令行中输入<code>xelatex 文件名.tex</code>即可编译 </li>
-<li>导出：导出后为排版好的<span class="heti-skip"><span class="heti-spacing"> </span>pdf<span class="heti-spacing"> </span></span>文件</li>
+<li>新建文件，保存为<span><span class="heti-spacing"> </span>.tex</span> ；</li>
+<li>编写代码；</li>
+<li>编译；</li>
+<li>可以直接在<span class="heti-skip"><span class="heti-spacing"> </span>VScode<span class="heti-spacing"> </span></span>中点击编译按钮，也可以使用命令行编译；</li>
+<li>导出：导出后为排版好的<span class="heti-skip"><span class="heti-spacing"> </span>pdf<span class="heti-spacing"> </span></span>文件；</li>
 </ul>
+<div class="admonition warning">
+<p class="admonition-title">注意</p>
+<p>对于带参考文献的文档，会有对文献的不同处理方式，此时要注意选择的编译器会有所区别，有较新的<code>biber</code>和较旧的<code>bibtex</code>，要注意在多次编译的时候选择合适的编译器。</p>
+</div>
 <h3 id="发行版说明">发行版说明<a class="headerlink" href="#发行版说明" title="Permanent link">⚓︎</a></h3>
 <p>对于各种不同的发行版和宏包管理不做说明，不是本次学习的重点，下面我们把重点放在<span class="heti-skip"><span class="heti-spacing"> </span><span class="arithmatex">\(\LaTeX\)</span><span class="heti-spacing"> </span></span>的语法学习上。</p>
 <h3 id="命令及代码结构">命令及代码结构<a class="headerlink" href="#命令及代码结构" title="Permanent link">⚓︎</a></h3>
 <ul>
-<li><span><span class="arithmatex">\(\LaTeX\)</span><span class="heti-spacing"> </span></span>的命令以反斜杠<code>\</code>开头，后面跟着命令名，且对大小写敏感</li>
-<li>有些命令会对后续内容产生影响，可以用<span class="heti-skip"><span class="heti-spacing"> </span>{}<span class="heti-spacing"> </span></span>限定作用范围</li>
-<li>命令可以接收参数，<span>[]<span class="heti-spacing"> </span></span>中为可选参数，<span>{}<span class="heti-spacing"> </span></span>中为必选参数，逗号分隔。比如对于环境的命令：
-<div class="highlight"><table class="highlighttable"><tr><th class="filename" colspan="2"><span class="filename">TeX</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span>
-<span class="normal"><a href="#__codelineno-0-2">2</a></span>
-<span class="normal"><a href="#__codelineno-0-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="k">\begin</span><span class="nb">{</span>环境名<span class="nb">}</span>[可选参数]<span class="nb">{</span>必选参数<span class="nb">}</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2"></a>内容
-<a id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="k">\end</span><span class="nb">{</span>环境名<span class="nb">}</span>
-</code></pre></div></td></tr></table></div></li>
-<li>注释：<code>%</code>后面的内容为注释，不会被编译</li>
-<li>空格：多个空格会被视为一个空格，多个或一个换行符会被视为一个空格</li>
-<li>段落：使用一个或多个空行来分隔段落</li>
-<li>文件结构：一个完整的<span class="heti-skip"><span class="heti-spacing"> </span>LaTeX<span class="heti-spacing"> </span></span>文档由以下几部分组成：
-<div class="highlight"><table class="highlighttable"><tr><th class="filename" colspan="2"><span class="filename">TeX</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1">1</a></span>
-<span class="normal"><a href="#__codelineno-1-2">2</a></span>
-<span class="normal"><a href="#__codelineno-1-3">3</a></span>
-<span class="normal"><a href="#__codelineno-1-4">4</a></span>
-<span class="normal"><a href="#__codelineno-1-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="k">\documentclass</span><span class="nb">{</span>article<span class="nb">}</span>
-<a id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="c">% 导言区，调用宏包，定义命令，进行文档设置等</span>
-<a id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="k">\begin</span><span class="nb">{</span>document<span class="nb">}</span>
-<a id="__codelineno-1-4" name="__codelineno-1-4"></a><span class="c">% 正文区，文档内容</span>
-<a id="__codelineno-1-5" name="__codelineno-1-5"></a><span class="k">\end</span><span class="nb">{</span>document<span class="nb">}</span> <span class="c">% 结束文档</span>
-</code></pre></div></td></tr></table></div></li>
+<li><span><span class="arithmatex">\(\LaTeX\)</span><span class="heti-spacing"> </span></span>的命令以反斜杠<code>\</code>开头，后面跟着命令名，且对大小写敏感；</li>
+<li>有些命令会对后续内容产生影响，可以用<span class="heti-skip"><span class="heti-spacing"> </span>{}<span class="heti-spacing"> </span></span>限定作用范围；</li>
+<li>命令可以接收参数，<span>[]<span class="heti-spacing"> </span></span>中为可选参数，<span>{}<span class="heti-spacing"> </span></span>中为必选参数，逗号分隔。比如对于环境的命令：</li>
 </ul>
+<div class="language-latex highlight"><pre><span></span><code><span id="__span-0-1"><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a><span class="k">\begin</span><span class="nb">{</span>环境名<span class="nb">}</span>[可选参数]<span class="nb">{</span>必选参数<span class="nb">}</span>
+</span><span id="__span-0-2"><a href="#__codelineno-0-2" id="__codelineno-0-2" name="__codelineno-0-2"></a>内容
+</span><span id="__span-0-3"><a href="#__codelineno-0-3" id="__codelineno-0-3" name="__codelineno-0-3"></a><span class="k">\end</span><span class="nb">{</span>环境名<span class="nb">}</span>
+</span></code></pre></div>
+<ul>
+<li>注释：<code>%</code>后面的内容为注释，不会被编译；</li>
+<li>空格：多个空格会被视为一个空格，多个或一个换行符会被视为一个空格；</li>
+<li>段落：使用一个或多个空行来分隔段落；</li>
+<li>文件结构：一个完整的<span class="heti-skip"><span class="heti-spacing"> </span>LaTeX<span class="heti-spacing"> </span></span>文档由以下几部分组成：</li>
+</ul>
+<div class="language-latex highlight"><pre><span></span><code><span id="__span-1-1"><a href="#__codelineno-1-1" id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="k">\documentclass</span><span class="nb">{</span>article<span class="nb">}</span>
+</span><span id="__span-1-2"><a href="#__codelineno-1-2" id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="c">% 导言区，调用宏包，定义命令，进行文档设置等</span>
+</span><span id="__span-1-3"><a href="#__codelineno-1-3" id="__codelineno-1-3" name="__codelineno-1-3"></a><span class="k">\begin</span><span class="nb">{</span>document<span class="nb">}</span>
+</span><span id="__span-1-4"><a href="#__codelineno-1-4" id="__codelineno-1-4" name="__codelineno-1-4"></a><span class="c">% 正文区，文档内容</span>
+</span><span id="__span-1-5"><a href="#__codelineno-1-5" id="__codelineno-1-5" name="__codelineno-1-5"></a><span class="k">\end</span><span class="nb">{</span>document<span class="nb">}</span> <span class="c">% 结束文档</span>
+</span></code></pre></div>
 <h3 id="文档类与宏包">文档类与宏包<a class="headerlink" href="#文档类与宏包" title="Permanent link">⚓︎</a></h3>
 <ul>
 <li>文档类：<code>documentclass</code>命令用于指定文档的类型，常用的文档类有：</li>
-<li><code>article</code>：用于短文，报告，论文等</li>
-<li><code>report</code>：用于长篇报告，论文等</li>
-<li><code>book</code>：用于书籍</li>
-<li><code>letter</code>：用于信件</li>
-<li><code>slides</code>：用于幻灯片</li>
-<li>可以通过可选参数配置字号、纸张大小等，如<code>\documentclass[12pt,a4paper]{article}</code></li>
-<li>宏包：<code>usepackage</code>命令用于调用宏包，宏包可以扩展<span class="heti-skip"><span class="heti-spacing"> </span>LaTeX<span class="heti-spacing"> </span></span>的功能，提供更多的命令和环境，相当于第三方库，如<code>\usepackage{amsmath}</code>用于调用数学公式宏包</li>
-<li>使用：<code>\usepackage[options]{package}</code> or <code>\usepackage{package1，package2}</code></li>
-<li>常用宏包：<span>TeXLive full<span class="heti-spacing"> </span></span>中包含了大部分常用的宏包<ul>
-<li><code>amsmath</code>：数学公式</li>
-<li><code>amssymb</code>：数学符号</li>
-<li><code>geometry</code>：页面设置</li>
-<li><code>graphicx</code>：插入图片</li>
-<li><code>hyperref</code>：超链接</li>
-<li><code>listings</code>：代码排版</li>
-<li><code>xcolor</code>：颜色设置</li>
-<li><code>fontspec</code>：字体设置</li>
-<li><code>fancyhdr</code>：页眉页脚设置</li>
-<li><code>titlesec</code>：修改章节标题<code>\chapter</code>、<code>\section</code>等的格式</li>
-<li><code>tocbibind</code>：支持将目录、参考文献、索引本身写入目录项</li>
-<li><code>titletoc</code>：修改目录中各条目的格式。类似宏包有<span class="heti-skip"><span class="heti-spacing"> </span>tocloft<span class="heti-spacing"> </span></span>等</li>
-<li><code>enumitem</code>：修改列表环境<span class="heti-skip"><span class="heti-spacing"> </span>enumerate<span class="heti-spacing"> </span></span>和<span class="heti-skip"><span class="heti-spacing"> </span>itemize<span class="heti-spacing"> </span></span>等的格式</li>
-<li><code>algorithm2e</code>：较为复杂的、可定制的算法排版宏包</li>
-<li><code>biblatex</code>：参考文献</li>
-<li><code>xeCJK</code> &amp; <code>ctex</code>：中文支持</li>
-<li><code>lettrine</code>：段落首字母大写</li>
-<li><code>indentfirst</code>：首行缩进</li>
-<li><span>···<span class="heti-spacing"> </span></span>宏包实在太多，可以用<code>texdoc 宏包名</code>查看具体宏包文档</li>
+<li><code>article</code>：用于短文，报告，论文等；</li>
+<li><code>report</code>：用于长篇报告，论文等；</li>
+<li><code>book</code>：用于书籍；</li>
+<li><code>letter</code>：用于信件；</li>
+<li><code>slides</code>：用于幻灯片；</li>
+<li>可以通过可选参数配置字号、纸张大小等，如<code>\documentclass[12pt,a4paper]{article}</code>；</li>
+<li>宏包：<code>usepackage</code>命令用于调用宏包，宏包可以扩展<span class="heti-skip"><span class="heti-spacing"> </span>LaTeX<span class="heti-spacing"> </span></span>的功能，提供更多的命令和环境，相当于第三方库，如<code>\usepackage{amsmath}</code>用于调用数学公式宏包；</li>
+<li>使用：<code>\usepackage[options]{package}</code> or <code>\usepackage{package1，package2}</code>；</li>
+<li>常用宏包：<span>TeXLive full<span class="heti-spacing"> </span></span>中包含了大部分常用的宏包；<ul>
+<li><code>amsmath</code>：数学公式；</li>
+<li><code>amssymb</code>：数学符号；</li>
+<li><code>geometry</code>：页面设置；</li>
+<li><code>graphicx</code>：插入图片；</li>
+<li><code>hyperref</code>：超链接；</li>
+<li><code>listings</code>：代码排版；</li>
+<li><code>xcolor</code>：颜色设置；</li>
+<li><code>fontspec</code>：字体设置；</li>
+<li><code>fancyhdr</code>：页眉页脚设置；</li>
+<li><code>titlesec</code>：修改章节标题<code>\chapter</code>、<code>\section</code>等的格式；</li>
+<li><code>tocbibind</code>：支持将目录、参考文献、索引本身写入目录项；</li>
+<li><code>titletoc</code>：修改目录中各条目的格式。类似宏包有<span class="heti-skip"><span class="heti-spacing"> </span>tocloft<span class="heti-spacing"> </span></span>等；</li>
+<li><code>enumitem</code>：修改列表环境<span class="heti-skip"><span class="heti-spacing"> </span>enumerate<span class="heti-spacing"> </span></span>和<span class="heti-skip"><span class="heti-spacing"> </span>itemize<span class="heti-spacing"> </span></span>等的格式；</li>
+<li><code>algorithm2e</code>：较为复杂的、可定制的算法排版宏包；</li>
+<li><code>biblatex</code>：参考文献；</li>
+<li><code>xeCJK</code> &amp; <code>ctex</code>：中文支持；</li>
+<li><code>lettrine</code>：段落首字母大写；</li>
+<li><code>indentfirst</code>：首行缩进；</li>
+<li><span>···<span class="heti-spacing"> </span></span>宏包实在太多，可以用<code>texdoc 宏包名</code>查看具体各宏包文档的说明与介绍；</li>
 </ul>
 </li>
 </ul>
@@ -1070,371 +1213,338 @@
 <h3 id="段落特点及排版样式">段落特点及排版样式<a class="headerlink" href="#段落特点及排版样式" title="Permanent link">⚓︎</a></h3>
 <h4 id="段落">段落<a class="headerlink" href="#段落" title="Permanent link">⚓︎</a></h4>
 <ul>
-<li>连续的多个空白字符视为一个空格，行首的空格忽略</li>
-<li>行尾的换行符视为一个空格（中文语境除外）</li>
-<li>分段落<ul>
-<li>使用一个或多个空行分隔段落</li>
-<li>行尾使用<code>\par</code>命令分隔段落</li>
+<li>连续的多个空白字符视为一个空格，行首的空格忽略；</li>
+<li>行尾的换行符视为一个空格（中文语境除外<heti-adjacent class="heti-adjacent-half">）</heti-adjacent>；</li>
+<li>分段落；<ul>
+<li>使用一个或多个空行分隔段落；</li>
+<li>行尾使用<code>\par</code>命令分隔段落；</li>
 </ul>
 </li>
 </ul>
-<h4 id="断行和断页">断行和断页<a class="headerlink" href="#断行和断页" title="Permanent link">⚓︎</a></h4>
+<h4 id="断行和断页">断行和断页；<a class="headerlink" href="#断行和断页" title="Permanent link">⚓︎</a></h4>
 <ul>
-<li>断行：使用<code>\\</code>或者<code>newline</code>命令强制换行</li>
-<li>需要注意这里的断行相当于段落内换行，不会产生新的段落</li>
-<li>故而断行的下一行不会自动缩进</li>
-<li>断页：使用<code>\newpage</code>命令强制换页</li>
-<li>也可以使用<code>\clearpage</code>命令</li>
-<li>如果使用双栏，则两者有一定区别</li>
+<li>断行：使用<code>\\</code>或者<code>newline</code>命令强制换行；</li>
+<li>需要注意这里的断行相当于段落内换行，不会产生新的段落；</li>
+<li>故而断行的下一行不会自动缩进；</li>
+<li>断页：使用<code>\newpage</code>命令强制换页；</li>
+<li>也可以使用<code>\clearpage</code>命令；</li>
+<li>如果使用双栏，则两者有一定区别；</li>
 </ul>
 <h4 id="字符和标点">字符和标点<a class="headerlink" href="#字符和标点" title="Permanent link">⚓︎</a></h4>
 <ul>
-<li>转义字符：<code>\</code>后面跟<span class="heti-skip"><span class="heti-spacing"> </span>% &amp; # { }<span class="heti-spacing"> </span></span>等，表示其相应的字符；<code>\textbackslash</code>表示<code>\</code><span class="heti-skip"><span class="heti-spacing"> </span>,<span class="heti-spacing"> </span></span>因为<code>\\</code>是换行符</li>
-<li>标点符号（西文的一般会有一些特殊性，中文的一般比较正常）</li>
-<li>单引号<span><span class="heti-spacing"> </span>` '</span>，双引号<span><span class="heti-spacing"> </span>`` ''</span></li>
-<li>连字号<span><span class="heti-spacing"> </span>-</span>，短破折号<span><span class="heti-spacing"> </span>--</span>，长破折号<span><span class="heti-spacing"> </span>---</span></li>
-<li>省略号相比三个点更推荐<code>\ldots</code></li>
-<li>防止西文连字</li>
-<li>通过<span class="heti-skip"><span class="heti-spacing"> </span>{}<span class="heti-spacing"> </span></span>分隔即可避免连字，如<code>difficult dif{}f{}icult</code></li>
+<li>转义字符：<code>\</code>后面跟<span class="heti-skip"><span class="heti-spacing"> </span>% &amp; # { }<span class="heti-spacing"> </span></span>等，表示其相应的字符；<code>\textbackslash</code>表示<code>\</code><span class="heti-skip"><span class="heti-spacing"> </span>,<span class="heti-spacing"> </span></span>因为<code>\\</code>是换行符；</li>
+<li>标点符号（西文的一般会有一些特殊性，中文的一般比较正常<heti-adjacent class="heti-adjacent-half">）</heti-adjacent>：</li>
+<li>单引号<span><span class="heti-spacing"> </span>` '</span>，双引号<span><span class="heti-spacing"> </span>`` ''</span>；</li>
+<li>连字号<span><span class="heti-spacing"> </span>-</span>，短破折号<span><span class="heti-spacing"> </span>--</span>，长破折号<span><span class="heti-spacing"> </span>---</span>；</li>
+<li>省略号相比三个点更推荐<code>\ldots</code>；</li>
+<li>防止西文连字；</li>
+<li>通过<span class="heti-skip"><span class="heti-spacing"> </span>{}<span class="heti-spacing"> </span></span>分隔即可避免连字，如<code>difficult dif{}f{}icult</code>；</li>
 </ul>
 <h4 id="字体样式和字号">字体样式和字号<a class="headerlink" href="#字体样式和字号" title="Permanent link">⚓︎</a></h4>
 <ul>
-<li>字体样式</li>
-<li><code>\textbf{content}</code>：粗体</li>
-<li><code>\textit{content}</code>：斜体</li>
-<li><code>\texttt{content}</code>：等宽</li>
-<li><code>\textsc{content}</code>：大写字符为更大的大写字母，小写字符为小的大写字母</li>
-<li><code>\textsf{content}</code>：无衬线字体</li>
-<li><code>\underline{content}</code>：下划线</li>
-<li>字号：一种形式的命令来修改字号 <code>{\tiny some text}</code></li>
-<li>从小到大：<code>\tiny</code>、<code>\scriptsize</code>、<code>\footnotesize</code>、<code>\small</code>、<code>\normalsize</code>、<code>\large</code>、<code>\Large</code>、<code>\LARGE</code>、<code>\huge</code>、<code>\Huge</code></li>
-<li>字体：使用<code>fontspec</code>宏包，<code>\usepackage{fontspec}</code>，然后使用<code>\setmainfont{fontname}</code>，其中<span class="heti-skip"><span class="heti-spacing"> </span>fontname<span class="heti-spacing"> </span></span>可以是系统字体名，也可以是字体文件路径</li>
-<li>颜色：使用<code>xcolor</code>宏包，<code>\usepackage{xcolor}</code>，然后使用<code>\textcolor{color}{content}</code>，<span>color<span class="heti-spacing"> </span></span>可以是预定义的颜色，也可以是<span class="heti-skip"><span class="heti-spacing"> </span>RGB<span class="heti-spacing"> </span></span>值</li>
+<li>字体样式：</li>
+<li><code>\textbf{content}</code>：粗体；</li>
+<li><code>\textit{content}</code>：斜体；</li>
+<li><code>\texttt{content}</code>：等宽；</li>
+<li><code>\textsc{content}</code>：大写字符为更大的大写字母，小写字符为小的大写字母；</li>
+<li><code>\textsf{content}</code>：无衬线字体；</li>
+<li><code>\underline{content}</code>：下划线；</li>
+<li>字号：一种形式的命令来修改字号 <code>{\tiny some text}</code>；</li>
+<li>从小到大：<code>\tiny</code>、<code>\scriptsize</code>、<code>\footnotesize</code>、<code>\small</code>、<code>\normalsize</code>、<code>\large</code>、<code>\Large</code>、<code>\LARGE</code>、<code>\huge</code>、<code>\Huge</code>；</li>
+<li>字体：使用<code>fontspec</code>宏包，<code>\usepackage{fontspec}</code>，然后使用<code>\setmainfont{fontname}</code>，其中<span class="heti-skip"><span class="heti-spacing"> </span>fontname<span class="heti-spacing"> </span></span>可以是系统字体名，也可以是字体文件路径；</li>
+<li>颜色：使用<code>xcolor</code>宏包，<code>\usepackage{xcolor}</code>，然后使用<code>\textcolor{color}{content}</code>，<span>color<span class="heti-spacing"> </span></span>可以是预定义的颜色，也可以是<span class="heti-skip"><span class="heti-spacing"> </span>RGB<span class="heti-spacing"> </span></span>值；</li>
 </ul>
 <h4 id="强制行距间距">强制行距<span class="heti-skip"><span class="heti-spacing"> </span>/<span class="heti-spacing"> </span></span>间距<a class="headerlink" href="#强制行距间距" title="Permanent link">⚓︎</a></h4>
 <ul>
-<li>长度单位：pt（point，<span>1/72.27<span class="heti-spacing"> </span></span>英寸<heti-adjacent class="heti-adjacent-half">）</heti-adjacent>、mm（毫米<heti-adjacent class="heti-adjacent-half">）</heti-adjacent>、cm（厘米<heti-adjacent class="heti-adjacent-half">）</heti-adjacent>、in（英寸<heti-adjacent class="heti-adjacent-half">）</heti-adjacent>、ex（当前字体<span class="heti-skip"><span class="heti-spacing"> </span>x<span class="heti-spacing"> </span></span>的高度<heti-adjacent class="heti-adjacent-half">）</heti-adjacent>、em（当前字体<span class="heti-skip"><span class="heti-spacing"> </span>M<span class="heti-spacing"> </span></span>的宽度）</li>
-<li>行距：<code>\linespread{1.3}</code>，<span>1.3<span class="heti-spacing"> </span></span>倍行距，在导言区作设置（默认行距<span class="heti-skip"><span class="heti-spacing"> </span>1.2<span class="heti-spacing"> </span></span>倍字号大小）</li>
-<li>局部修改要在后面加<code>\selectfont</code>命令，且要在范围内手动分段</li>
-<li>插入水平间距（多空格无效<heti-adjacent class="heti-adjacent-half">）</heti-adjacent>：<code>hspace{length}</code>，如<code>\hspace{3em}</code>，<span>3<span class="heti-spacing"> </span></span>个字母<span class="heti-skip"><span class="heti-spacing"> </span>M<span class="heti-spacing"> </span></span>的宽度</li>
-<li><code>\quad</code>：相当于<code>\hspace{1em}</code>，一个字母<span class="heti-skip"><span class="heti-spacing"> </span>M<span class="heti-spacing"> </span></span>的宽度</li>
-<li><code>\qquad</code>：相当于<code>\hspace{2em}</code>，两个字母<span class="heti-skip"><span class="heti-spacing"> </span>M<span class="heti-spacing"> </span></span>的宽度</li>
-<li><code>\hspace{\fill}</code>：防止因为换行而产生的空格<span class="heti-skip"><span class="heti-spacing"> </span>,<span class="heti-spacing"> </span></span>会填充剩余空间</li>
-<li>插入垂直间距：<code>vspace{length}</code>，如<code>\vspace{3em}</code></li>
-<li><code>\\[length]</code>：在换行的同时插入垂直间距，如<code>\\[1em]</code></li>
+<li>长度单位：pt（point，<span>1/72.27<span class="heti-spacing"> </span></span>英寸<heti-adjacent class="heti-adjacent-half">）</heti-adjacent>、mm（毫米<heti-adjacent class="heti-adjacent-half">）</heti-adjacent>、cm（厘米<heti-adjacent class="heti-adjacent-half">）</heti-adjacent>、in（英寸<heti-adjacent class="heti-adjacent-half">）</heti-adjacent>、ex（当前字体<span class="heti-skip"><span class="heti-spacing"> </span>x<span class="heti-spacing"> </span></span>的高度<heti-adjacent class="heti-adjacent-half">）</heti-adjacent>、em（当前字体<span class="heti-skip"><span class="heti-spacing"> </span>M<span class="heti-spacing"> </span></span>的宽度<heti-adjacent class="heti-adjacent-half">）</heti-adjacent>；</li>
+<li>行距：<code>\linespread{1.3}</code>，<span>1.3<span class="heti-spacing"> </span></span>倍行距，在导言区作设置（默认行距<span class="heti-skip"><span class="heti-spacing"> </span>1.2<span class="heti-spacing"> </span></span>倍字号大小<heti-adjacent class="heti-adjacent-half">）</heti-adjacent>；</li>
+<li>局部修改要在后面加<code>\selectfont</code>命令，且要在范围内手动分段；</li>
+<li>插入水平间距（多空格无效<heti-adjacent class="heti-adjacent-half">）</heti-adjacent>：<code>hspace{length}</code>，如<code>\hspace{3em}</code>，<span>3<span class="heti-spacing"> </span></span>个字母<span class="heti-skip"><span class="heti-spacing"> </span>M<span class="heti-spacing"> </span></span>的宽度；</li>
+<li><code>\quad</code>：相当于<code>\hspace{1em}</code>，一个字母<span class="heti-skip"><span class="heti-spacing"> </span>M<span class="heti-spacing"> </span></span>的宽度；</li>
+<li><code>\qquad</code>：相当于<code>\hspace{2em}</code>，两个字母<span class="heti-skip"><span class="heti-spacing"> </span>M<span class="heti-spacing"> </span></span>的宽度；</li>
+<li><code>\hspace{\fill}</code>：防止因为换行而产生的空格<span class="heti-skip"><span class="heti-spacing"> </span>,<span class="heti-spacing"> </span></span>会填充剩余空间；</li>
+<li>插入垂直间距：<code>vspace{length}</code>，如<code>\vspace{3em}</code>；</li>
+<li><code>\\[length]</code>：在换行的同时插入垂直间距，如<code>\\[1em]</code>；</li>
 </ul>
-<p>try：
-</p><div class="highlight"><table class="highlighttable"><tr><th class="filename" colspan="2"><span class="filename">TeX</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1">1</a></span>
-<span class="normal"><a href="#__codelineno-2-2">2</a></span>
-<span class="normal"><a href="#__codelineno-2-3">3</a></span>
-<span class="normal"><a href="#__codelineno-2-4">4</a></span>
-<span class="normal"><a href="#__codelineno-2-5">5</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="nb">{</span><span class="k">\linespread</span><span class="nb">{</span>2.0<span class="nb">}</span><span class="k">\selectfont</span> This is a paragraph with 2.0 linespread.<span class="k">\\</span>
-<a id="__codelineno-2-2" name="__codelineno-2-2"></a>This is the next line and <span class="k">\quad</span> space and <span class="k">\hspace</span><span class="nb">{</span>3em<span class="nb">}</span> more and
-<a id="__codelineno-2-3" name="__codelineno-2-3"></a><span class="k">\hspace</span><span class="nb">{</span><span class="k">\fill</span><span class="nb">}</span>lol<span class="k">\par</span><span class="nb">}</span>
-<a id="__codelineno-2-4" name="__codelineno-2-4"></a>
-<a id="__codelineno-2-5" name="__codelineno-2-5"></a><span class="k">\vspace</span><span class="nb">{</span>-1em<span class="nb">}</span>Next paragraph.<span class="k">\\</span><span class="na">[1em]</span> and next line.
-</code></pre></div></td></tr></table></div>
+<details class="note">
+<summary>try</summary>
+<div class="language-latex highlight"><pre><span></span><code><span id="__span-2-1"><a href="#__codelineno-2-1" id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="nb">{</span><span class="k">\linespread</span><span class="nb">{</span>2.0<span class="nb">}</span><span class="k">\selectfont</span> This is a paragraph with 2.0 linespread.<span class="k">\\</span>
+</span><span id="__span-2-2"><a href="#__codelineno-2-2" id="__codelineno-2-2" name="__codelineno-2-2"></a>This is the next line and <span class="k">\quad</span> space and <span class="k">\hspace</span><span class="nb">{</span>3em<span class="nb">}</span> more and
+</span><span id="__span-2-3"><a href="#__codelineno-2-3" id="__codelineno-2-3" name="__codelineno-2-3"></a><span class="k">\hspace</span><span class="nb">{</span><span class="k">\fill</span><span class="nb">}</span>lol<span class="k">\par</span><span class="nb">}</span>
+</span><span id="__span-2-4"><a href="#__codelineno-2-4" id="__codelineno-2-4" name="__codelineno-2-4"></a>
+</span><span id="__span-2-5"><a href="#__codelineno-2-5" id="__codelineno-2-5" name="__codelineno-2-5"></a><span class="k">\vspace</span><span class="nb">{</span>-1em<span class="nb">}</span>Next paragraph.<span class="k">\\</span><span class="na">[1em]</span> and next line.
+</span></code></pre></div>
+</details>
 <h4 id="页边距和分栏">页边距和分栏<a class="headerlink" href="#页边距和分栏" title="Permanent link">⚓︎</a></h4>
 <ul>
-<li>通过<span class="heti-skip"><span class="heti-spacing"> </span>geometry<span class="heti-spacing"> </span></span>宏包设置页边距
-<div class="highlight"><table class="highlighttable"><tr><th class="filename" colspan="2"><span class="filename">TeX</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-3-1">1</a></span>
-<span class="normal"><a href="#__codelineno-3-2">2</a></span>
-<span class="normal"><a href="#__codelineno-3-3">3</a></span>
-<span class="normal"><a href="#__codelineno-3-4">4</a></span>
-<span class="normal"><a href="#__codelineno-3-5">5</a></span>
-<span class="normal"><a href="#__codelineno-3-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="k">\usepackage</span><span class="na">[left=1in,right=1in,top=1in,bottom=1in]</span><span class="nb">{</span>geometry<span class="nb">}</span>
-<a id="__codelineno-3-2" name="__codelineno-3-2"></a><span class="k">\usepackage</span><span class="na">[margin=1in]</span><span class="nb">{</span>geometry<span class="nb">}</span> <span class="c">% 全相等</span>
-<a id="__codelineno-3-3" name="__codelineno-3-3"></a><span class="k">\usepackage</span><span class="na">[hmargin=1.5in,vmargin=1in]</span><span class="nb">{</span>geometry<span class="nb">}</span> <span class="c">% 水平和垂直</span>
-<a id="__codelineno-3-4" name="__codelineno-3-4"></a><span class="k">\usepackage</span><span class="na">[inner=1in,outer=1in]</span><span class="nb">{</span>geometry<span class="nb">}</span> <span class="c">% 内侧和外侧</span>
-<a id="__codelineno-3-5" name="__codelineno-3-5"></a><span class="k">\usepackage</span><span class="na">[margin=1in,includeheadfoot]</span><span class="nb">{</span>geometry<span class="nb">}</span> <span class="c">% 包括页眉页脚</span>
-<a id="__codelineno-3-6" name="__codelineno-3-6"></a><span class="k">\usepackage</span><span class="na">[margin=1in,showframe]</span><span class="nb">{</span>geometry<span class="nb">}</span> <span class="c">% 显示边框</span>
-</code></pre></div></td></tr></table></div>
-<div class="highlight"><table class="highlighttable"><tr><th class="filename" colspan="2"><span class="filename">TeX</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-4-1">1</a></span>
-<span class="normal"><a href="#__codelineno-4-2">2</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="k">\usepackage</span><span class="nb">{</span>geometry<span class="nb">}</span>
-<a id="__codelineno-4-2" name="__codelineno-4-2"></a><span class="k">\geometry</span><span class="nb">{</span>left=1in,right=1in,top=1in,bottom=1in<span class="nb">}</span>
-</code></pre></div></td></tr></table></div></li>
-<li>分栏：使用<code>twocolumn</code>文档类选项，或者使用<code>multicols</code>宏包</li>
-<li>全局分栏：<code>\documentclass[twocolumn]{article}</code>，<code>\oneclumn</code></li>
-<li>局部分栏：<code>\begin{multicols}{2}</code>，<code>\end{multicols}</code></li>
+<li>通过<span class="heti-skip"><span class="heti-spacing"> </span>geometry<span class="heti-spacing"> </span></span>宏包设置页边距；</li>
+</ul>
+<p></p><div class="language-latex highlight"><pre><span></span><code><span id="__span-3-1"><a href="#__codelineno-3-1" id="__codelineno-3-1" name="__codelineno-3-1"></a><span class="k">\usepackage</span><span class="na">[left=1in,right=1in,top=1in,bottom=1in]</span><span class="nb">{</span>geometry<span class="nb">}</span>
+</span><span id="__span-3-2"><a href="#__codelineno-3-2" id="__codelineno-3-2" name="__codelineno-3-2"></a><span class="k">\usepackage</span><span class="na">[margin=1in]</span><span class="nb">{</span>geometry<span class="nb">}</span> <span class="c">% 全相等</span>
+</span><span id="__span-3-3"><a href="#__codelineno-3-3" id="__codelineno-3-3" name="__codelineno-3-3"></a><span class="k">\usepackage</span><span class="na">[hmargin=1.5in,vmargin=1in]</span><span class="nb">{</span>geometry<span class="nb">}</span> <span class="c">% 水平和垂直</span>
+</span><span id="__span-3-4"><a href="#__codelineno-3-4" id="__codelineno-3-4" name="__codelineno-3-4"></a><span class="k">\usepackage</span><span class="na">[inner=1in,outer=1in]</span><span class="nb">{</span>geometry<span class="nb">}</span> <span class="c">% 内侧和外侧</span>
+</span><span id="__span-3-5"><a href="#__codelineno-3-5" id="__codelineno-3-5" name="__codelineno-3-5"></a><span class="k">\usepackage</span><span class="na">[margin=1in,includeheadfoot]</span><span class="nb">{</span>geometry<span class="nb">}</span> <span class="c">% 包括页眉页脚</span>
+</span><span id="__span-3-6"><a href="#__codelineno-3-6" id="__codelineno-3-6" name="__codelineno-3-6"></a><span class="k">\usepackage</span><span class="na">[margin=1in,showframe]</span><span class="nb">{</span>geometry<span class="nb">}</span> <span class="c">% 显示边框</span>
+</span></code></pre></div>
+<div class="language-latex highlight"><pre><span></span><code><span id="__span-4-1"><a href="#__codelineno-4-1" id="__codelineno-4-1" name="__codelineno-4-1"></a><span class="k">\usepackage</span><span class="nb">{</span>geometry<span class="nb">}</span>
+</span><span id="__span-4-2"><a href="#__codelineno-4-2" id="__codelineno-4-2" name="__codelineno-4-2"></a><span class="k">\geometry</span><span class="nb">{</span>left=1in,right=1in,top=1in,bottom=1in<span class="nb">}</span>
+</span></code></pre></div>
+<ul>
+<li>分栏：使用<code>twocolumn</code>文档类选项，或者使用<code>multicols</code>宏包；</li>
+<li>全局分栏：<code>\documentclass[twocolumn]{article}</code>，<code>\oneclumn</code>；</li>
+<li>局部分栏：<code>\begin{multicols}{2}</code>，<code>\end{multicols}</code>；</li>
 </ul>
 <h3 id="各种文档元素">各种文档元素<a class="headerlink" href="#各种文档元素" title="Permanent link">⚓︎</a></h3>
 <h4 id="章节和目录">章节和目录<a class="headerlink" href="#章节和目录" title="Permanent link">⚓︎</a></h4>
 <ul>
-<li>章节：<code>\chapter{title}</code>、<code>\section[别名]{title}</code>、<code>\subsection{title}</code>、<code>\subsubsection{title}</code>、<code>\paragraph{title}</code>、<code>\subparagraph{title}</code></li>
-<li>其中<code>\chapter</code>只能在<span class="heti-skip"><span class="heti-spacing"> </span>book<span class="heti-spacing"> </span></span>和<span class="heti-skip"><span class="heti-spacing"> </span>report<span class="heti-spacing"> </span></span>文档类中使用</li>
-<li>可以加入可选参数表示短标题（显示在目录和页眉页脚中）</li>
-<li>可以的带星号表示不编号（正常会带三级编号）</li>
-<li>通过<code>\setcounter{secnumdepth}{n}</code>设置章节编号深度，<span>n<span class="heti-spacing"> </span></span>为数字，<span>0<span class="heti-spacing"> </span></span>为不编号</li>
-<li>使用<code>\tableofcontents</code>生成目录（新的一章<span class="heti-skip"><span class="heti-spacing"> </span>/<span class="heti-spacing"> </span></span>一节）</li>
-<li>生成目录需要编译两次</li>
-<li>可以通过<code>\addcontentsline{toc}{section}{name}</code>手动添加目录项</li>
-<li><code>\appendix</code>之后为附录，编号从<span class="heti-skip"><span class="heti-spacing"> </span>A<span class="heti-spacing"> </span></span>开始</li>
+<li>章节：<code>\chapter{title}</code>、<code>\section[别名]{title}</code>、<code>\subsection{title}</code>、<code>\subsubsection{title}</code>、<code>\paragraph{title}</code>、<code>\subparagraph{title}</code>；</li>
+<li>其中<code>\chapter</code>只能在<span class="heti-skip"><span class="heti-spacing"> </span>book<span class="heti-spacing"> </span></span>和<span class="heti-skip"><span class="heti-spacing"> </span>report<span class="heti-spacing"> </span></span>文档类中使用；</li>
+<li>可以加入可选参数表示短标题（显示在目录和页眉页脚中<heti-adjacent class="heti-adjacent-half">）</heti-adjacent>；</li>
+<li>可以的带星号表示不编号（正常会带三级编号<heti-adjacent class="heti-adjacent-half">）</heti-adjacent>；</li>
+<li>通过<code>\setcounter{secnumdepth}{n}</code>设置章节编号深度，<span>n<span class="heti-spacing"> </span></span>为数字，<span>0<span class="heti-spacing"> </span></span>为不编号；</li>
+<li>使用<code>\tableofcontents</code>生成目录（新的一章<span class="heti-skip"><span class="heti-spacing"> </span>/<span class="heti-spacing"> </span></span>一节<heti-adjacent class="heti-adjacent-half">）</heti-adjacent>；</li>
+<li>生成目录需要编译两次；</li>
+<li>可以通过<code>\addcontentsline{toc}{section}{name}</code>手动添加目录项；</li>
+<li><code>\appendix</code>之后为附录，编号从<span class="heti-skip"><span class="heti-spacing"> </span>A<span class="heti-spacing"> </span></span>开始；</li>
 </ul>
 <h4 id="生成标题页">生成标题页<a class="headerlink" href="#生成标题页" title="Permanent link">⚓︎</a></h4>
 <ul>
-<li>一般在导言区设置信息</li>
-<li><code>\title{title}</code>设置标题（必需）</li>
-<li><code>\author{author}</code>设置作者（不写会警告<heti-adjacent class="heti-adjacent-half">）</heti-adjacent>，可以使用<code>\and</code>分隔多个作者，<code>\thanks{thanks}</code>添加脚注</li>
-<li><code>\date{date}</code>设置日期（不写会自动生成当前日期）</li>
-<li><code>\maketitle</code> 生成标题页（一般在正文开始前，在<span class="heti-skip"><span class="heti-spacing"> </span>bigin<span class="heti-spacing"> </span></span>后）</li>
-<li><code>\titlepage</code> 生成独立的标题页</li>
+<li>一般在导言区设置信息；</li>
+<li><code>\title{title}</code>设置标题（必需<heti-adjacent class="heti-adjacent-half">）</heti-adjacent>；</li>
+<li><code>\author{author}</code>设置作者（不写会警告<heti-adjacent class="heti-adjacent-half">）</heti-adjacent>，可以使用<code>\and</code>分隔多个作者，<code>\thanks{thanks}</code>添加脚注；</li>
+<li><code>\date{date}</code>设置日期（不写会自动生成当前日期<heti-adjacent class="heti-adjacent-half">）</heti-adjacent>；</li>
+<li><code>\maketitle</code> 生成标题页（一般在正文开始前，在<span class="heti-skip"><span class="heti-spacing"> </span>bigin<span class="heti-spacing"> </span></span>后<heti-adjacent class="heti-adjacent-half">）</heti-adjacent>；</li>
+<li><code>\titlepage</code> 生成独立的标题页；</li>
 </ul>
 <h4 id="脚注">脚注<a class="headerlink" href="#脚注" title="Permanent link">⚓︎</a></h4>
 <ul>
-<li>使用<code>\footnote{content}</code>生成脚注</li>
-<li>脚注的编号是全局自动排序的</li>
-<li>表格环境中不能自动正确生成脚注，需要手动</li>
-<li><code>\footnotemark</code>生成脚注编号</li>
-<li><code>\footnotetext{content}</code>生成脚注内容</li>
+<li>使用<code>\footnote{content}</code>生成脚注；</li>
+<li>脚注的编号是全局自动排序的；</li>
+<li>表格环境中不能自动正确生成脚注，需要手动；</li>
+<li><code>\footnotemark</code>生成脚注编号；</li>
+<li><code>\footnotetext{content}</code>生成脚注内容；</li>
 </ul>
-<p>try：
-</p><div class="highlight"><table class="highlighttable"><tr><th class="filename" colspan="2"><span class="filename">TeX</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-5-1">1</a></span>
-<span class="normal"><a href="#__codelineno-5-2">2</a></span>
-<span class="normal"><a href="#__codelineno-5-3">3</a></span>
-<span class="normal"><a href="#__codelineno-5-4">4</a></span>
-<span class="normal"><a href="#__codelineno-5-5">5</a></span>
-<span class="normal"><a href="#__codelineno-5-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1"></a>some text<span class="k">\footnote</span><span class="nb">{</span>footnote<span class="nb">}</span>
-<a id="__codelineno-5-2" name="__codelineno-5-2"></a>
-<a id="__codelineno-5-3" name="__codelineno-5-3"></a><span class="k">\begin</span><span class="nb">{</span>tabular<span class="nb">}{</span>l<span class="nb">}</span>
-<a id="__codelineno-5-4" name="__codelineno-5-4"></a><span class="k">\hline</span> some text<span class="k">\footnotemark</span> <span class="k">\\\hline</span>
-<a id="__codelineno-5-5" name="__codelineno-5-5"></a><span class="k">\end</span><span class="nb">{</span>tabular<span class="nb">}</span>
-<a id="__codelineno-5-6" name="__codelineno-5-6"></a><span class="k">\footnotetext</span><span class="nb">{</span>footnote<span class="nb">}</span>
-</code></pre></div></td></tr></table></div>
+<details class="note">
+<summary>try</summary>
+<p>```latex
+some text\footnote{footnote}</p>
+<p>\begin{tabular}{l}
+\hline some text\footnotemark \\hline
+\end{tabular}
+\footnotetext{footnote}</p>
+</details>
+<p>```</p>
 <h4 id="图片">图片<a class="headerlink" href="#图片" title="Permanent link">⚓︎</a></h4>
 <ul>
-<li>插入图片需要使用<code>graphicx</code>宏包</li>
-<li>使用<code>\includegraphics[options]{filename}</code>插入图片</li>
+<li>插入图片需要使用<code>graphicx</code>宏包；</li>
+<li>使用<code>\includegraphics[options]{filename}</code>插入图片；</li>
 <li>options：<ul>
-<li>width、height、scale、angle、origin、<span>clip<span class="heti-spacing"> </span></span>等</li>
+<li>width、height、scale、angle、origin、<span>clip<span class="heti-spacing"> </span></span>等；</li>
 </ul>
 </li>
-<li>filename：图片文件名，可以是相对路径或绝对路径<ul>
-<li>不能包含空格，建议全英文</li>
-<li>可以省略后缀名，<span>LaTeX<span class="heti-spacing"> </span></span>会自动搜索</li>
+<li>filename：图片文件名，可以是相对路径或绝对路径；<ul>
+<li>不能包含空格，建议全英文；</li>
+<li>可以省略后缀名，<span>LaTeX<span class="heti-spacing"> </span></span>会自动搜索；</li>
 </ul>
 </li>
-<li>图片环境：<code>figure</code>环境，可以使用<code>\caption{caption}</code>添加标题</li>
-<li><code>\label{label}</code>添加标签，可以使用<code>\ref{label}</code>引用</li>
-<li><code>\listoffigures</code>生成图片目录</li>
-<li>浮动体：<span>LaTeX<span class="heti-spacing"> </span></span>会自动调整图片位置，可以使用<code>h</code>、<code>t</code>、<code>b</code>、<code>p</code>、<code>!</code>等选项调整</li>
-<li>h：here，尽量在当前位置</li>
-<li>t：top，页面顶部</li>
-<li>b：bottom，页面底部</li>
-<li>p：page，单独一页</li>
-<li>!：忽略<span class="heti-skip"><span class="heti-spacing"> </span>LaTeX<span class="heti-spacing"> </span></span>的默认设置</li>
-<li><code>\graphicspath{{path1}{path2}...}</code>设置图片路径</li>
-<li><code>\centering</code>居中图片</li>
-<li>可以为<span class="heti-skip"><span class="heti-spacing"> </span>graphicx<span class="heti-spacing"> </span></span>或文档类设置<span class="heti-skip"><span class="heti-spacing"> </span>draft<span class="heti-spacing"> </span></span>选项</li>
-<li>显示图片框架而不加载图片</li>
-<li><code>\documentclass[draft]{article}</code> or <code>\usepackage[draft]{graphicx}</code></li>
+<li>图片环境：<code>figure</code>环境，可以使用<code>\caption{caption}</code>添加标题；</li>
+<li><code>\label{label}</code>添加标签，可以使用<code>\ref{label}</code>引用；</li>
+<li><code>\listoffigures</code>生成图片目录；</li>
+<li>浮动体：<span>LaTeX<span class="heti-spacing"> </span></span>会自动调整图片位置，可以使用<code>h</code>、<code>t</code>、<code>b</code>、<code>p</code>、<code>!</code>等选项调整；</li>
+<li>h：here，尽量在当前位置；</li>
+<li>t：top，页面顶部；</li>
+<li>b：bottom，页面底部；</li>
+<li>p：page，单独一页；</li>
+<li>!：忽略<span class="heti-skip"><span class="heti-spacing"> </span>LaTeX<span class="heti-spacing"> </span></span>的默认设置；</li>
+<li><code>\graphicspath{{path1}{path2}...}</code>设置图片路径；</li>
+<li><code>\centering</code>居中图片；</li>
+<li>可以为<span class="heti-skip"><span class="heti-spacing"> </span>graphicx<span class="heti-spacing"> </span></span>或文档类设置<span class="heti-skip"><span class="heti-spacing"> </span>draft<span class="heti-spacing"> </span></span>选项；</li>
+<li>显示图片框架而不加载图片；</li>
+<li><code>\documentclass[draft]{article}</code> or <code>\usepackage[draft]{graphicx}</code>；</li>
 </ul>
 <h3 id="常用环境">常用环境<a class="headerlink" href="#常用环境" title="Permanent link">⚓︎</a></h3>
 <h4 id="列表">列表<a class="headerlink" href="#列表" title="Permanent link">⚓︎</a></h4>
 <ul>
-<li><code>itemize</code>无序列表，<code>enumerate</code>有序列表<span class="heti-skip"><span class="heti-spacing"> </span>,<span class="heti-spacing"> </span></span><code>description</code>描述列表</li>
-<li><code>\usepackage{enumitem}</code>可选<span class="heti-skip"><span class="heti-spacing"> </span>[(1)] [i.] [a)]<span class="heti-spacing"> </span></span>等指定编号格式</li>
-<li><code>\setcounter{enumi}{i}</code>后下一个<span class="heti-skip"><span class="heti-spacing"> </span>item<span class="heti-spacing"> </span></span>从<span class="heti-skip"><span class="heti-spacing"> </span>i+1<span class="heti-spacing"> </span></span>开始编号</li>
-<li><code>\item</code>生成列表项，后接内容，<code>\item[marker]</code>可以自定义符号标签</li>
-<li>使用<code>description</code>环境这标签会加粗左对齐表示关键字
-  <div class="highlight"><table class="highlighttable"><tr><th class="filename" colspan="2"><span class="filename">TeX</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-6-1">1</a></span>
-<span class="normal"><a href="#__codelineno-6-2">2</a></span>
-<span class="normal"><a href="#__codelineno-6-3">3</a></span>
-<span class="normal"><a href="#__codelineno-6-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1"></a><span class="k">\begin</span><span class="nb">{</span>description<span class="nb">}</span>
-<a id="__codelineno-6-2" name="__codelineno-6-2"></a>  <span class="k">\item</span><span class="na">[First]</span> The first item
-<a id="__codelineno-6-3" name="__codelineno-6-3"></a>  <span class="k">\item</span><span class="na">[Second]</span> The second item
-<a id="__codelineno-6-4" name="__codelineno-6-4"></a><span class="k">\end</span><span class="nb">{</span>description<span class="nb">}</span>
-</code></pre></div></td></tr></table></div></li>
-<li>可以嵌套列表，最多四层</li>
+<li><code>itemize</code>无序列表，<code>enumerate</code>有序列表<span class="heti-skip"><span class="heti-spacing"> </span>,<span class="heti-spacing"> </span></span><code>description</code>描述列表；</li>
+<li><code>\usepackage{enumitem}</code>可选<span class="heti-skip"><span class="heti-spacing"> </span>[(1)] [i.] [a)]<span class="heti-spacing"> </span></span>等指定编号格式；</li>
+<li><code>\setcounter{enumi}{i}</code>后下一个<span class="heti-skip"><span class="heti-spacing"> </span>item<span class="heti-spacing"> </span></span>从<span class="heti-skip"><span class="heti-spacing"> </span>i+1<span class="heti-spacing"> </span></span>开始编号；</li>
+<li><code>\item</code>生成列表项，后接内容，<code>\item[marker]</code>可以自定义符号标签；</li>
+<li>使用<code>description</code>环境这标签会加粗左对齐表示关键字；</li>
 </ul>
-<p>try：
-</p><div class="highlight"><table class="highlighttable"><tr><th class="filename" colspan="2"><span class="filename">TeX</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-7-1">1</a></span>
-<span class="normal"><a href="#__codelineno-7-2">2</a></span>
-<span class="normal"><a href="#__codelineno-7-3">3</a></span>
-<span class="normal"><a href="#__codelineno-7-4">4</a></span>
-<span class="normal"><a href="#__codelineno-7-5">5</a></span>
-<span class="normal"><a href="#__codelineno-7-6">6</a></span>
-<span class="normal"><a href="#__codelineno-7-7">7</a></span>
-<span class="normal"><a href="#__codelineno-7-8">8</a></span>
-<span class="normal"><a href="#__codelineno-7-9">9</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1"></a><span class="k">\begin</span><span class="nb">{</span>itemize<span class="nb">}</span>
-<a id="__codelineno-7-2" name="__codelineno-7-2"></a>    <span class="k">\item</span> First item
-<a id="__codelineno-7-3" name="__codelineno-7-3"></a>    <span class="k">\item</span><span class="na">[+]</span> Second item
-<a id="__codelineno-7-4" name="__codelineno-7-4"></a>    <span class="k">\begin</span><span class="nb">{</span>enumerate<span class="nb">}</span>[i.]
-<a id="__codelineno-7-5" name="__codelineno-7-5"></a>        <span class="k">\setcounter</span><span class="nb">{</span>enumi<span class="nb">}{</span>2<span class="nb">}</span>
-<a id="__codelineno-7-6" name="__codelineno-7-6"></a>        <span class="k">\item</span> First subitem
-<a id="__codelineno-7-7" name="__codelineno-7-7"></a>        <span class="k">\item</span> Second subitem
-<a id="__codelineno-7-8" name="__codelineno-7-8"></a>    <span class="k">\end</span><span class="nb">{</span>enumerate<span class="nb">}</span>
-<a id="__codelineno-7-9" name="__codelineno-7-9"></a><span class="k">\end</span><span class="nb">{</span>itemize<span class="nb">}</span>
-</code></pre></div></td></tr></table></div>
+<div class="language-latex highlight"><pre><span></span><code><span id="__span-5-1"><a href="#__codelineno-5-1" id="__codelineno-5-1" name="__codelineno-5-1"></a><span class="k">\begin</span><span class="nb">{</span>description<span class="nb">}</span>
+</span><span id="__span-5-2"><a href="#__codelineno-5-2" id="__codelineno-5-2" name="__codelineno-5-2"></a>  <span class="k">\item</span><span class="na">[First]</span> The first item
+</span><span id="__span-5-3"><a href="#__codelineno-5-3" id="__codelineno-5-3" name="__codelineno-5-3"></a>  <span class="k">\item</span><span class="na">[Second]</span> The second item
+</span><span id="__span-5-4"><a href="#__codelineno-5-4" id="__codelineno-5-4" name="__codelineno-5-4"></a><span class="k">\end</span><span class="nb">{</span>description<span class="nb">}</span>
+</span></code></pre></div>
+<ul>
+<li>可以嵌套列表，最多四层；</li>
+</ul>
+<details class="note">
+<summary>try</summary>
+<div class="language-latex highlight"><pre><span></span><code><span id="__span-6-1"><a href="#__codelineno-6-1" id="__codelineno-6-1" name="__codelineno-6-1"></a><span class="k">\begin</span><span class="nb">{</span>itemize<span class="nb">}</span>
+</span><span id="__span-6-2"><a href="#__codelineno-6-2" id="__codelineno-6-2" name="__codelineno-6-2"></a>    <span class="k">\item</span> First item
+</span><span id="__span-6-3"><a href="#__codelineno-6-3" id="__codelineno-6-3" name="__codelineno-6-3"></a>    <span class="k">\item</span><span class="na">[+]</span> Second item
+</span><span id="__span-6-4"><a href="#__codelineno-6-4" id="__codelineno-6-4" name="__codelineno-6-4"></a>    <span class="k">\begin</span><span class="nb">{</span>enumerate<span class="nb">}</span>[i.]
+</span><span id="__span-6-5"><a href="#__codelineno-6-5" id="__codelineno-6-5" name="__codelineno-6-5"></a>        <span class="k">\setcounter</span><span class="nb">{</span>enumi<span class="nb">}{</span>2<span class="nb">}</span>
+</span><span id="__span-6-6"><a href="#__codelineno-6-6" id="__codelineno-6-6" name="__codelineno-6-6"></a>        <span class="k">\item</span> First subitem
+</span><span id="__span-6-7"><a href="#__codelineno-6-7" id="__codelineno-6-7" name="__codelineno-6-7"></a>        <span class="k">\item</span> Second subitem
+</span><span id="__span-6-8"><a href="#__codelineno-6-8" id="__codelineno-6-8" name="__codelineno-6-8"></a>    <span class="k">\end</span><span class="nb">{</span>enumerate<span class="nb">}</span>
+</span><span id="__span-6-9"><a href="#__codelineno-6-9" id="__codelineno-6-9" name="__codelineno-6-9"></a><span class="k">\end</span><span class="nb">{</span>itemize<span class="nb">}</span>
+</span></code></pre></div>
+</details>
 <h4 id="对齐环境">对齐环境<a class="headerlink" href="#对齐环境" title="Permanent link">⚓︎</a></h4>
 <ul>
-<li><code>flushleft</code>左对齐，<code>flushright</code>右对齐，<code>center</code>居中</li>
-<li>这里的对齐环境是一个环境，不是一个命令</li>
-<li>会在环境上下添加额外的垂直间距</li>
-<li><code>\raggedright</code><em>左对齐</em>，<code>\raggedleft</code><em>右对齐</em>，<code>\centering</code>居中</li>
-<li>这里是命令，不是环境，会改变后面所有的文本对齐方式</li>
-<li>不会在环境上下添加额外的垂直间距</li>
+<li><code>flushleft</code>左对齐，<code>flushright</code>右对齐，<code>center</code>居中；</li>
+<li>这里的对齐环境是一个环境，不是一个命令；</li>
+<li>会在环境上下添加额外的垂直间距；</li>
+<li><code>\raggedright</code><em>左对齐</em>，<code>\raggedleft</code><em>右对齐</em>，<code>\centering</code>居中；</li>
+<li>这里是命令，不是环境，会改变后面所有的文本对齐方式；</li>
+<li>不会在环境上下添加额外的垂直间距；</li>
 </ul>
 <details class="tip" open="open">
 <summary>注意</summary>
 <p>这里<code>\raggedright</code>是左对齐，<code>\raggedleft</code>是右对齐，不要搞反了</p>
 </details>
-<p>try：
-</p><div class="highlight"><table class="highlighttable"><tr><th class="filename" colspan="2"><span class="filename">TeX</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-8-1">1</a></span>
-<span class="normal"><a href="#__codelineno-8-2">2</a></span>
-<span class="normal"><a href="#__codelineno-8-3">3</a></span>
-<span class="normal"><a href="#__codelineno-8-4">4</a></span>
-<span class="normal"><a href="#__codelineno-8-5">5</a></span>
-<span class="normal"><a href="#__codelineno-8-6">6</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1"></a><span class="k">\begin</span><span class="nb">{</span>center<span class="nb">}</span>some text<span class="k">\end</span><span class="nb">{</span>center<span class="nb">}</span>
-<a id="__codelineno-8-2" name="__codelineno-8-2"></a><span class="k">\begin</span><span class="nb">{</span>flushright<span class="nb">}</span>some text<span class="k">\end</span><span class="nb">{</span>flushright<span class="nb">}</span>
-<a id="__codelineno-8-3" name="__codelineno-8-3"></a>
-<a id="__codelineno-8-4" name="__codelineno-8-4"></a><span class="k">\centering</span> some text
-<a id="__codelineno-8-5" name="__codelineno-8-5"></a>
-<a id="__codelineno-8-6" name="__codelineno-8-6"></a><span class="k">\raggedleft</span> some text
-</code></pre></div></td></tr></table></div>
+<details class="note">
+<summary>try</summary>
+<div class="language-latex highlight"><pre><span></span><code><span id="__span-7-1"><a href="#__codelineno-7-1" id="__codelineno-7-1" name="__codelineno-7-1"></a><span class="k">\begin</span><span class="nb">{</span>center<span class="nb">}</span>some text<span class="k">\end</span><span class="nb">{</span>center<span class="nb">}</span>
+</span><span id="__span-7-2"><a href="#__codelineno-7-2" id="__codelineno-7-2" name="__codelineno-7-2"></a><span class="k">\begin</span><span class="nb">{</span>flushright<span class="nb">}</span>some text<span class="k">\end</span><span class="nb">{</span>flushright<span class="nb">}</span>
+</span><span id="__span-7-3"><a href="#__codelineno-7-3" id="__codelineno-7-3" name="__codelineno-7-3"></a>
+</span><span id="__span-7-4"><a href="#__codelineno-7-4" id="__codelineno-7-4" name="__codelineno-7-4"></a><span class="k">\centering</span> some text
+</span><span id="__span-7-5"><a href="#__codelineno-7-5" id="__codelineno-7-5" name="__codelineno-7-5"></a>
+</span><span id="__span-7-6"><a href="#__codelineno-7-6" id="__codelineno-7-6" name="__codelineno-7-6"></a><span class="k">\raggedleft</span> some text
+</span></code></pre></div>
+</details>
 <h4 id="代码环境">代码环境<a class="headerlink" href="#代码环境" title="Permanent link">⚓︎</a></h4>
 <ul>
-<li><code>verbatim</code>环境：原样输出，不解释命令</li>
-<li>不能嵌套在其他环境中</li>
-<li>可以使用<code>\verb</code>命令，输出行内代码，如<code>\verb|text|</code><ul>
-<li>也可以使用<code>\verb*|text|</code>，<span>*<span class="heti-spacing"> </span></span>表示显示空格</li>
+<li><code>verbatim</code>环境：原样输出，不解释命令；</li>
+<li>不能嵌套在其他环境中；</li>
+<li>可以使用<code>\verb</code>命令，输出行内代码，如<code>\verb|text|</code>；<ul>
+<li>也可以使用<code>\verb*|text|</code>，<span>*<span class="heti-spacing"> </span></span>表示显示空格；</li>
 </ul>
 </li>
-<li>可以使用<code>\begin{verbatim}...\end{verbatim}</code>输出多行代码 </li>
-<li><code>lstlisting</code>环境：生成高亮代码，代码排版，需要<code>listings</code>宏包</li>
-<li><code>\begin{lstlisting}[options]</code>，<code>\end{lstlisting}</code></li>
-<li>options：<code>language</code>、<code>basicstyle</code>、<code>numbers</code>、<code>frame</code>、<code>caption</code>等</li>
-<li>可以使用<code>\lstinputlisting[options]{filename}</code>插入外部代码文件</li>
-<li>可以使用<code>\lstinline[options]{code}</code>插入内联代码</li>
+<li>可以使用<code>\begin{verbatim}...\end{verbatim}</code>输出多行代码； </li>
+<li><code>lstlisting</code>环境：生成高亮代码，代码排版，需要<code>listings</code>宏包；</li>
+<li><code>\begin{lstlisting}[options]</code>，<code>\end{lstlisting}</code>；</li>
+<li>options：<code>language</code>、<code>basicstyle</code>、<code>numbers</code>、<code>frame</code>、<code>caption</code>等；</li>
+<li>可以使用<code>\lstinputlisting[options]{filename}</code>插入外部代码文件；</li>
+<li>可以使用<code>\lstinline[options]{code}</code>插入内联代码；</li>
 </ul>
-<p>try:
-</p><div class="highlight"><table class="highlighttable"><tr><th class="filename" colspan="2"><span class="filename">TeX</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-9-1">1</a></span>
-<span class="normal"><a href="#__codelineno-9-2">2</a></span>
-<span class="normal"><a href="#__codelineno-9-3">3</a></span>
-<span class="normal"><a href="#__codelineno-9-4">4</a></span>
-<span class="normal"><a href="#__codelineno-9-5">5</a></span>
-<span class="normal"><a href="#__codelineno-9-6">6</a></span>
-<span class="normal"><a href="#__codelineno-9-7">7</a></span>
-<span class="normal"><a href="#__codelineno-9-8">8</a></span>
-<span class="normal"><a href="#__codelineno-9-9">9</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1"></a><span class="k">\begin</span><span class="nb">{</span>verbatim<span class="nb">}</span>
-<a id="__codelineno-9-2" name="__codelineno-9-2"></a>#include &lt;stdio.h&gt;
-<a id="__codelineno-9-3" name="__codelineno-9-3"></a>int main() <span class="nb">{</span>
-<a id="__codelineno-9-4" name="__codelineno-9-4"></a>    printf("Hello, world!<span class="k">\n</span>");
-<a id="__codelineno-9-5" name="__codelineno-9-5"></a>    return 0;
-<a id="__codelineno-9-6" name="__codelineno-9-6"></a><span class="nb">}</span>
-<a id="__codelineno-9-7" name="__codelineno-9-7"></a><span class="k">\end</span><span class="nb">{</span>verbatim<span class="nb">}</span>
-<a id="__codelineno-9-8" name="__codelineno-9-8"></a>
-<a id="__codelineno-9-9" name="__codelineno-9-9"></a><span class="k">\verb</span>|<span class="k">\LaTeX</span>| and <span class="k">\verb*</span>|printf("Hello, world!<span class="k">\n</span>");|
-</code></pre></div></td></tr></table></div>
+<details class="note">
+<summary>try</summary>
+<div class="language-latex highlight"><pre><span></span><code><span id="__span-8-1"><a href="#__codelineno-8-1" id="__codelineno-8-1" name="__codelineno-8-1"></a><span class="k">\begin</span><span class="nb">{</span>verbatim<span class="nb">}</span>
+</span><span id="__span-8-2"><a href="#__codelineno-8-2" id="__codelineno-8-2" name="__codelineno-8-2"></a>#include &lt;stdio.h&gt;
+</span><span id="__span-8-3"><a href="#__codelineno-8-3" id="__codelineno-8-3" name="__codelineno-8-3"></a>int main() <span class="nb">{</span>
+</span><span id="__span-8-4"><a href="#__codelineno-8-4" id="__codelineno-8-4" name="__codelineno-8-4"></a>    printf("Hello, world!<span class="k">\n</span>");
+</span><span id="__span-8-5"><a href="#__codelineno-8-5" id="__codelineno-8-5" name="__codelineno-8-5"></a>    return 0;
+</span><span id="__span-8-6"><a href="#__codelineno-8-6" id="__codelineno-8-6" name="__codelineno-8-6"></a><span class="nb">}</span>
+</span><span id="__span-8-7"><a href="#__codelineno-8-7" id="__codelineno-8-7" name="__codelineno-8-7"></a><span class="k">\end</span><span class="nb">{</span>verbatim<span class="nb">}</span>
+</span><span id="__span-8-8"><a href="#__codelineno-8-8" id="__codelineno-8-8" name="__codelineno-8-8"></a>
+</span><span id="__span-8-9"><a href="#__codelineno-8-9" id="__codelineno-8-9" name="__codelineno-8-9"></a><span class="k">\verb</span>|<span class="k">\LaTeX</span>| and <span class="k">\verb*</span>|printf("Hello, world!<span class="k">\n</span>");|
+</span></code></pre></div>
+</details>
 <h4 id="表格">表格<a class="headerlink" href="#表格" title="Permanent link">⚓︎</a></h4>
 <ul>
-<li>表格使用<code>tabular</code>环境，有时可以使用<code>array</code>环境提供辅助</li>
-<li>直接使用<code>tabular</code>环境会和文本混排，一般使用<code>table</code>环境包裹变成浮动体</li>
+<li>表格使用<code>tabular</code>环境，有时可以使用<code>array</code>环境提供辅助；</li>
+<li>直接使用<code>tabular</code>环境会和文本混排，一般使用<code>table</code>环境包裹变成浮动体；</li>
 <li><code>\begin{tabular}{cols}</code>，<code>\end{tabular}</code>，其中列格式<span><span class="heti-spacing"> </span>cols</span>：</li>
-<li>l：左对齐，c：居中，r：右对齐</li>
-<li>|：竖线分隔列；@{}：去除列间距；@{content}：用<span class="heti-skip"><span class="heti-spacing"> </span>content<span class="heti-spacing"> </span></span>替代默认的列间距</li>
-<li>p{width}：固定宽度，自动换行；m{width}：垂直居中；b{width}：底部对齐</li>
-<li>*{num}{cols}：重复<span class="heti-skip"><span class="heti-spacing"> </span>num<span class="heti-spacing"> </span></span>次<span class="heti-skip"><span class="heti-spacing"> </span>cols<span class="heti-spacing"> </span></span>列格式</li>
-<li>表格元素：<code>&amp;</code>分隔列，<code>\\</code>分隔行，<code>\hline</code>添加水平线，<code>\cline{i-j}</code>添加<span class="heti-skip"><span class="heti-spacing"> </span>i<span class="heti-spacing"> </span></span>列<span class="heti-skip"><span class="heti-spacing"> </span>-j<span class="heti-spacing"> </span></span>列的水平线</li>
-<li><span>booktabs<span class="heti-spacing"> </span></span>宏包提供更好的水平线，<code>\toprule</code>、<code>\midrule</code>、<code>\bottomrule</code>、<code>\cmidrule{a-b}</code></li>
-<li>可以使用<a href="https://www.tablesgenerator.com/"><span class="heti-skip"><span class="heti-spacing"> </span>TablesGenerator<span class="heti-spacing"> </span></span></a>生成</li>
+<li>l：左对齐，c：居中，r：右对齐；</li>
+<li>|：竖线分隔列；@{}：去除列间距；@{content}：用<span class="heti-skip"><span class="heti-spacing"> </span>content<span class="heti-spacing"> </span></span>替代默认的列间距；</li>
+<li>p{width}：固定宽度，自动换行；m{width}：垂直居中；b{width}：底部对齐；</li>
+<li>*{num}{cols}：重复<span class="heti-skip"><span class="heti-spacing"> </span>num<span class="heti-spacing"> </span></span>次<span class="heti-skip"><span class="heti-spacing"> </span>cols<span class="heti-spacing"> </span></span>列格式；</li>
+<li>表格元素：<code>&amp;</code>分隔列，<code>\\</code>分隔行，<code>\hline</code>添加水平线，<code>\cline{i-j}</code>添加<span class="heti-skip"><span class="heti-spacing"> </span>i<span class="heti-spacing"> </span></span>列<span class="heti-skip"><span class="heti-spacing"> </span>-j<span class="heti-spacing"> </span></span>列的水平线；</li>
+<li><span>booktabs<span class="heti-spacing"> </span></span>宏包提供更好的水平线，<code>\toprule</code>、<code>\midrule</code>、<code>\bottomrule</code>、<code>\cmidrule{a-b}</code>；</li>
+<li>可以使用<a href="https://www.tablesgenerator.com/" target="_blank"><span class="heti-skip"><span class="heti-spacing"> </span>TablesGenerator<span class="heti-spacing"> </span></span></a>生成；</li>
 </ul>
-<p>try：
-</p><div class="highlight"><table class="highlighttable"><tr><th class="filename" colspan="2"><span class="filename">TeX</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-10-1"> 1</a></span>
-<span class="normal"><a href="#__codelineno-10-2"> 2</a></span>
-<span class="normal"><a href="#__codelineno-10-3"> 3</a></span>
-<span class="normal"><a href="#__codelineno-10-4"> 4</a></span>
-<span class="normal"><a href="#__codelineno-10-5"> 5</a></span>
-<span class="normal"><a href="#__codelineno-10-6"> 6</a></span>
-<span class="normal"><a href="#__codelineno-10-7"> 7</a></span>
-<span class="normal"><a href="#__codelineno-10-8"> 8</a></span>
-<span class="normal"><a href="#__codelineno-10-9"> 9</a></span>
-<span class="normal"><a href="#__codelineno-10-10">10</a></span>
-<span class="normal"><a href="#__codelineno-10-11">11</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1"></a><span class="k">\begin</span><span class="nb">{</span>table<span class="nb">}</span>[h]
-<a id="__codelineno-10-2" name="__codelineno-10-2"></a>    <span class="k">\centering</span>
-<a id="__codelineno-10-3" name="__codelineno-10-3"></a>    <span class="k">\begin</span><span class="nb">{</span>tabular<span class="nb">}{</span>@<span class="nb">{}</span>c|c|c|<span class="nb">}</span>
-<a id="__codelineno-10-4" name="__codelineno-10-4"></a>        <span class="k">\hline</span>
-<a id="__codelineno-10-5" name="__codelineno-10-5"></a>        1 <span class="nb">&amp;</span> 2 <span class="nb">&amp;</span> 3 <span class="k">\\</span>
-<a id="__codelineno-10-6" name="__codelineno-10-6"></a>        <span class="k">\hline</span>
-<a id="__codelineno-10-7" name="__codelineno-10-7"></a>        4 <span class="nb">&amp;</span> 5 <span class="nb">&amp;</span> 6 <span class="k">\\</span>
-<a id="__codelineno-10-8" name="__codelineno-10-8"></a>        <span class="k">\hline</span>
-<a id="__codelineno-10-9" name="__codelineno-10-9"></a>    <span class="k">\end</span><span class="nb">{</span>tabular<span class="nb">}</span>
-<a id="__codelineno-10-10" name="__codelineno-10-10"></a>    <span class="k">\caption</span><span class="nb">{</span>A table<span class="nb">}</span> <span class="c">%生成表格序号，表格标题</span>
-<a id="__codelineno-10-11" name="__codelineno-10-11"></a><span class="k">\end</span><span class="nb">{</span>table<span class="nb">}</span>
-</code></pre></div></td></tr></table></div>
+<details class="note">
+<summary>try</summary>
+<div class="language-latex highlight"><pre><span></span><code><span id="__span-9-1"><a href="#__codelineno-9-1" id="__codelineno-9-1" name="__codelineno-9-1"></a><span class="k">\begin</span><span class="nb">{</span>table<span class="nb">}</span>[h]
+</span><span id="__span-9-2"><a href="#__codelineno-9-2" id="__codelineno-9-2" name="__codelineno-9-2"></a>    <span class="k">\centering</span>
+</span><span id="__span-9-3"><a href="#__codelineno-9-3" id="__codelineno-9-3" name="__codelineno-9-3"></a>    <span class="k">\begin</span><span class="nb">{</span>tabular<span class="nb">}{</span>@<span class="nb">{}</span>c|c|c|<span class="nb">}</span>
+</span><span id="__span-9-4"><a href="#__codelineno-9-4" id="__codelineno-9-4" name="__codelineno-9-4"></a>        <span class="k">\hline</span>
+</span><span id="__span-9-5"><a href="#__codelineno-9-5" id="__codelineno-9-5" name="__codelineno-9-5"></a>        1 <span class="nb">&amp;</span> 2 <span class="nb">&amp;</span> 3 <span class="k">\\</span>
+</span><span id="__span-9-6"><a href="#__codelineno-9-6" id="__codelineno-9-6" name="__codelineno-9-6"></a>        <span class="k">\hline</span>
+</span><span id="__span-9-7"><a href="#__codelineno-9-7" id="__codelineno-9-7" name="__codelineno-9-7"></a>        4 <span class="nb">&amp;</span> 5 <span class="nb">&amp;</span> 6 <span class="k">\\</span>
+</span><span id="__span-9-8"><a href="#__codelineno-9-8" id="__codelineno-9-8" name="__codelineno-9-8"></a>        <span class="k">\hline</span>
+</span><span id="__span-9-9"><a href="#__codelineno-9-9" id="__codelineno-9-9" name="__codelineno-9-9"></a>    <span class="k">\end</span><span class="nb">{</span>tabular<span class="nb">}</span>
+</span><span id="__span-9-10"><a href="#__codelineno-9-10" id="__codelineno-9-10" name="__codelineno-9-10"></a>    <span class="k">\caption</span><span class="nb">{</span>A table<span class="nb">}</span> <span class="c">%生成表格序号，表格标题</span>
+</span><span id="__span-9-11"><a href="#__codelineno-9-11" id="__codelineno-9-11" name="__codelineno-9-11"></a><span class="k">\end</span><span class="nb">{</span>table<span class="nb">}</span>
+</span></code></pre></div>
+</details>
 <h4 id="浮动体">浮动体<a class="headerlink" href="#浮动体" title="Permanent link">⚓︎</a></h4>
 <ul>
-<li>使得图片和表格脱离文本，独立寻找合适的位置排放</li>
-<li><code>figure</code>环境：插入图片；<code>\table</code>环境：包裹表格
-<div class="highlight"><table class="highlighttable"><tr><th class="filename" colspan="2"><span class="filename">TeX</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-11-1">1</a></span>
-<span class="normal"><a href="#__codelineno-11-2">2</a></span>
-<span class="normal"><a href="#__codelineno-11-3">3</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1"></a><span class="k">\begin</span><span class="nb">{</span>figure<span class="nb">}</span>[placement]
-<a id="__codelineno-11-2" name="__codelineno-11-2"></a>    ...
-<a id="__codelineno-11-3" name="__codelineno-11-3"></a><span class="k">\end</span><span class="nb">{</span>figure<span class="nb">}</span>
-</code></pre></div></td></tr></table></div></li>
-<li>placement：h（here<heti-adjacent class="heti-adjacent-half">）</heti-adjacent>、t（top<heti-adjacent class="heti-adjacent-half">）</heti-adjacent>、b（bottom<heti-adjacent class="heti-adjacent-half">）</heti-adjacent>、p（page<heti-adjacent class="heti-adjacent-half">）</heti-adjacent>、!（忽略<span class="heti-skip"><span class="heti-spacing"> </span>LaTeX<span class="heti-spacing"> </span></span>默认设置）</li>
-<li>默认<span><span class="heti-spacing"> </span>tbp</span>，按<span class="heti-skip"><span class="heti-spacing"> </span>h-t-b-p<span class="heti-spacing"> </span></span>顺序</li>
-<li>限制包括：每页浮动体数量，占页面比例，浮动体间距等</li>
-<li>可以使用<code>\caption{caption}</code>添加标题（后可以接<code>\label{...}</code>用于引用）</li>
-<li>可以<code>\listoffigures</code> <code>\listofftables</code>生成目录</li>
+<li>使得图片和表格脱离文本，独立寻找合适的位置排放；</li>
+<li><code>figure</code>环境：插入图片；<code>\table</code>环境：包裹表格；</li>
+</ul>
+<div class="language-latex highlight"><pre><span></span><code><span id="__span-10-1"><a href="#__codelineno-10-1" id="__codelineno-10-1" name="__codelineno-10-1"></a><span class="k">\begin</span><span class="nb">{</span>figure<span class="nb">}</span>[placement]
+</span><span id="__span-10-2"><a href="#__codelineno-10-2" id="__codelineno-10-2" name="__codelineno-10-2"></a>    ...
+</span><span id="__span-10-3"><a href="#__codelineno-10-3" id="__codelineno-10-3" name="__codelineno-10-3"></a><span class="k">\end</span><span class="nb">{</span>figure<span class="nb">}</span>
+</span></code></pre></div>
+<ul>
+<li>placement：h (here), t (top), b(bottom), p(page), !（忽略<span class="heti-skip"><span class="heti-spacing"> </span>LaTeX<span class="heti-spacing"> </span></span>默认设置<heti-adjacent class="heti-adjacent-half">）</heti-adjacent>；</li>
+<li>默认<span><span class="heti-spacing"> </span>tbp</span>，按<span class="heti-skip"><span class="heti-spacing"> </span>h-t-b-p<span class="heti-spacing"> </span></span>顺序；</li>
+<li>限制包括：每页浮动体数量，占页面比例，浮动体间距等；</li>
+<li>可以使用<code>\caption{caption}</code>添加标题（后可以接<code>\label{...}</code>用于引用<heti-adjacent class="heti-adjacent-half">）</heti-adjacent>；</li>
+<li>可以<code>\listoffigures</code> <code>\listofftables</code>生成目录；</li>
 </ul>
 <h4 id="引用和标签">引用和标签<a class="headerlink" href="#引用和标签" title="Permanent link">⚓︎</a></h4>
 <ul>
-<li>使用<code>\label{label}</code>为对象添加标签，使用<code>\ref{label}</code>引用<span class="heti-skip"><span class="heti-spacing"> </span>,<span class="heti-spacing"> </span></span><code>\pageref{label}</code>引用页码</li>
+<li>使用<code>\label{label}</code>为对象添加标签，使用<code>\ref{label}</code>引用<span class="heti-skip"><span class="heti-spacing"> </span>,<span class="heti-spacing"> </span></span><code>\pageref{label}</code>引用页码；</li>
 <li>可以使用<code>\label</code>记录的位置：</li>
-<li>章节标题后紧挨着使用，如<code>\section{title}\label{sec:label}</code></li>
-<li>行间公式中任意位置使用，如<code>\begin{equation}...\end{equation}\label{eq:label}</code></li>
-<li>有序列表每个<span class="heti-skip"><span class="heti-spacing"> </span>item<span class="heti-spacing"> </span></span>后使用，如<code>\item\label{item:label}</code></li>
-<li>浮动体环境中<code>\caption</code>后使用，如<code>\caption{caption}\label{fig:label}</code></li>
-<li>定理环境内部使用 </li>
-<li><code>\label</code>一般放在<code>\caption</code>后面</li>
-<li>引用的编号会自动更新</li>
-<li>可以使用<code>hyperref</code>宏包，<code>\usepackage{hyperref}</code>，生成超链接</li>
-<li>不会记录编号的命令不可以使用（比如<code>\section*</code>）</li>
+<li>章节标题后紧挨着使用，如<code>\section{title}\label{sec:label}</code>；</li>
+<li>行间公式中任意位置使用，如<code>\begin{equation}...\end{equation}\label{eq:label}</code>；</li>
+<li>有序列表每个<span class="heti-skip"><span class="heti-spacing"> </span>item<span class="heti-spacing"> </span></span>后使用，如<code>\item\label{item:label}</code>；</li>
+<li>浮动体环境中<code>\caption</code>后使用，如<code>\caption{caption}\label{fig:label}</code>；</li>
+<li>定理环境内部使用；</li>
+<li><code>\label</code>一般放在<code>\caption</code>后面；</li>
+<li>引用的编号会自动更新；</li>
+<li>可以使用<code>hyperref</code>宏包，<code>\usepackage{hyperref}</code>，生成超链接；</li>
+<li>不会记录编号的命令不可以使用（比如<code>\section*</code><heti-adjacent class="heti-adjacent-half">）</heti-adjacent>；</li>
 </ul>
 <h2 id="数学公式语法">数学公式语法<a class="headerlink" href="#数学公式语法" title="Permanent link">⚓︎</a></h2>
 <h3 id="数学模式">数学模式<a class="headerlink" href="#数学模式" title="Permanent link">⚓︎</a></h3>
 <ul>
-<li>编写数学公式首先推荐载入<code>amsmath</code>宏包</li>
-<li>两种排版方式</li>
-<li>行内公式，用一对<code>$</code>包裹，如<code>$a^2+b^2=c^2$</code></li>
+<li>编写数学公式首先推荐载入<code>amsmath</code>宏包；</li>
+<li>两种排版方式；</li>
+<li>行内公式，用一对<code>$</code>包裹，如<code>$a^2+b^2=c^2$</code>；</li>
 <li>行间公式，有下面几种方法：<ul>
-<li><span>equation<span class="heti-spacing"> </span></span>环境，自动编号，<code>\begin{equation}...\end{equation}</code>，<code>\notag</code>或<code>\equation*</code>取消编号</li>
-<li>一对<code>$$</code>包裹（不太推荐）或<code>\[...\]</code>包裹或<span class="heti-skip"><span class="heti-spacing"> </span>displaymath<span class="heti-spacing"> </span></span>环境，不编号</li>
-<li>其他多行环境，如<code>align</code>、<code>multline</code>等</li>
+<li><span>equation<span class="heti-spacing"> </span></span>环境，自动编号，<code>\begin{equation}...\end{equation}</code>，<code>\notag</code>或<code>\equation*</code>取消编号；</li>
+<li>一对<code>$$</code>包裹（不太推荐）或<code>\[...\]</code>包裹或<span class="heti-skip"><span class="heti-spacing"> </span>displaymath<span class="heti-spacing"> </span></span>环境，不编号；</li>
+<li>其他多行环境，如<code>align</code>、<code>multline</code>等；</li>
 </ul>
 </li>
-<li>数学模式相比文本模式的不同</li>
-<li>字母变为斜体，字母当作变量处理，输入文本时使用<code>\text{}</code>命令</li>
-<li>空格被忽略，可以使用<code>\quad</code>、<code>\qquad</code>等命令</li>
-<li>不允许有空行，换行符被忽略，除多行环境外不能使用<code>\\</code>命令手动换行</li>
+<li>数学模式相比文本模式的不同；</li>
+<li>字母变为斜体，字母当作变量处理，输入文本时使用<code>\text{}</code>命令；</li>
+<li>空格被忽略，可以使用<code>\quad</code>、<code>\qquad</code>等命令；</li>
+<li>不允许有空行，换行符被忽略，除多行环境外不能使用<code>\\</code>命令手动换行；</li>
 </ul>
 <h3 id="公式排版基础">公式排版基础<a class="headerlink" href="#公式排版基础" title="Permanent link">⚓︎</a></h3>
 <ul>
-<li>直接写字母就表示变量，<span>\<span class="heti-spacing"> </span></span>开头是命令（命令后面不要加字母，建议加空格）</li>
-<li>空格均会忽略，需要手动空格</li>
-<li><code>\</code>和<code>\:</code>表示一个小空格</li>
-<li><code>\;</code>表示中等大小的空格</li>
-<li><code>\</code><span>(<span class="heti-spacing"> </span></span>反斜杠加空格<span class="heti-skip"><span class="heti-spacing"> </span>)<span class="heti-spacing"> </span></span>是另一种插入空格的方式</li>
-<li><code>\quad</code>表示一个较大的空格（大约是一个字符的宽度）</li>
-<li><code>\qquad</code>表示一个很大的空格（大约是两个字符的宽度）</li>
-<li><code>\!</code>是负空格，它会减少字符间的间距</li>
-<li>上下标使用<span class="heti-skip"><span class="heti-spacing"> </span>^<span class="heti-spacing"> </span></span>和<span><span class="heti-spacing"> </span>_</span>，超过一个字符需要用<span class="heti-skip"><span class="heti-spacing"> </span>{}<span class="heti-spacing"> </span></span>包裹</li>
-<li>有些时候也表示子式，比如<span class="heti-skip"><span class="heti-spacing"> </span>\sum \int<span class="heti-spacing"> </span></span>等，如：<code>\sum_{i=1}^{n} a_i</code></li>
-<li>特定函数有命令时要使用专门的命令，比如<code>\sin</code> <code>\log</code> <code>\lim</code>等</li>
-<li>没有的时候可以用<code>\mathrm{...}</code>包裹</li>
-<li>内部要穿插文字时使用<code>\text{...}</code>包裹</li>
-<li>有两种样式<code>\displaystyle</code>和<code>\textstyle</code>，即行间和行内，可以在不同情形下进行调整</li>
-<li>例如<code>\sum</code>的上下标位置<span><span class="heti-spacing"> </span>,</span><code>\int</code>（积分）的高度，<code>\frac</code>的分数样式等会有不同</li>
-<li>也可以使用<code>\limits</code>和<code>\nolimits</code>改变上下标位置</li>
+<li>直接写字母就表示变量，<span>\<span class="heti-spacing"> </span></span>开头是命令（命令后面不要加字母，建议加空格<heti-adjacent class="heti-adjacent-half">）</heti-adjacent>；</li>
+<li>空格均会忽略，需要手动空格；</li>
+<li><code>\</code>和<code>\:</code>表示一个小空格；</li>
+<li><code>\;</code>表示中等大小的空格；</li>
+<li><code>\</code><span>(<span class="heti-spacing"> </span></span>反斜杠加空格<span class="heti-skip"><span class="heti-spacing"> </span>)<span class="heti-spacing"> </span></span>是另一种插入空格的方式；</li>
+<li><code>\quad</code>表示一个较大的空格（大约是一个字符的宽度<heti-adjacent class="heti-adjacent-half">）</heti-adjacent>；</li>
+<li><code>\qquad</code>表示一个很大的空格（大约是两个字符的宽度<heti-adjacent class="heti-adjacent-half">）</heti-adjacent>；</li>
+<li><code>\!</code>是负空格，它会减少字符间的间距；</li>
+<li>上下标使用<span class="heti-skip"><span class="heti-spacing"> </span>^<span class="heti-spacing"> </span></span>和<span><span class="heti-spacing"> </span>_</span>，超过一个字符需要用<span class="heti-skip"><span class="heti-spacing"> </span>{}<span class="heti-spacing"> </span></span>包裹；</li>
+<li>有些时候也表示子式，比如<span class="heti-skip"><span class="heti-spacing"> </span>\sum \int<span class="heti-spacing"> </span></span>等，如：<code>\sum_{i=1}^{n} a_i</code>；</li>
+<li>特定函数有命令时要使用专门的命令，比如<code>\sin</code> <code>\log</code> <code>\lim</code>等；</li>
+<li>没有的时候可以用<code>\mathrm{...}</code>包裹；</li>
+<li>内部要穿插文字时使用<code>\text{...}</code>包裹；</li>
+<li>有两种样式<code>\displaystyle</code>和<code>\textstyle</code>，即行间和行内，可以在不同情形下进行调整；</li>
+<li>例如<code>\sum</code>的上下标位置<span><span class="heti-spacing"> </span>,</span><code>\int</code>（积分）的高度，<code>\frac</code>的分数样式等会有不同；</li>
+<li>也可以使用<code>\limits</code>和<code>\nolimits</code>改变上下标位置；</li>
 </ul>
 <h3 id="常用数学符号">常用数学符号<a class="headerlink" href="#常用数学符号" title="Permanent link">⚓︎</a></h3>
 <ul>
-<li>太多了，可以参考<a href="https://www.latexlive.com/"><span class="heti-skip"><span class="heti-spacing"> </span>LaTeX<span class="heti-spacing"> </span></span>数学符号表</a> </li>
+<li>太多了，可以参考<a href="https://www.latexlive.com/" target="_blank"><span class="heti-skip"><span class="heti-spacing"> </span>LaTeX<span class="heti-spacing"> </span></span>数学符号表</a>；</li>
 </ul>
 <h3 id="特殊数学字体">特殊数学字体<a class="headerlink" href="#特殊数学字体" title="Permanent link">⚓︎</a></h3>
 <ul>
-<li>公式环境中不能使用<code>\textbf</code>等命令，可以使用<code>\mathbf</code>、<code>\mathit</code>、<code>\mathsf</code>、<code>\mathtt</code>等命令</li>
-<li>针对于数学环境中特定的命令</li>
+<li>公式环境中不能使用<code>\textbf</code>等命令，可以使用<code>\mathbf</code>、<code>\mathit</code>、<code>\mathsf</code>、<code>\mathtt</code>等命令；</li>
+<li>针对于数学环境中特定的命令：</li>
 </ul>
 <table>
 <thead>
@@ -1500,77 +1610,71 @@
 <h3 id="数学环境">数学环境<a class="headerlink" href="#数学环境" title="Permanent link">⚓︎</a></h3>
 <h4 id="alignaligned对齐环境"><span>align/aligned<span class="heti-spacing"> </span></span>对齐环境<a class="headerlink" href="#alignaligned对齐环境" title="Permanent link">⚓︎</a></h4>
 <ul>
-<li>最常用<span class="heti-skip"><span class="heti-spacing"> </span>align<span class="heti-spacing"> </span></span>环境进行多行公式对齐</li>
-<li>用 <code>&amp;</code> 分割或标记对齐位置，<code>\\</code>换行
-<div class="highlight"><table class="highlighttable"><tr><th class="filename" colspan="2"><span class="filename">TeX</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-12-1">1</a></span>
-<span class="normal"><a href="#__codelineno-12-2">2</a></span>
-<span class="normal"><a href="#__codelineno-12-3">3</a></span>
-<span class="normal"><a href="#__codelineno-12-4">4</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1"></a><span class="k">\begin</span><span class="nb">{</span>align<span class="nb">}</span>
-<a id="__codelineno-12-2" name="__codelineno-12-2"></a>a <span class="nb">&amp;</span>= b + c  <span class="nb">&amp;</span>     g <span class="nb">&amp;</span>= h + i <span class="k">\\</span>
-<a id="__codelineno-12-3" name="__codelineno-12-3"></a>  <span class="nb">&amp;</span>= d + e + f  <span class="nb">&amp;</span>   <span class="nb">&amp;</span>= j<span class="k">\notag</span>
-<a id="__codelineno-12-4" name="__codelineno-12-4"></a><span class="k">\end</span><span class="nb">{</span>align<span class="nb">}</span>
-</code></pre></div></td></tr></table></div></li>
-<li>用<code>\notag</code>取消编号，用<code>\nonumber</code>取消整个公式的编号<span class="heti-skip"><span class="heti-spacing"> </span>,<span class="heti-spacing"> </span></span>或使用<code>align*</code>环境</li>
-<li>可以使用<code>aligned</code>环境嵌套在其他环境中<span class="heti-skip"><span class="heti-spacing"> </span>(<span class="heti-spacing"> </span></span>如<span class="heti-skip"><span class="heti-spacing"> </span>equation)<span class="heti-spacing"> </span></span>进行对齐</li>
-<li><span>aligned<span class="heti-spacing"> </span></span>环境本身并不会进入数学模式，不会自动编号，需要在数学模式中嵌套使用 </li>
+<li>最常用<span class="heti-skip"><span class="heti-spacing"> </span>align<span class="heti-spacing"> </span></span>环境进行多行公式对齐；</li>
+<li>用 <code>&amp;</code> 分割或标记对齐位置，<code>\\</code>换行；</li>
+</ul>
+<div class="language-latex highlight"><pre><span></span><code><span id="__span-11-1"><a href="#__codelineno-11-1" id="__codelineno-11-1" name="__codelineno-11-1"></a><span class="k">\begin</span><span class="nb">{</span>align<span class="nb">}</span>
+</span><span id="__span-11-2"><a href="#__codelineno-11-2" id="__codelineno-11-2" name="__codelineno-11-2"></a>a <span class="nb">&amp;</span>= b + c  <span class="nb">&amp;</span>     g <span class="nb">&amp;</span>= h + i <span class="k">\\</span>
+</span><span id="__span-11-3"><a href="#__codelineno-11-3" id="__codelineno-11-3" name="__codelineno-11-3"></a>  <span class="nb">&amp;</span>= d + e + f  <span class="nb">&amp;</span>   <span class="nb">&amp;</span>= j<span class="k">\notag</span>
+</span><span id="__span-11-4"><a href="#__codelineno-11-4" id="__codelineno-11-4" name="__codelineno-11-4"></a><span class="k">\end</span><span class="nb">{</span>align<span class="nb">}</span>
+</span></code></pre></div>
+<ul>
+<li>用<code>\notag</code>取消编号，用<code>\nonumber</code>取消整个公式的编号<span class="heti-skip"><span class="heti-spacing"> </span>,<span class="heti-spacing"> </span></span>或使用<code>align*</code>环境；</li>
+<li>可以使用<code>aligned</code>环境嵌套在其他环境中<span class="heti-skip"><span class="heti-spacing"> </span>(<span class="heti-spacing"> </span></span>如<span class="heti-skip"><span class="heti-spacing"> </span>equation)<span class="heti-spacing"> </span></span>进行对齐；</li>
+<li><span>aligned<span class="heti-spacing"> </span></span>环境本身并不会进入数学模式，不会自动编号，需要在数学模式中嵌套使用； </li>
 </ul>
 <h4 id="矩阵环境">矩阵环境<a class="headerlink" href="#矩阵环境" title="Permanent link">⚓︎</a></h4>
 <ul>
-<li>可以使用内置的<span class="heti-skip"><span class="heti-spacing"> </span>array<span class="heti-spacing"> </span></span>环境，用法类似<span><span class="heti-spacing"> </span>tabular</span>，左右需手动加括号</li>
-<li>推荐使用<span class="heti-skip"><span class="heti-spacing"> </span>amsmath<span class="heti-spacing"> </span></span>的矩阵环境</li>
-<li><span>matrix<span class="heti-spacing"> </span></span>不带定界符</li>
-<li><span>pmatrix<span class="heti-spacing"> </span></span>小括号；<span>bmatrix<span class="heti-spacing"> </span></span>中括号；<span>Bmatrix<span class="heti-spacing"> </span></span>大括号</li>
-<li><span>vmatrix<span class="heti-spacing"> </span></span>单竖线；<span>Vmatrix<span class="heti-spacing"> </span></span>双竖线</li>
-<li>写法同样 <code>&amp;</code> 分隔，<code>\\</code>换行</li>
+<li>可以使用内置的<span class="heti-skip"><span class="heti-spacing"> </span>array<span class="heti-spacing"> </span></span>环境，用法类似<span><span class="heti-spacing"> </span>tabular</span>，左右需手动加括号；</li>
+<li>推荐使用<span class="heti-skip"><span class="heti-spacing"> </span>amsmath<span class="heti-spacing"> </span></span>的矩阵环境；</li>
+<li><span>matrix<span class="heti-spacing"> </span></span>不带定界符；</li>
+<li><span>pmatrix<span class="heti-spacing"> </span></span>小括号；<span>bmatrix<span class="heti-spacing"> </span></span>中括号；<span>Bmatrix<span class="heti-spacing"> </span></span>大括号；</li>
+<li><span>vmatrix<span class="heti-spacing"> </span></span>单竖线；<span>Vmatrix<span class="heti-spacing"> </span></span>双竖线；</li>
+<li>写法同样 <code>&amp;</code> 分隔，<code>\\</code>换行；</li>
 </ul>
-<p>try：
-</p><div class="highlight"><table class="highlighttable"><tr><th class="filename" colspan="2"><span class="filename">TeX</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-13-1">1</a></span>
-<span class="normal"><a href="#__codelineno-13-2">2</a></span>
-<span class="normal"><a href="#__codelineno-13-3">3</a></span>
-<span class="normal"><a href="#__codelineno-13-4">4</a></span>
-<span class="normal"><a href="#__codelineno-13-5">5</a></span>
-<span class="normal"><a href="#__codelineno-13-6">6</a></span>
-<span class="normal"><a href="#__codelineno-13-7">7</a></span>
-<span class="normal"><a href="#__codelineno-13-8">8</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1"></a><span class="sb">\[</span>
-<a id="__codelineno-13-2" name="__codelineno-13-2"></a><span class="nv">\mathbf</span><span class="nb">{A} </span><span class="o">=</span><span class="nb"> </span><span class="nv">\begin</span><span class="nb">{bmatrix}</span>
-<a id="__codelineno-13-3" name="__codelineno-13-3"></a><span class="nb">a_{</span><span class="m">11</span><span class="nb">} &amp; a_{</span><span class="m">12</span><span class="nb">} &amp; </span><span class="nv">\cdots</span><span class="nb"> &amp; a_{</span><span class="m">1</span><span class="nb">n}</span><span class="nv">\\</span>
-<a id="__codelineno-13-4" name="__codelineno-13-4"></a><span class="nb">a_{</span><span class="m">21</span><span class="nb">} &amp; a_{</span><span class="m">22</span><span class="nb">} &amp; </span><span class="nv">\cdots</span><span class="nb"> &amp; a_{</span><span class="m">2</span><span class="nb">n}</span><span class="nv">\\</span>
-<a id="__codelineno-13-5" name="__codelineno-13-5"></a><span class="nv">\vdots</span><span class="nb"> &amp; </span><span class="nv">\vdots</span><span class="nb"> &amp; </span><span class="nv">\ddots</span><span class="nb"> &amp; </span><span class="nv">\vdots\\</span>
-<a id="__codelineno-13-6" name="__codelineno-13-6"></a><span class="nb">a_{n</span><span class="m">1</span><span class="nb">} &amp; a_{n</span><span class="m">2</span><span class="nb">} &amp; </span><span class="nv">\cdots</span><span class="nb"> &amp; a_{nn}</span><span class="nv">\\</span>
-<a id="__codelineno-13-7" name="__codelineno-13-7"></a><span class="nv">\end</span><span class="nb">{bmatrix}</span>
-<a id="__codelineno-13-8" name="__codelineno-13-8"></a><span class="s">\]</span>
-</code></pre></div></td></tr></table></div>
+<details class="note">
+<summary>try</summary>
+<p><code>`latex
+\[
+\mathbf{A} = \begin{bmatrix}
+a_{11} &amp; a_{12} &amp; \cdots &amp; a_{1n}\\
+a_{21} &amp; a_{22} &amp; \cdots &amp; a_{2n}\\
+\vdots &amp; \vdots &amp; \ddots &amp; \vdots\\
+a_{n1} &amp; a_{n2} &amp; \cdots &amp; a_{nn}\\
+\end{bmatrix}
+\]</code></p>
+</details>
 <h3 id="规范写法">规范写法<a class="headerlink" href="#规范写法" title="Permanent link">⚓︎</a></h3>
 <ul>
-<li>一般来说，公式中的字母都是变量，不是常数，所以应该使用斜体</li>
-<li>特定函数一定要用专门命令，或写为正体</li>
-<li>除了变量以外都要用正体，特别是微分算子</li>
-<li>括号括起来的内容不为一个字符高时要用<code>\left</code> <code>\right</code></li>
-<li>❌<code>(x^2)^2</code> <span class="arithmatex">\((x^2)^2\)</span> ✅<code>\left(x^2\right)^2</code> <span class="arithmatex">\(\left(x^2\right)^2\)</span></li>
-<li>行间公式上方不加空行<span class="heti-skip"><span class="heti-spacing"> </span>(<span class="heti-spacing"> </span></span>不然行间公式算新一段落，会导致上方间距过大<span><span class="heti-spacing"> </span>)</span></li>
-<li>一个锻炼写数学公式的网站：<a href="https://texnique.xyz/">TeXnique</a></li>
+<li>一般来说，公式中的字母都是变量，不是常数，所以应该使用斜体；</li>
+<li>特定函数一定要用专门命令，或写为正体；</li>
+<li>除了变量以外都要用正体，特别是微分算子；</li>
+<li>括号括起来的内容不为一个字符高时要用<code>\left</code> <code>\right</code>；</li>
+<li>❌<code>(x^2)^2</code> <span class="arithmatex">\((x^2)^2\)</span> ✅<code>\left(x^2\right)^2</code> <span class="arithmatex">\(\left(x^2\right)^2\)</span>；</li>
+<li>行间公式上方不加空行（不然行间公式算新一段落，会导致上方间距过大<heti-adjacent class="heti-adjacent-half">）</heti-adjacent>；</li>
+<li>一个锻炼写数学公式的网站：<a href="https://texnique.xyz/" target="_blank">TeXnique</a>；</li>
 </ul>
 <h2 id="更多">更多<a class="headerlink" href="#更多" title="Permanent link">⚓︎</a></h2>
 <h3 id="模板">模板<a class="headerlink" href="#模板" title="Permanent link">⚓︎</a></h3>
 <ul>
-<li><a href="https://github.com/ElegantLaTeX"><span>ElegantLaTeX<span class="heti-spacing"> </span></span></a>系列模板</li>
-<li>beamer：用于制作幻灯片的模板</li>
+<li><a href="https://github.com/ElegantLaTeX" target="_blank"><span>ElegantLaTeX<span class="heti-spacing"> </span></span></a>系列模板；</li>
+<li>beamer：用于制作幻灯片的模板；</li>
 </ul>
 <h3 id="参考网站">参考网站<a class="headerlink" href="#参考网站" title="Permanent link">⚓︎</a></h3>
 <ul>
-<li><a href="https://mirrors.ustc.edu.cn/CTAN/info/lshort/chinese/lshort-zh-cn.pdf">一份（不太）简短的<span class="heti-skip"><span class="heti-spacing"> </span>LaTeX2e<span class="heti-spacing"> </span></span>介绍</a></li>
-<li><a href="https://liam.page/2014/09/08/latex-introduction/">一个清晰简单的说明</a></li>
-<li><a href="https://slides.tonycrane.cc/PracticalSkillsTutorial/2023-spring-cs/lec4/#/"><span>xg<span class="heti-spacing"> </span></span>的技能拾遗<span><span class="heti-spacing"> </span>PPT</span>！</a></li>
-<li><a href="https://www.latexlive.com/"><span>LaTeX<span class="heti-spacing"> </span></span>数学符号表</a></li>
-<li><a href="https://simpletex.cn/">支持手写识别和文档识别的公式编辑软件平台</a></li>
-<li><a href="https://latex.emoryhuang.cn/">简洁的<span class="heti-skip"><span class="heti-spacing"> </span>LaTeX<span class="heti-spacing"> </span></span>的数学公式速查手册</a></li>
+<li><a href="https://mirrors.ustc.edu.cn/CTAN/info/lshort/chinese/lshort-zh-cn.pdf" target="_blank">一份（不太）简短的<span class="heti-skip"><span class="heti-spacing"> </span>LaTeX2e<span class="heti-spacing"> </span></span>介绍</a>；</li>
+<li><a href="https://liam.page/2014/09/08/latex-introduction/" target="_blank">一个清晰简单的说明</a>；</li>
+<li><a href="https://slides.tonycrane.cc/PracticalSkillsTutorial/2023-spring-cs/lec4/#/" target="_blank"><span>xg<span class="heti-spacing"> </span></span>的技能拾遗<span><span class="heti-spacing"> </span>PPT</span>！</a>；</li>
+<li><a href="https://www.latexlive.com/" target="_blank"><span>LaTeX<span class="heti-spacing"> </span></span>数学符号表</a>；</li>
+<li><a href="https://simpletex.cn/" target="_blank">支持手写识别和文档识别的公式编辑软件平台</a>；</li>
+<li><a href="https://latex.emoryhuang.cn/" target="_blank">简洁的<span class="heti-skip"><span class="heti-spacing"> </span>LaTeX<span class="heti-spacing"> </span></span>的数学公式速查手册</a>；</li>
 </ul>
 <aside class="md-source-file">
 <span class="md-source-file__fact">
 <span class="md-icon" title="最后更新">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg>
 </span>
-<span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">2025年2月8日 00:56:01</span>
+<span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">2025年2月16日 19:13:05</span>
 </span>
 <span class="md-source-file__fact">
 <span class="md-icon" title="创建日期">
@@ -1666,7 +1770,7 @@
 </main>
 <footer class="md-footer">
 <nav aria-label="页脚" class="md-footer__inner md-grid">
-<a aria-label="上一页: Tools" class="md-footer__link md-footer__link--prev" href="../">
+<a aria-label="上一页: Index" class="md-footer__link md-footer__link--prev" href="../">
 <div class="md-footer__button md-icon">
 <svg viewbox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256l137.3-137.4c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"></path></svg>
 </div>
@@ -1675,17 +1779,17 @@
                 上一页
               </span>
 <div class="md-ellipsis">
-                Tools
+                Index
               </div>
 </div>
 </a>
-<a aria-label="下一页: Markdown" class="md-footer__link md-footer__link--next" href="../markdown/">
+<a aria-label="下一页: MkDocs" class="md-footer__link md-footer__link--next" href="../mkdocs/">
 <div class="md-footer__title">
 <span class="md-footer__direction">
                 下一页
               </span>
 <div class="md-ellipsis">
-                Markdown
+                MkDocs
               </div>
 </div>
 <div class="md-footer__button md-icon">

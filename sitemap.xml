@@ -2,34 +2,66 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://wurao-liu.github.io/notebook/</loc>
-         <lastmod>2025-02-07</lastmod>
+         <lastmod>2025-02-16</lastmod>
     </url>
     <url>
          <loc>https://wurao-liu.github.io/notebook/Computer%20Science/</loc>
-         <lastmod>2025-02-07</lastmod>
+         <lastmod>2025-02-16</lastmod>
+    </url>
+    <url>
+         <loc>https://wurao-liu.github.io/notebook/Computer%20Science/DLD/</loc>
+         <lastmod>2025-02-16</lastmod>
+    </url>
+    <url>
+         <loc>https://wurao-liu.github.io/notebook/Computer%20Science/FDS/</loc>
+         <lastmod>2025-02-16</lastmod>
     </url>
     <url>
          <loc>https://wurao-liu.github.io/notebook/Life/</loc>
-         <lastmod>2025-02-07</lastmod>
+         <lastmod>2025-02-16</lastmod>
+    </url>
+    <url>
+         <loc>https://wurao-liu.github.io/notebook/Life/about/</loc>
+         <lastmod>2025-02-16</lastmod>
+    </url>
+    <url>
+         <loc>https://wurao-liu.github.io/notebook/Life/series/</loc>
+         <lastmod>2025-02-16</lastmod>
+    </url>
+    <url>
+         <loc>https://wurao-liu.github.io/notebook/Life/record/</loc>
+         <lastmod>2025-02-16</lastmod>
+    </url>
+    <url>
+         <loc>https://wurao-liu.github.io/notebook/Life/record/record_1/</loc>
+         <lastmod>2025-02-16</lastmod>
     </url>
     <url>
          <loc>https://wurao-liu.github.io/notebook/OtherCourses/</loc>
-         <lastmod>2025-02-07</lastmod>
+         <lastmod>2025-02-16</lastmod>
+    </url>
+    <url>
+         <loc>https://wurao-liu.github.io/notebook/OtherCourses/math/</loc>
+         <lastmod>2025-02-16</lastmod>
+    </url>
+    <url>
+         <loc>https://wurao-liu.github.io/notebook/OtherCourses/math/calc/</loc>
+         <lastmod>2025-02-16</lastmod>
+    </url>
+    <url>
+         <loc>https://wurao-liu.github.io/notebook/OtherCourses/math/dm/</loc>
+         <lastmod>2025-02-16</lastmod>
     </url>
     <url>
          <loc>https://wurao-liu.github.io/notebook/Tools/</loc>
-         <lastmod>2025-02-07</lastmod>
+         <lastmod>2025-02-16</lastmod>
     </url>
     <url>
          <loc>https://wurao-liu.github.io/notebook/Tools/LaTeX/</loc>
-         <lastmod>2025-02-07</lastmod>
+         <lastmod>2025-02-16</lastmod>
     </url>
     <url>
-         <loc>https://wurao-liu.github.io/notebook/Tools/Shell/</loc>
-         <lastmod>2025-02-07</lastmod>
-    </url>
-    <url>
-         <loc>https://wurao-liu.github.io/notebook/Tools/markdown/</loc>
-         <lastmod>2025-02-07</lastmod>
+         <loc>https://wurao-liu.github.io/notebook/Tools/mkdocs/</loc>
+         <lastmod>2025-02-16</lastmod>
     </url>
 </urlset>
