@@ -181,6 +181,7 @@ nav:
         - OtherCourses/math/calc/index.md
       - 离散数学及其应用:
         - OtherCourses/math/dm/index.md
+        - Logic and Proofs: OtherCourses/math/dm/chap_1.md
   - Tools:
     - Tools/index.md
     - LaTeX: Tools/LaTeX.md 
