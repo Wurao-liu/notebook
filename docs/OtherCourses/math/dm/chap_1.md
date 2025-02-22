@@ -31,8 +31,8 @@
 ### 条件语句 (Conditional Statements)
 
 - 条件语句 (conditional statements or implication)：$p \rightarrow q$；
-  - $p$为假设 (hypothesis/antecedent/premise)，$q$为结论 (conclusion/consequence)；
-  - 若$p$为真，$q$为假，则条件语句为假；其余情况均为真
+    - $p$为假设 (hypothesis/antecedent/premise)，$q$为结论 (conclusion/consequence)；
+    - 若$p$为真，$q$为假，则条件语句为假；其余情况均为真
 
 ??? note "多种表达"
 
@@ -49,9 +49,9 @@
     - $q$ unless $\neg p$；
 
 - 逆命题 (converse)：$q \rightarrow p$；
-- 反命题 (inverse)：$\neg p \rightarrow \neg q$；
+- 否命题 (inverse)：$\neg p \rightarrow \neg q$；
 - 逆否命题 (contrapositive)：$\neg q \rightarrow \neg p$；
-- 双条件语句 (biconditional statements/bi-implications)：$p \leftrightarrow q$，"$p$ and only if (iff) $q$"，$p$当且仅当$q$，即为 $(p \rightarrow q) \land (q \rightarrow p)$；
+- 双条件语句 (biconditional statements/bi-implications)：$p \leftrightarrow q$，"$p$ if and only if (iff) $q$"，$p$当且仅当$q$，即为 $(p \rightarrow q) \land (q \rightarrow p)$；
 
     ??? note "多种表达"
 
@@ -123,9 +123,9 @@ $$
 ### 可满足性 (Satisfiability)
 
 - 可满足 (satisfiable)：存在至少一种赋值使得复合命题为真；
-  - 当我们找到一个特定的使得复合命题为真的赋值时，我们称其为一个解 (solution)；
+    - 当我们找到一个特定的使得复合命题为真的赋值时，我们称其为一个解 (solution)；
 - 不可满足 (unsatisfiable)：所有赋值都使得复合命题为假；
-  - 一个复合命题不可满足时，当且仅当其否定为永真式；
+    - 一个复合命题不可满足时，当且仅当其否定为永真式；
 
 ## 谓词和量词 (Predicates and Quantifiers)
 ### 谓词 (Predicates)
@@ -139,13 +139,13 @@ $$
 ### 量词 (Quantifiers)
 
 - 量词 (quantifier)：用于描述谓词的范围；
-  - 全称量词 (universal quantifier)：$\forall$，表示对所有的；
-  - 存在量词 (existential quantifier)：$\exists$，表示存在一个；
+    - 全称量词 (universal quantifier)：$\forall$，表示对所有的；
+    - 存在量词 (existential quantifier)：$\exists$，表示存在一个；
 - 谓词演算 (predicate calculus)：使用谓词和量词的逻辑系统；
 
 #### 全称量词 (Universal Quantifier)
 
-- "$p(x)$ for all values of $x$ in the domain"，记为$\forall x p(x)$，读作"for all $x, p(x)$"；
+- "$p(x)$ for all values of $x$ in the domain"，记为$\forall x P(x)$，读作"for all $x, P(x)$"；
 - 论域 (domain of discourse/universe of discourse)：谓词变元的取值范围；
 - 反例 (counterexample)：用于证明全称量词的否定；
 
@@ -161,12 +161,12 @@ $$
 
 #### 存在量词 (Existential Quantifier)
 
-- "$p(x)$ for some values of $x$ in the domain"，记为$\exists x p(x)$，读作"for some $x$ $p(x)$"；
+- "$p(x)$ for some values of $x$ in the domain"，记为$\exists x P(x)$，读作"for some $x$ $P(x)$"；
 
 ??? note "多种表达"
 
-    - there is an $x$ such that $p(x)$;
-    - there is at least one $x$ such that $p(x)$;
+    - there is an $x$ such that $P(x)$;
+    - there is at least one $x$ such that $P(x)$;
 
 ### 唯一性量词 (Uniqueness Quantifier)
 
@@ -184,18 +184,18 @@ $$
 ### 变量绑定 (Binding Variables)
 
 - 量词绑定 (binding variables)：量词限定了变量的范围；
-  - 命题函数中的所有变量出现必须是被约束的或是等于某个特定值的；
+    - 命题函数中的所有变量出现必须是被约束的或是等于某个特定值的；
 - 自由变量 (free variables)：未被量词限定的变量；
 
 ### 涉及量词的逻辑等价式 (Logical Equivalences Involving Quantifiers)
 
-- $\forall x p(x) \land \forall x q(x) \equiv \forall x (p(x) \land q(x))$；
-- $\exists x p(x) \lor \exists x q(x) \equiv \exists x (p(x) \lor q(x))$；
+- $\forall x P(x) \land \forall x Q(x) \equiv \forall x (P(x) \land Q(x))$；
+- $\exists x P(x) \lor \exists x Q(x) \equiv \exists x (P(x) \lor Q(x))$；
 
 ??? note "注意"
 
-    - $\forall x p(x) \lor \forall x q(x) \neq \forall x (p(x) \lor q(x))$；
-    - $\exists x p(x) \land \exists x q(x) \neq \exists x (p(x) \land q(x))$；
+    - $\forall x P(x) \lor \forall x Q(x) \nLeftrightarrow \forall x (P(x) \lor Q(x))$；
+    - $\exists x P(x) \land \exists x Q(x) \nLeftrightarrow \exists x (P(x) \land Q(x))$；
 
 - 带量词的德摩根定律：
     - $\neg \forall x p(x) \equiv \exists x \neg p(x)$；
