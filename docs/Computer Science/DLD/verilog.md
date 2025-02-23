@@ -6,7 +6,7 @@
 	+ 想要好好学Verilog语法的话，推荐[HDLBits](https://hdlbits.01xz.net/wiki/Main_Page)(用来刷题)和[菜鸟教程](https://www.runoob.com/)
 
 <div style="text-align: center; margin-top: 15px;">
-<img src="images/Verilog/Quicker_20240525_142536.png" width="50%" style="margin: 0 auto;">
+<img src="./images/Verilog/Quicker_20240525_142536.png" width="50%" style="margin: 0 auto;">
 </div>
 
 ``` Verilog
@@ -23,7 +23,7 @@ endmodule
 
 ---
 <div style="text-align: center; margin-top: 15px;">
-<img src="images/Verilog/Quicker_20240525_143245.png" width="60%" style="margin: 0 auto;">
+<img src="./images/Verilog/Quicker_20240525_143245.png" width="60%" style="margin: 0 auto;">
 </div>
 
 ``` Verilog
