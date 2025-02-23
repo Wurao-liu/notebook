@@ -173,15 +173,22 @@ nav:
       - Computer Science/FDS/index.md
     - 数字逻辑设计:
       - Computer Science/DLD/index.md
+      - Computer Science/DLD/1.md
+      - Computer Science/DLD/2.md
+      - Computer Science/DLD/3.md
+      - Computer Science/DLD/4.md
+      - Computer Science/DLD/5.md
+      - Computer Science/DLD/6.md
+      - Computer Science/DLD/7.md
+      - Computer Science/DLD/verilog.md
+      - Computer Science/DLD/words.md
   - Other Courses: 
     - OtherCourses/index.md
     - 数学相关:
       - OtherCourses/math/index.md
-      - 微积分（甲）II:
-        - OtherCourses/math/calc/index.md
       - 离散数学及其应用:
         - OtherCourses/math/dm/index.md
-        - Logic and Proofs: OtherCourses/math/dm/chap_1.md
+        - OtherCourses/math/dm/chap_1.md
   - Tools:
     - Tools/index.md
     - LaTeX: Tools/LaTeX.md 

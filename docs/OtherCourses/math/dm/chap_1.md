@@ -1,4 +1,4 @@
-# The Foundations: Logic and Proofs
+# Chap 1 The Foundations: Logic and Proofs
 ## 命题逻辑 (Propositional Logic)
 ### 命题 (Propositions)
 
@@ -32,7 +32,7 @@
 
 - 条件语句 (conditional statements or implication)：$p \rightarrow q$；
     - $p$为假设 (hypothesis/antecedent/premise)，$q$为结论 (conclusion/consequence)；
-    - 若$p$为真，$q$为假，则条件语句为假；其余情况均为真
+    - 若$p$为真，$q$为假，则条件语句为假；其余情况均为真；
 
 ??? note "多种表达"
 
