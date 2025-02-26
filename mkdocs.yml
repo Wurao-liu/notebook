@@ -173,14 +173,14 @@ nav:
       - Computer Science/FDS/index.md
     - 数字逻辑设计:
       - Computer Science/DLD/index.md
-      - Computer Science/DLD/1.md
-      - Computer Science/DLD/2.md
-      - Computer Science/DLD/3.md
-      - Computer Science/DLD/4.md
-      - Computer Science/DLD/5.md
-      - Computer Science/DLD/6.md
-      - Computer Science/DLD/7.md
-      - Computer Science/DLD/verilog.md
+      - Computer Science/DLD/Chap01.md
+      - Computer Science/DLD/Chap02.md
+      - Computer Science/DLD/Chap03.md
+      - Computer Science/DLD/Chap04.md
+      - Computer Science/DLD/Chap05.md
+      - Computer Science/DLD/Chap06.md
+      - Computer Science/DLD/Chap07.md
+      - Computer Science/DLD/glossary.md
       - Computer Science/DLD/words.md
   - Other Courses: 
     - OtherCourses/index.md
