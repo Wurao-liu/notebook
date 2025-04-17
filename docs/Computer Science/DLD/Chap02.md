@@ -213,12 +213,12 @@ $XY+\overline{X}Z+YZ=XY+\overline{X}Z+(X+\overline{X})YZ$，那后面就很简�
 至此，我们得到了 🌰 所对应的 SOM：
 
 $$
-\begin{array}{l}
+\begin{aligned}
     F(X,Y,Z)
     & = \sum m(2,4,5,7) \\
-    & = m_2+m_4+m_5+m_7 \\
+    & = m_2 + m_4 + m_5 + m_7 \\
     & = \overline{X}Y\overline{Z}+X\overline{Y}\,\overline{Z}+X\overline{Y}Z+XYZ
-\end{array}
+\end{aligned}
 $$
 
 再次归纳，使用通俗的话来说，最小项之和更像是“枚举了所有 `1` 的可能”，只要匹配了这个“和”中的某一项（*事实上不做化简的话你也只能满足一项的值取到 `1`*），表达式的值就会变成 `1`；而一个都不匹配的，自然就只能得到 `0`。
@@ -305,40 +305,6 @@ $$
 例如：$M_5 = \overline{X} + Y + \overline{Z} = \overline{ X\overline{Y}Z } = \overline{m}_5$
 
 关于这个发现的更多的例子和说明，可以看下面的第一个练习。
-
----
-
-### 练习
-
-接下来，我们将通过一些例子来进一步强化这些理解，并且挖掘一些神奇的特性。
-
-!!! note ""
-    === "题面"
-        请分别写出如下真值表中 $F$ 和 $\overline{F}$ 的 SOM 和 POM。
-        <figure markdown>![](img/13.png)</figure>
-    === "答案"
-        答案：
-        $$
-        \begin{aligned}
-            F(X,Y,Z)
-            & = \sum m(0,2,5,7) \\
-            & = \overline{X}\,\overline{Y}\,\overline{Z} + \overline{X}Y\overline{Z} + X\overline{Y}Z + XYZ \\
-            & = \prod M(1,3,4,6) \\
-            & = (X+Y+\overline{Z})(X+\overline{Y}+\overline{Z})(\overline{X}+Y+Z)(\overline{X}+\overline{Y}+Z)
-        \end{aligned}
-        $$
-        $$
-        \begin{array}{l}
-            \overline{F}(X,Y,Z)
-            & = \sum m(1,3,4,6) \\
-            & = \overline{X}\,\overline{Y}Z + \overline{X}YZ + X\overline{Y}\,\overline{Z} + XY\overline{Z} \\
-            & = \prod M(0,2,5,7) \\
-            & = (X+Y+Z)(X+\overline{Y}+Z)(\overline{X}+Y+\overline{Z})(\overline{X}+\overline{Y}+\overline{Z})
-        \end{array}
-        $$
-        于是我们发现一件很有意思的事情，$F$ 的 SOM 的下标与 $\overline{F}$ 的 POM 的下标是一样的；当然对于 $F$ 的 POM 和 $\overline{F}$ 的 SOM 也是一样的。这又印证了对称性。
-
-> 之后的练习等我做了再添加x 如果做了的话x 😋
 
 ---
 

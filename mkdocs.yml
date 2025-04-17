@@ -192,7 +192,30 @@ nav:
       - OtherCourses/math/index.md
       - 离散数学及其应用:
         - OtherCourses/math/dm/index.md
-        - OtherCourses/math/dm/chap_1.md
+        - OtherCourses/math/dm/1.md
+        - OtherCourses/math/dm/2.md
+        - OtherCourses/math/dm/3.md
+        - OtherCourses/math/dm/4.md
+        - OtherCourses/math/dm/5.md
+        - OtherCourses/math/dm/6.md
+        - OtherCourses/math/dm/8.md
+        - OtherCourses/math/dm/9.md
+        - OtherCourses/math/dm/10.md
+        - OtherCourses/math/dm/11.md
+        - OtherCourses/math/dm/Glossary.md
+  - Security:
+    - Security/index.md
+    - SJTU-CTF-2025:
+      - Security/SJTU-CTF-2025/index.md
+      - Security/SJTU-CTF-2025/Welcom3.md
+      - Security/SJTU-CTF-2025/女娲补胎.md
+      - Security/SJTU-CTF-2025/Emergency.md
+      - Security/SJTU-CTF-2025/ezCrypt.md
+      - Security/SJTU-CTF-2025/Inaudible.md
+      - Security/SJTU-CTF-2025/IP Hunter 24.md
+      - Security/SJTU-CTF-2025/PyCalc.md
+      - Security/SJTU-CTF-2025/rickroll.md
+      - Security/SJTU-CTF-2025/TIME&POWER.md
   - Tools:
     - Tools/index.md
     - LaTeX: Tools/LaTeX.md 
