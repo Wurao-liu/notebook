@@ -11,14 +11,21 @@ Git 是一个强大的 **分布式版本控制系统 (DVCS, Distributed Version 
 
 #### Git 工作流模型
 
-![图片引自 https://slides.tonycrane.cc/PracticalSkillsTutorial/2023-spring-cs/lec2/#/1/2](./images/model.png "图片引自 https://slides.tonycrane.cc/PracticalSkillsTutorial/2023-spring-cs/lec2/#/1/2")
+<figure markdown="span">
+    <center>
+    ![model](./images/model.png)
+    </center>
+    <figcaption>
+    <small>图片来源：[TonyCrane 的讲义](https://slides.tonycrane.cc/PracticalSkillsTutorial/2023-fall-ckc/lec2/#/1/3)</small>
+    </figcaption>
+</figure>
 
 我们从底向上来理解，可以看到，主要有以下三个部分：
 
 - 工作区：就是你本地的文件夹，包含了所有的文件和文件夹；
 - 本地仓库：就是你本地的 `.git` 文件夹，包含了项目版本历史；
-  - 暂存区：一个临时区域，用来存放你准备提交的文件修改；
-  - 提交历史：提交历史版本查看和管理；
+    - 暂存区：一个临时区域，用来存放你准备提交的文件修改；
+    - 提交历史：提交历史版本查看和管理；
 - 远程仓库：托管在网络服务器（如 GitHub, Gitee, ZJU git）上的项目版本历史，用于备份和协作。
 
 ### Git 配置
@@ -75,13 +82,25 @@ git init
 
 初始化后，这个仓库就会被 Git 所管理，可以看到，其现在在 `main` 上。
 
-![Git 管理](images/image-1.png "Git 管理")
+<figure markdown="span">
+    <center>
+    ![history_2](./images/image-1.png)
+    </center>
+    <figcaption>Git 管理
+    </figcaption>
+</figure>
 
 我们会有一个 `.git` 文件夹来对这个仓库进行版本控制管理，记录这些相关信息。
 
 > 注意：`.git` 文件夹是系统不希望我们去看见和更改的文件夹，所以我们在使用 `ls` 命令时是看不见的；如果想要查看，可以使用 `ls -a` 命令来查看。
 
-![.git 内部结构](images/image.png ".git 内部结构")
+<figure markdown="span">
+    <center>
+    ![history_2](./images/image.png)
+    </center>
+    <figcaption>.git 内部结构
+    </figcaption>
+</figure>
 
 #### 添加文件
 
@@ -101,7 +120,13 @@ nothing added to commit but untracked files present (use "git add" to track)
 
 同时，我们在 VSCode 中也可以看见相关的小标识 `U`。
 
-![Untracked](images/image-2.png "Untracked")
+<figure markdown="span">
+    <center>
+    ![history_2](./images/image-2.png)
+    </center>
+    <figcaption>Untracked
+    </figcaption>
+</figure>
 
 那么接下来，我们就可以使用 `git add` 命令来将其添加到 Git 的管理中。
 
@@ -141,42 +166,49 @@ git commit -m "feat: add hello.c"
 分支是 Git 的一个重要特性，它允许我们在同一个仓库中进行多条线的开发。下面介绍一系列的分支管理命令。
 
 - 创建分支
-  - `git branch <branch_name>`：创建一个新的分支，基于当前 `head` 所在位置；
-  - `git branch <branch_name> <commit_id>`：创建一个新的分支，基于指定的提交 id 所在位置；
+    - `git branch <branch_name>`：创建一个新的分支，基于当前 `head` 所在位置；
+    - `git branch <branch_name> <commit_id>`：创建一个新的分支，基于指定的提交 id 所在位置；
 - 查看分支
-  - `git branch`：查看当前的分支情况；
-  - `git branch -a`：查看所有的分支情况，包括远程分支；
-  - `git show branch`：更详细的分支情况；
+    - `git branch`：查看当前的分支情况；
+    - `git branch -a`：查看所有的分支情况，包括远程分支；
+    - `git show branch`：更详细的分支情况；
 - 切换分支（检出）
-  - `git checkout <branch_name>`：切换到指定的分支；
-  - `git checkout -b <branch_name>`：创建一个新的分支并切换到这个分支；
+    - `git checkout <branch_name>`：切换到指定的分支；
+    - `git checkout -b <branch_name>`：创建一个新的分支并切换到这个分支；
 
 !!! note "关于 checkout"
 
     对于这个命令，我们需要特别注意一些事情，主要是 *Detached HEAD* 的问题。当我们使用 `git checkout <commit_id>` 这个命令的时候，就会出现这个问题。如下图所示，大家可以比较直观地理解到这个事情。
 
-    ![图片引自 https://slides.tonycrane.cc/PracticalSkillsTutorial/2023-spring-cs/lec2/#/2/6](images/image-3.png "图片引自 https://slides.tonycrane.cc/PracticalSkillsTutorial/2023-spring-cs/lec2/#/2/6")
+    <figure markdown="span">
+    <center>
+    ![model](./images/image-3.png)
+    </center>
+    <figcaption>
+    <small>图片来源：[TonyCrane 的讲义](https://slides.tonycrane.cc/PracticalSkillsTutorial/2023-spring-cs/lec2/#/2/6)</small>
+    </figcaption>
+    </figure>
 
     所以说，`git checkout <commit_id>` 这个命令，我们通常用它来查看旧版本，一般不直接在此基础上直接修改提交。
     
     如果我们希望在这个基础上进行修改提交，我们可以回到这个旧版本的时候，再使用 `git checkout -b <branch_name>` 来创建一个新的分支，这样就不会出现 *Detached HEAD* 的问题了。
 
 - 删除分支
-  - `git branch -d <branch_name>`：删除指定的分支；
-  - ``git branch -D <branch_name>``：强制删除指定的分支；
+    - `git branch -d <branch_name>`：删除指定的分支；
+    - ``git branch -D <branch_name>``：强制删除指定的分支；
 - 合并分支
-  - `git merge <branch_name>`：将指定的分支合并到当前分支；
-  - 如果有冲突，会提示我们进行解决，需要手动处理冲突，解决完后需要使用 `git add` 命令来将其添加到暂存区，然后使用 `git commit` 命令来提交；
+    - `git merge <branch_name>`：将指定的分支合并到当前分支；
+    - 如果有冲突，会提示我们进行解决，需要手动处理冲突，解决完后需要使用 `git add` 命令来将其添加到暂存区，然后使用 `git commit` 命令来提交；
 
 #### 一些其他命令
 
 - 修改提交历史
-  1. `git revert <commit_id>`：撤销指定的提交，生成一个新的提交（此次更改的补集），但历史的提交不变；
-  2. `git commit --amend`：修改上一次提交的提交信息；
-  3. `git reset <commit_id>`：回到之前某一提交；
-     - `git reset --hard <commit_id>`：修改 `HEAD` 指针，暂存区和工作区（完全回退）；
-     - `git reset --soft <commit_id>`：只修改 `HEAD` 指针，保留工作区和暂存区的修改；
-     - `git reset --mixed <commit_id>`：修改 `HEAD` 指针和暂存区，保留工作区的修改（默认）；
+    1. `git revert <commit_id>`：撤销指定的提交，生成一个新的提交（此次更改的补集），但历史的提交不变；
+    2. `git commit --amend`：修改上一次提交的提交信息；
+    3. `git reset <commit_id>`：回到之前某一提交；
+          - `git reset --hard <commit_id>`：修改 `HEAD` 指针，暂存区和工作区（完全回退）；
+          - `git reset --soft <commit_id>`：只修改 `HEAD` 指针，保留工作区和暂存区的修改；
+          - `git reset --mixed <commit_id>`：修改 `HEAD` 指针和暂存区，保留工作区的修改（默认）；
   
 ??? tip "AI 解释"
 
@@ -185,27 +217,28 @@ git commit -m "feat: add hello.c"
     `git reset` 命令用于将当前分支的 HEAD 指针移动到指定的提交，同时根据不同的模式，它还会影响暂存区和工作区的内容。以下是三种主要模式的详细讲解：
 
     1. **`git reset --soft <commit_id>`**
-      - **HEAD 指针**：移动到指定的 `<commit_id>`。这意味着你之后的提交历史在 `git log` 中将不再可见（除非你切换到其他包含这些提交的分支）。
-      - **暂存区 (Index)**：**保持不变**。也就是说，在 `<commit_id>` 和你原来 `HEAD` 位置之间的所有更改，现在都会出现在暂存区中，显示为“Changes to be committed”。
-      - **工作区 (Working Directory)**：**保持不变**。你本地文件的内容不会有任何变化。
-      - **用途**：当你提交后发现提交信息有误，或者想把最近的几次提交合并成一个新的提交时，这个模式非常有用。你可以回退 `HEAD`，然后重新 `git commit` 并附上新的提交信息或合并内容。
+          1. **HEAD 指针**：移动到指定的 `<commit_id>`，这意味着你之后的提交历史在 `git log` 中将不再可见（除非你切换到其他包含这些提交的分支）；
+          2. **暂存区 (Index)**：**保持不变**，也就是说，在 `<commit_id>` 和你原来 `HEAD` 位置之间的所有更改，现在都会出现在暂存区中，显示为“Changes to be committed”；
+          3. **工作区 (Working Directory)**：**保持不变**，你本地文件的内容不会有任何变化；
+          4. **用途**：当你提交后发现提交信息有误，或者想把最近的几次提交合并成一个新的提交时，这个模式非常有用，你可以回退 `HEAD`，然后重新 `git commit` 并附上新的提交信息或合并内容。
 
     2. **`git reset --mixed <commit_id>` (这是默认模式)**
-      - **HEAD 指针**：移动到指定的 `<commit_id>`。
-      - **暂存区 (Index)**：**被重置**。暂存区的内容会更新为 `<commit_id>` 所指向的快照。也就是说，在 `<commit_id>` 和你原来 `HEAD` 位置之间的所有更改，现在都会从暂存区移出，显示为工作区中的“Changes not staged for commit”（未暂存的更改）。
-      - **工作区 (Working Directory)**：**保持不变**。你本地文件的内容不会有任何变化，但这些更改现在是未暂存状态。
-      - **用途**：当你提交后，发现有些更改不应该包含在内，或者想重新组织暂存区的内容时使用。它会保留工作目录的更改，但撤销了 `git add` 的操作，允许你重新选择要暂存和提交的文件。
+          1. **HEAD 指针**：移动到指定的 `<commit_id>`；
+          2. **暂存区 (Index)**：**被重置**，暂存区的内容会更新为 `<commit_id>` 所指向的快照，也就是说，在  `<commit_id>` 和你原来 `HEAD` 位置之间的所有更改，现在都会从暂存区移出，显示为工作区中的“Changes not staged for commit”（未暂存的更改）；
+          3. **工作区 (Working Directory)**：**保持不变**，你本地文件的内容不会有任何变化，但这些更改现在是未暂存状态；
+          4. **用途**：当你提交后，发现有些更改不应该包含在内，或者想重新组织暂存区的内容时使用，它会保留工作目录的更改，但撤销了 `git add` 的操作，允许你重新选择要暂存和提交的文件。
 
     3. **`git reset --hard <commit_id>`**
-      - **HEAD 指针**：移动到指定的 `<commit_id>`。
-      - **暂存区 (Index)**：**被重置**。暂存区的内容会更新为 `<commit_id>` 所指向的快照。
-      - **工作区 (Working Directory)**：**被重置**。工作区的文件内容会完全恢复到 `<commit_id>` 时的状态。**这意味着所有在 `<commit_id>` 之后所做的更改（无论是已暂存还是未暂存的）都会丢失！**
-      - **用途**：当你确定要彻底丢弃某次提交之后的所有本地更改时使用。这是一个具有破坏性的操作，因为工作区的更改会丢失且通常无法恢复（除非你有其他备份或通过 `git reflog` 尝试恢复，但这并不总是可行）。**请谨慎使用此命令。**
+          1. **HEAD 指针**：移动到指定的 `<commit_id>`；
+          2. **暂存区 (Index)**：**被重置**，暂存区的内容会更新为 `<commit_id>` 所指向的快照；
+          3. **工作区 (Working Directory)**：**被重置**，工作区的文件内容会完全恢复到 `<commit_id>` 时的状态，**这意味着所有在 `<commit_id>` 之后所做的更改（无论是已暂存还是未暂存的）都会丢失！**；
+          4. **用途**：当你确定要彻底丢弃某次提交之后的所有本地更改时使用，这是一个具有破坏性的操作，因为工作区的更改会丢失且通常无法恢复（除非你有其他备份或通过 `git reflog` 尝试恢复，但这并不总是可行）。**请谨慎使用此命令。**
 
     总结来说：
-      - `--soft`：只动 `HEAD`。
-      - `--mixed`：动 `HEAD` 和暂存区。
-      - `--hard`：动 `HEAD`、暂存区和工作区。
+
+    - `--soft`：只动 `HEAD`。
+    - `--mixed`：动 `HEAD` 和暂存区。
+    - `--hard`：动 `HEAD`、暂存区和工作区。
 
     在使用 `git reset` 时，特别是 `--hard` 模式，请确保你清楚其后果，因为它可能会导致数据丢失。
 
@@ -226,10 +259,10 @@ git commit -m "feat: add hello.c"
 我们在前面已经简单地看过一些 VSCode 集成 Git 的功能了，这里我们再简单地介绍一下。
 
 - 版本控制：在左侧的活动栏中，点击 `Source Control` 图标，可以查看当前的版本控制状态，里面提供了比较直观的图形化界面，里面集成了非常多的功能，方便我们进行管理操作；
-  - 提交：在 `Source Control` 中，可以直接进行提交操作；
-  - 分支管理：在 `Source Control` 中，可以直接进行分支的创建、切换、删除等操作；
-  - 比较差异：我们可以直观看到具体什么地方产生了变动；
-  - ...
+    - 提交：在 `Source Control` 中，可以直接进行提交操作；
+    - 分支管理：在 `Source Control` 中，可以直接进行分支的创建、切换、删除等操作；
+    - 比较差异：我们可以直观看到具体什么地方产生了变动；
+    - ...
 - 在工作区，每一个文件的状态会有相关的颜色和标识，来表明此时这个文件所处的状态
 - 在文件内部，也会有相应的一些颜色标识在行号右面，来注明到底是什么地方进行了修改，比如有绿色实线表示新增的行，蓝色虚线表示修改的行等。
 - 此外，还可以使用 **GitLens** 插件来增强 VSCode 的 Git 功能，提供了更多的功能，可以具体看到每一行的修改历史、作者、时间等信息，方便我们进行版本控制和协作开发。
@@ -245,7 +278,14 @@ git commit -m "feat: add hello.c"
 - `git push`：将本地的提交推送到远程版本库；
 - `git pull`：从远程版本库拉取最新的提交到本地，等价于 `fetch` + `merge`；
 
-![图片引自 https://ckc-agc.bowling233.top/programming/24fall/lec3/#_10](images/image-4.png "图片引自 https://ckc-agc.bowling233.top/programming/24fall/lec3/#_10")
+<figure markdown="span">
+    <center>
+    ![model](./images/image-4.png)
+    </center>
+    <figcaption>
+    <small>图片来源：[Xecades 的讲义](https://ckc-agc.bowling233.top/programming/24fall/lec3/#_10)</small>
+    </figcaption>
+</figure>
 
 我们可以使用 `ssh` 协议来连接远程版本库，这里就不再多说了。
 
@@ -255,17 +295,31 @@ Github 是一个基于 Git 的代码托管平台，提供了 Git 的远程版本
 
 关于 github 的 repo，可以看下面的图片：
 
-![图片引自 https://slides.tonycrane.cc/PracticalSkillsTutorial/2023-spring-cs/lec2/#/4/2)](images/image-5.png "图片引自 https://slides.tonycrane.cc/PracticalSkillsTutorial/2023-spring-cs/lec2/#/4/2")
+<figure markdown="span">
+    <center>
+    ![model](./images/image-5.png)
+    </center>
+    <figcaption>
+    <small>图片来源：[TonyCrane 的讲义](https://slides.tonycrane.cc/PracticalSkillsTutorial/2023-spring-cs/lec2/#/4/2)</small>
+    </figcaption>
+</figure>
 
 - issues:
-  - 用于记录项目中的 bug 和功能请求，也可以寻求帮助并进行讨论；
-  - 一般使用 markdown 语言来书写；
+    - 用于记录项目中的 bug 和功能请求，也可以寻求帮助并进行讨论；
+    - 一般使用 markdown 语言来书写；
 - pull requests:
-  - 用于提交代码的请求，可以进行代码审查和讨论，来更好地构建这个项目；
+    - 用于提交代码的请求，可以进行代码审查和讨论，来更好地构建这个项目；
 
 进行协作一般的流程为：
 
-![图片引自 https://slides.tonycrane.cc/PracticalSkillsTutorial/2023-spring-cs/lec2/#/4/4](images/image-6.png "图片引自 https://slides.tonycrane.cc/PracticalSkillsTutorial/2023-spring-cs/lec2/#/4/4")
+<figure markdown="span">
+    <center>
+    ![model](./images/image-6.png)
+    </center>
+    <figcaption>
+    <small>图片来源：[TonyCrane 的讲义](https://slides.tonycrane.cc/PracticalSkillsTutorial/2023-spring-cs/lec2/#/4/4)</small>
+    </figcaption>
+</figure>
 
 ## 开源项目基础
 ### 许可证
