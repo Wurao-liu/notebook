@@ -220,6 +220,7 @@ nav:
     - Tools/index.md
     - LaTeX: Tools/LaTeX.md 
     - MkDocs: Tools/mkdocs.md
+    - Git: Tools/Git.md
   - Life:
     - Life/index.md
     - 生活记录:
