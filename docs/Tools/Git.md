@@ -11,7 +11,7 @@ Git 是一个强大的 **分布式版本控制系统 (DVCS, Distributed Version 
 
 #### Git 工作流模型
 
-![图片引自 https://slides.tonycrane.cc/PracticalSkillsTutorial/2023-spring-cs/lec2/#/1/2](./images/model.png)
+![图片引自 https://slides.tonycrane.cc/PracticalSkillsTutorial/2023-spring-cs/lec2/#/1/2](./images/model.png "图片引自 https://slides.tonycrane.cc/PracticalSkillsTutorial/2023-spring-cs/lec2/#/1/2")
 
 我们从底向上来理解，可以看到，主要有以下三个部分：
 
@@ -75,13 +75,13 @@ git init
 
 初始化后，这个仓库就会被 Git 所管理，可以看到，其现在在 `main` 上。
 
-![Git 管理](images/image-1.png)
+![Git 管理](images/image-1.png "Git 管理")
 
 我们会有一个 `.git` 文件夹来对这个仓库进行版本控制管理，记录这些相关信息。
 
 > 注意：`.git` 文件夹是系统不希望我们去看见和更改的文件夹，所以我们在使用 `ls` 命令时是看不见的；如果想要查看，可以使用 `ls -a` 命令来查看。
 
-![.git 内部结构](images/image.png)
+![.git 内部结构](images/image.png ".git 内部结构")
 
 #### 添加文件
 
@@ -101,7 +101,7 @@ nothing added to commit but untracked files present (use "git add" to track)
 
 同时，我们在 VSCode 中也可以看见相关的小标识 `U`。
 
-![Untracked](images/image-2.png)
+![Untracked](images/image-2.png "Untracked")
 
 那么接下来，我们就可以使用 `git add` 命令来将其添加到 Git 的管理中。
 
@@ -155,7 +155,7 @@ git commit -m "feat: add hello.c"
 
     对于这个命令，我们需要特别注意一些事情，主要是 *Detached HEAD* 的问题。当我们使用 `git checkout <commit_id>` 这个命令的时候，就会出现这个问题。如下图所示，大家可以比较直观地理解到这个事情。
 
-    ![图片引自 https://slides.tonycrane.cc/PracticalSkillsTutorial/2023-spring-cs/lec2/#/2/6](images/image-3.png)
+    ![图片引自 https://slides.tonycrane.cc/PracticalSkillsTutorial/2023-spring-cs/lec2/#/2/6](images/image-3.png "图片引自 https://slides.tonycrane.cc/PracticalSkillsTutorial/2023-spring-cs/lec2/#/2/6")
 
     所以说，`git checkout <commit_id>` 这个命令，我们通常用它来查看旧版本，一般不直接在此基础上直接修改提交。
     
@@ -178,36 +178,36 @@ git commit -m "feat: add hello.c"
      - `git reset --soft <commit_id>`：只修改 `HEAD` 指针，保留工作区和暂存区的修改；
      - `git reset --mixed <commit_id>`：修改 `HEAD` 指针和暂存区，保留工作区的修改（默认）；
   
-  ??? tip "AI 解释"
+??? tip "AI 解释"
 
-      下面附上一段 AI 解释的文字，供大家参考。  
+    下面附上一段 AI 解释的文字，供大家参考。  
 
-      `git reset` 命令用于将当前分支的 HEAD 指针移动到指定的提交，同时根据不同的模式，它还会影响暂存区和工作区的内容。以下是三种主要模式的详细讲解：
+    `git reset` 命令用于将当前分支的 HEAD 指针移动到指定的提交，同时根据不同的模式，它还会影响暂存区和工作区的内容。以下是三种主要模式的详细讲解：
 
-       1. **`git reset --soft <commit_id>`**
-          - **HEAD 指针**：移动到指定的 `<commit_id>`。这意味着你之后的提交历史在 `git log` 中将不再可见（除非你切换到其他包含这些提交的分支）。
-          - **暂存区 (Index)**：**保持不变**。也就是说，在 `<commit_id>` 和你原来 `HEAD` 位置之间的所有更改，现在都会出现在暂存区中，显示为“Changes to be committed”。
-          - **工作区 (Working Directory)**：**保持不变**。你本地文件的内容不会有任何变化。
-          - **用途**：当你提交后发现提交信息有误，或者想把最近的几次提交合并成一个新的提交时，这个模式非常有用。你可以回退 `HEAD`，然后重新 `git commit` 并附上新的提交信息或合并内容。
+    1. **`git reset --soft <commit_id>`**
+      - **HEAD 指针**：移动到指定的 `<commit_id>`。这意味着你之后的提交历史在 `git log` 中将不再可见（除非你切换到其他包含这些提交的分支）。
+      - **暂存区 (Index)**：**保持不变**。也就是说，在 `<commit_id>` 和你原来 `HEAD` 位置之间的所有更改，现在都会出现在暂存区中，显示为“Changes to be committed”。
+      - **工作区 (Working Directory)**：**保持不变**。你本地文件的内容不会有任何变化。
+      - **用途**：当你提交后发现提交信息有误，或者想把最近的几次提交合并成一个新的提交时，这个模式非常有用。你可以回退 `HEAD`，然后重新 `git commit` 并附上新的提交信息或合并内容。
 
-       2. **`git reset --mixed <commit_id>` (这是默认模式)**
-          - **HEAD 指针**：移动到指定的 `<commit_id>`。
-          - **暂存区 (Index)**：**被重置**。暂存区的内容会更新为 `<commit_id>` 所指向的快照。也就是说，在 `<commit_id>` 和你原来 `HEAD` 位置之间的所有更改，现在都会从暂存区移出，显示为工作区中的“Changes not staged for commit”（未暂存的更改）。
-          - **工作区 (Working Directory)**：**保持不变**。你本地文件的内容不会有任何变化，但这些更改现在是未暂存状态。
-          - **用途**：当你提交后，发现有些更改不应该包含在内，或者想重新组织暂存区的内容时使用。它会保留工作目录的更改，但撤销了 `git add` 的操作，允许你重新选择要暂存和提交的文件。
+    2. **`git reset --mixed <commit_id>` (这是默认模式)**
+      - **HEAD 指针**：移动到指定的 `<commit_id>`。
+      - **暂存区 (Index)**：**被重置**。暂存区的内容会更新为 `<commit_id>` 所指向的快照。也就是说，在 `<commit_id>` 和你原来 `HEAD` 位置之间的所有更改，现在都会从暂存区移出，显示为工作区中的“Changes not staged for commit”（未暂存的更改）。
+      - **工作区 (Working Directory)**：**保持不变**。你本地文件的内容不会有任何变化，但这些更改现在是未暂存状态。
+      - **用途**：当你提交后，发现有些更改不应该包含在内，或者想重新组织暂存区的内容时使用。它会保留工作目录的更改，但撤销了 `git add` 的操作，允许你重新选择要暂存和提交的文件。
 
-       3. **`git reset --hard <commit_id>`**
-          - **HEAD 指针**：移动到指定的 `<commit_id>`。
-          - **暂存区 (Index)**：**被重置**。暂存区的内容会更新为 `<commit_id>` 所指向的快照。
-          - **工作区 (Working Directory)**：**被重置**。工作区的文件内容会完全恢复到 `<commit_id>` 时的状态。**这意味着所有在 `<commit_id>` 之后所做的更改（无论是已暂存还是未暂存的）都会丢失！**
-          - **用途**：当你确定要彻底丢弃某次提交之后的所有本地更改时使用。这是一个具有破坏性的操作，因为工作区的更改会丢失且通常无法恢复（除非你有其他备份或通过 `git reflog` 尝试恢复，但这并不总是可行）。**请谨慎使用此命令。**
+    3. **`git reset --hard <commit_id>`**
+      - **HEAD 指针**：移动到指定的 `<commit_id>`。
+      - **暂存区 (Index)**：**被重置**。暂存区的内容会更新为 `<commit_id>` 所指向的快照。
+      - **工作区 (Working Directory)**：**被重置**。工作区的文件内容会完全恢复到 `<commit_id>` 时的状态。**这意味着所有在 `<commit_id>` 之后所做的更改（无论是已暂存还是未暂存的）都会丢失！**
+      - **用途**：当你确定要彻底丢弃某次提交之后的所有本地更改时使用。这是一个具有破坏性的操作，因为工作区的更改会丢失且通常无法恢复（除非你有其他备份或通过 `git reflog` 尝试恢复，但这并不总是可行）。**请谨慎使用此命令。**
 
-        总结来说：
-          - `--soft`：只动 `HEAD`。
-          - `--mixed`：动 `HEAD` 和暂存区。
-          - `--hard`：动 `HEAD`、暂存区和工作区。
+    总结来说：
+      - `--soft`：只动 `HEAD`。
+      - `--mixed`：动 `HEAD` 和暂存区。
+      - `--hard`：动 `HEAD`、暂存区和工作区。
 
-        在使用 `git reset` 时，特别是 `--hard` 模式，请确保你清楚其后果，因为它可能会导致数据丢失。
+    在使用 `git reset` 时，特别是 `--hard` 模式，请确保你清楚其后果，因为它可能会导致数据丢失。
 
 ### .gitignore 文件
 
@@ -245,7 +245,7 @@ git commit -m "feat: add hello.c"
 - `git push`：将本地的提交推送到远程版本库；
 - `git pull`：从远程版本库拉取最新的提交到本地，等价于 `fetch` + `merge`；
 
-![图片引自 https://ckc-agc.bowling233.top/programming/24fall/lec3/#_10](images/image-4.png)
+![图片引自 https://ckc-agc.bowling233.top/programming/24fall/lec3/#_10](images/image-4.png "图片引自 https://ckc-agc.bowling233.top/programming/24fall/lec3/#_10")
 
 我们可以使用 `ssh` 协议来连接远程版本库，这里就不再多说了。
 
@@ -255,7 +255,7 @@ Github 是一个基于 Git 的代码托管平台，提供了 Git 的远程版本
 
 关于 github 的 repo，可以看下面的图片：
 
-![图片引自 https://slides.tonycrane.cc/PracticalSkillsTutorial/2023-spring-cs/lec2/#/4/2)](images/image-5.png)
+![图片引自 https://slides.tonycrane.cc/PracticalSkillsTutorial/2023-spring-cs/lec2/#/4/2)](images/image-5.png "图片引自 https://slides.tonycrane.cc/PracticalSkillsTutorial/2023-spring-cs/lec2/#/4/2")
 
 - issues:
   - 用于记录项目中的 bug 和功能请求，也可以寻求帮助并进行讨论；
@@ -265,7 +265,7 @@ Github 是一个基于 Git 的代码托管平台，提供了 Git 的远程版本
 
 进行协作一般的流程为：
 
-![图片引自 https://slides.tonycrane.cc/PracticalSkillsTutorial/2023-spring-cs/lec2/#/4/4](images/image-6.png)
+![图片引自 https://slides.tonycrane.cc/PracticalSkillsTutorial/2023-spring-cs/lec2/#/4/4](images/image-6.png "图片引自 https://slides.tonycrane.cc/PracticalSkillsTutorial/2023-spring-cs/lec2/#/4/4")
 
 ## 开源项目基础
 ### 许可证
