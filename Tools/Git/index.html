@@ -6,9 +6,11 @@
 <meta content="勿扰的小世界" name="description"/>
 <meta content="勿扰" name="author"/>
 <link href="https://wurao-liu.github.io/notebook/Tools/Git/" rel="canonical"/>
+<link href="../mkdocs/" rel="prev"/>
+<link href="../../Life/" rel="next"/>
 <link href="../../assets/logo.png" rel="icon"/>
 <meta content="mkdocs-1.6.1, mkdocs-material-9.6.12" name="generator"/>
-<title>Git &amp; GitHub - 勿扰的小世界</title>
+<title>Git - 勿扰的小世界</title>
 <link href="../../assets/stylesheets/main.2afb09e1.min.css" rel="stylesheet"/>
 <link href="../../assets/stylesheets/palette.06af60db.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -64,7 +66,7 @@
 <div class="md-header__topic" data-md-component="header-topic">
 <span class="md-ellipsis">
             
-              Git &amp; GitHub
+              Git
             
           </span>
 </div>
@@ -173,7 +175,7 @@
 
         </a>
 </li>
-<li class="md-tabs__item">
+<li class="md-tabs__item md-tabs__item--active">
 <a class="md-tabs__link" href="../">
           
   
@@ -636,8 +638,8 @@
 </ul>
 </nav>
 </li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" id="__nav_5" type="checkbox"/>
+<li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" id="__nav_5" type="checkbox"/>
 <div class="md-nav__link md-nav__container">
 <a class="md-nav__link" href="../">
 <span class="md-ellipsis">
@@ -645,11 +647,11 @@
     
   </span>
 </a>
-<label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+<label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
 <span class="md-nav__icon md-icon"></span>
 </label>
 </div>
-<nav aria-expanded="false" aria-labelledby="__nav_5_label" class="md-nav" data-md-level="1">
+<nav aria-expanded="true" aria-labelledby="__nav_5_label" class="md-nav" data-md-level="1">
 <label class="md-nav__title" for="__nav_5">
 <span class="md-nav__icon md-icon"></span>
             Tools
@@ -670,6 +672,183 @@
     
   </span>
 </a>
+</li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+<span class="md-ellipsis">
+    Git
+    
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
+<span class="md-ellipsis">
+    Git
+    
+  </span>
+</a>
+<nav aria-label="目录" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#git-介绍">
+<span class="md-ellipsis">
+      Git 介绍
+    </span>
+</a>
+<nav aria-label="Git 介绍" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#什么是-git">
+<span class="md-ellipsis">
+      什么是 Git
+    </span>
+</a>
+<nav aria-label="什么是 Git" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#简介">
+<span class="md-ellipsis">
+      简介
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#git-工作流模型">
+<span class="md-ellipsis">
+      Git 工作流模型
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#git-配置">
+<span class="md-ellipsis">
+      Git 配置
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#基础用法">
+<span class="md-ellipsis">
+      基础用法
+    </span>
+</a>
+<nav aria-label="基础用法" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#初始化仓库">
+<span class="md-ellipsis">
+      初始化仓库
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#添加文件">
+<span class="md-ellipsis">
+      添加文件
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#提交更改">
+<span class="md-ellipsis">
+      提交更改
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#分支管理">
+<span class="md-ellipsis">
+      分支管理
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#一些其他命令">
+<span class="md-ellipsis">
+      一些其他命令
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#gitignore-文件">
+<span class="md-ellipsis">
+      .gitignore 文件
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#vscode-集成-git">
+<span class="md-ellipsis">
+      VSCode 集成 Git
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#github-介绍">
+<span class="md-ellipsis">
+      Github 介绍
+    </span>
+</a>
+<nav aria-label="Github 介绍" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#远程版本库">
+<span class="md-ellipsis">
+      远程版本库
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#github-简介">
+<span class="md-ellipsis">
+      GitHub 简介
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#开源项目基础">
+<span class="md-ellipsis">
+      开源项目基础
+    </span>
+</a>
+<nav aria-label="开源项目基础" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#许可证">
+<span class="md-ellipsis">
+      许可证
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#参考资料">
+<span class="md-ellipsis">
+      参考资料
+    </span>
+</a>
+</li>
+</ul>
+</nav>
 </li>
 </ul>
 </nav>
@@ -790,9 +969,9 @@
 </nav>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#git-安装及配置">
+<a class="md-nav__link" href="#git-配置">
 <span class="md-ellipsis">
-      Git 安装及配置
+      Git 配置
     </span>
 </a>
 </li>
@@ -802,18 +981,57 @@
       基础用法
     </span>
 </a>
-</li>
+<nav aria-label="基础用法" class="md-nav">
+<ul class="md-nav__list">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#vscode-集成-git">
+<a class="md-nav__link" href="#初始化仓库">
 <span class="md-ellipsis">
-      VSCode 集成 Git
+      初始化仓库
     </span>
 </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#添加文件">
+<span class="md-ellipsis">
+      添加文件
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#提交更改">
+<span class="md-ellipsis">
+      提交更改
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#分支管理">
+<span class="md-ellipsis">
+      分支管理
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#一些其他命令">
+<span class="md-ellipsis">
+      一些其他命令
+    </span>
+</a>
+</li>
+</ul>
+</nav>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#gitignore-文件">
 <span class="md-ellipsis">
       .gitignore 文件
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#vscode-集成-git">
+<span class="md-ellipsis">
+      VSCode 集成 Git
     </span>
 </a>
 </li>
@@ -860,13 +1078,6 @@
     </span>
 </a>
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#开源协议">
-<span class="md-ellipsis">
-      开源协议
-    </span>
-</a>
-</li>
 </ul>
 </nav>
 </li>
@@ -892,7 +1103,7 @@
 </a>
 <h1 id="git--github">Git &amp; GitHub<a class="headerlink" href="#git--github" title="Permanent link">⚓︎</a></h1>
 <div style="margin-top: -30px; font-size: 0.75em; opacity: 0.7;">
-<p><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z"></path></svg></span> 约<span class="heti-skip"><span class="heti-spacing"> </span>282<span class="heti-spacing"> </span></span>个字 <span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M21 17H7V3h14m0-2H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2M3 5H1v16a2 2 0 0 0 2 2h16v-2H3m12.96-10.71-2.75 3.54-1.96-2.36L8.5 15h11z"></path></svg></span> <span>1<span class="heti-spacing"> </span></span>张图片 <span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z"></path></svg></span> 预计阅读时间<span class="heti-skip"><span class="heti-spacing"> </span>1<span class="heti-spacing"> </span></span>分钟</p>
+<p><span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10h-2a8 8 0 0 1-8 8 8 8 0 0 1-8-8 8 8 0 0 1 8-8zm6.78 1a.7.7 0 0 0-.48.2l-1.22 1.21 2.5 2.5L20.8 5.7c.26-.26.26-.7 0-.95L19.25 3.2c-.13-.13-.3-.2-.47-.2m-2.41 2.12L9 12.5V15h2.5l7.37-7.38z"></path></svg></span> 约<span class="heti-skip"><span class="heti-spacing"> </span>3903<span class="heti-spacing"> </span></span>个字 <span class="twemoji"><svg viewbox="0 0 640 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6m80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3l89.3 89.4-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3"></path></svg></span> <span>20<span class="heti-spacing"> </span></span>行代码 <span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M21 17H7V3h14m0-2H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2M3 5H1v16a2 2 0 0 0 2 2h16v-2H3m12.96-10.71-2.75 3.54-1.96-2.36L8.5 15h11z"></path></svg></span> <span>8<span class="heti-spacing"> </span></span>张图片 <span class="twemoji"><svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 20c4.42 0 8-3.58 8-8s-3.58-8-8-8-8 3.58-8 8 3.58 8 8 8m0-18c5.5 0 10 4.5 10 10s-4.5 10-10 10C6.47 22 2 17.5 2 12S6.5 2 12 2m.5 11H11V7h1.5v4.26l3.7-2.13.75 1.3z"></path></svg></span> 预计阅读时间<span class="heti-skip"><span class="heti-spacing"> </span>13<span class="heti-spacing"> </span></span>分钟</p>
 </div>
 <h2 id="git-介绍"><span>Git<span class="heti-spacing"> </span></span>介绍<a class="headerlink" href="#git-介绍" title="Permanent link">⚓︎</a></h2>
 <h3 id="什么是-git">什么是<span><span class="heti-spacing"> </span>Git</span><a class="headerlink" href="#什么是-git" title="Permanent link">⚓︎</a></h3>
@@ -904,7 +1115,7 @@
 <li>方便进行团队协作，让多人高效地在同一个项目上工作；</li>
 </ul>
 <h4 id="git-工作流模型"><span>Git<span class="heti-spacing"> </span></span>工作流模型<a class="headerlink" href="#git-工作流模型" title="Permanent link">⚓︎</a></h4>
-<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../figures/model.png"><img alt="图片引自 https://slides.tonycrane.cc/PracticalSkillsTutorial/2023-spring-cs/lec2/ #/1/2" src="../figures/model.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../images/model.png"><img alt="图片引自 https://slides.tonycrane.cc/PracticalSkillsTutorial/2023-spring-cs/lec2/#/1/2" src="../images/model.png"/></a></p>
 <p>我们从底向上来理解，可以看到，主要有以下三个部分：</p>
 <ul>
 <li>工作区：就是你本地的文件夹，包含了所有的文件和文件夹；</li>
@@ -913,23 +1124,229 @@
 <li>提交历史：提交历史版本查看和管理；</li>
 <li>远程仓库：托管在网络服务器（如<span><span class="heti-spacing"> </span>GitHub, Gitee, ZJU git</span>）上的项目版本历史，用于备份和协作。</li>
 </ul>
-<h3 id="git-安装及配置"><span>Git<span class="heti-spacing"> </span></span>安装及配置<a class="headerlink" href="#git-安装及配置" title="Permanent link">⚓︎</a></h3>
+<h3 id="git-配置"><span>Git<span class="heti-spacing"> </span></span>配置<a class="headerlink" href="#git-配置" title="Permanent link">⚓︎</a></h3>
+<p>对于<span class="heti-skip"><span class="heti-spacing"> </span>Git<span class="heti-spacing"> </span></span>的安装，若是<span class="heti-skip"><span class="heti-spacing"> </span>MacOS<span class="heti-spacing"> </span></span>和<span class="heti-skip"><span class="heti-spacing"> </span>Linux<span class="heti-spacing"> </span></span>系统，大部分都是自带的，如果没有，可以直接使用包管理器安装；<span>Windows<span class="heti-spacing"> </span></span>系统可以使用<a href="https://gitforwindows.org/" target="_blank"><span class="heti-skip"><span class="heti-spacing"> </span>Git for Windows<span class="heti-spacing"> </span></span></a>来安装。</p>
+<p>对于<span class="heti-skip"><span class="heti-spacing"> </span>Git<span class="heti-spacing"> </span></span>的配置，主要是设置用户名和邮箱，这两个信息会在每次提交时记录在版本历史中。</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>user.name<span class="w"> </span><span class="s2">"Your Name"</span>
+</span><span id="__span-0-2"><a href="#__codelineno-0-2" id="__codelineno-0-2" name="__codelineno-0-2"></a>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>user.email<span class="w"> </span><span class="s2">"Your Email"</span>
+</span></code></pre></div>
+<p>可以使用 <code>git config --global --list</code> 来查看当前的配置。</p>
+<p>另外，特别要说明的是，我们有时候会有代理的需求，这就需要我们在其配置中设置代理，设置后其就能走我们所设置的代理，有时候速度会更快。一般来说，要么在 <code>.gitconfig</code> 文件中设置，要么在命令行中设置，下面给出命令行设置的一些指令。</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a href="#__codelineno-1-1" id="__codelineno-1-1" name="__codelineno-1-1"></a>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>http.proxy<span class="w"> </span>http://proxy-server:port
+</span><span id="__span-1-2"><a href="#__codelineno-1-2" id="__codelineno-1-2" name="__codelineno-1-2"></a>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>https.proxy<span class="w"> </span>https://proxy-server:port
+</span></code></pre></div>
+<p>这里的 <code>proxy-server</code> 和 <code>port</code> 分别是代理服务器的地址和端口号。</p>
+<p>如果你使用的是<span class="heti-skip"><span class="heti-spacing"> </span>SOCKS<span class="heti-spacing"> </span></span>代理，可以使用以下命令：</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a href="#__codelineno-2-1" id="__codelineno-2-1" name="__codelineno-2-1"></a>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>http.proxy<span class="w"> </span>socks5://proxy-server:port
+</span><span id="__span-2-2"><a href="#__codelineno-2-2" id="__codelineno-2-2" name="__codelineno-2-2"></a>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>https.proxy<span class="w"> </span>socks5://proxy-server:port
+</span></code></pre></div>
+<p>如果需要取消代理，可以使用以下命令：</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a href="#__codelineno-3-1" id="__codelineno-3-1" name="__codelineno-3-1"></a>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>--unset<span class="w"> </span>http.proxy
+</span><span id="__span-3-2"><a href="#__codelineno-3-2" id="__codelineno-3-2" name="__codelineno-3-2"></a>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>--unset<span class="w"> </span>https.proxy
+</span></code></pre></div>
+<p>同样的，上述配置都可以用 <code>git config --global -l</code> 来查看。如果不想要对全局进行设置，那么可以去掉 <code>--global</code> 选项，其余的不变，这样就只会对当前特定的仓库进行设置。</p>
 <h3 id="基础用法">基础用法<a class="headerlink" href="#基础用法" title="Permanent link">⚓︎</a></h3>
-<h3 id="vscode-集成-git"><span>VSCode<span class="heti-spacing"> </span></span>集成<span><span class="heti-spacing"> </span>Git</span><a class="headerlink" href="#vscode-集成-git" title="Permanent link">⚓︎</a></h3>
+<blockquote>
+<p>碎碎念：<span>Git<span class="heti-spacing"> </span></span>的完整用法很多，命令很多，但是常用的一般就是那么几个，所以我认为只要对常用的命令有一个理解，用着用着就熟悉了；对于使用频率没那么高的一些命令，我们大可以边用边查。</p>
+</blockquote>
+<h4 id="初始化仓库">初始化仓库<a class="headerlink" href="#初始化仓库" title="Permanent link">⚓︎</a></h4>
+<p>首先我们需要初始化一个本地仓库，使用 <code>git init</code> 命令来完成。</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a href="#__codelineno-4-1" id="__codelineno-4-1" name="__codelineno-4-1"></a>mkdir<span class="w"> </span>try_git
+</span><span id="__span-4-2"><a href="#__codelineno-4-2" id="__codelineno-4-2" name="__codelineno-4-2"></a><span class="nb">cd</span><span class="w"> </span>try_git
+</span><span id="__span-4-3"><a href="#__codelineno-4-3" id="__codelineno-4-3" name="__codelineno-4-3"></a>git<span class="w"> </span>init
+</span></code></pre></div>
+<p>初始化后，这个仓库就会被<span class="heti-skip"><span class="heti-spacing"> </span>Git<span class="heti-spacing"> </span></span>所管理，可以看到，其现在在 <code>main</code> 上。</p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../images/image-1.png"><img alt="Git 管理" src="../images/image-1.png"/></a></p>
+<p>我们会有一个 <code>.git</code> 文件夹来对这个仓库进行版本控制管理，记录这些相关信息。</p>
+<blockquote>
+<p>注意：<code>.git</code> 文件夹是系统不希望我们去看见和更改的文件夹，所以我们在使用 <code>ls</code> 命令时是看不见的；如果想要查看，可以使用 <code>ls -a</code> 命令来查看。</p>
+</blockquote>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../images/image.png"><img alt=".git 内部结构" src="../images/image.png"/></a></p>
+<h4 id="添加文件">添加文件<a class="headerlink" href="#添加文件" title="Permanent link">⚓︎</a></h4>
+<p>现在我们可以新建一个文件，比如 <code>hello.c</code> 文件，我们可以先看一下文件的状态。使用 <code>git status</code> 命令来查看当前仓库的状态。其输出如下：</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-5-1"><a href="#__codelineno-5-1" id="__codelineno-5-1" name="__codelineno-5-1"></a>On<span class="w"> </span>branch<span class="w"> </span>main
+</span><span id="__span-5-2"><a href="#__codelineno-5-2" id="__codelineno-5-2" name="__codelineno-5-2"></a>No<span class="w"> </span>commits<span class="w"> </span>yet
+</span><span id="__span-5-3"><a href="#__codelineno-5-3" id="__codelineno-5-3" name="__codelineno-5-3"></a>Untracked<span class="w"> </span>files:
+</span><span id="__span-5-4"><a href="#__codelineno-5-4" id="__codelineno-5-4" name="__codelineno-5-4"></a><span class="w">  </span><span class="o">(</span>use<span class="w"> </span><span class="s2">"git add &lt;file&gt;..."</span><span class="w"> </span>to<span class="w"> </span>include<span class="w"> </span><span class="k">in</span><span class="w"> </span>what<span class="w"> </span>will<span class="w"> </span>be<span class="w"> </span>committed<span class="o">)</span>
+</span><span id="__span-5-5"><a href="#__codelineno-5-5" id="__codelineno-5-5" name="__codelineno-5-5"></a>
+</span><span id="__span-5-6"><a href="#__codelineno-5-6" id="__codelineno-5-6" name="__codelineno-5-6"></a><span class="w">  </span>hello.c
+</span><span id="__span-5-7"><a href="#__codelineno-5-7" id="__codelineno-5-7" name="__codelineno-5-7"></a>nothing<span class="w"> </span>added<span class="w"> </span>to<span class="w"> </span>commit<span class="w"> </span>but<span class="w"> </span>untracked<span class="w"> </span>files<span class="w"> </span>present<span class="w"> </span><span class="o">(</span>use<span class="w"> </span><span class="s2">"git add"</span><span class="w"> </span>to<span class="w"> </span>track<span class="o">)</span>
+</span></code></pre></div>
+<p>也就是说现在这个文件是 <strong>Untracked</strong> 的状态，表示这个文件没有被<span class="heti-skip"><span class="heti-spacing"> </span>Git<span class="heti-spacing"> </span></span>所管理，根据其输出提示，我们可以使用 <code>git add</code> 命令来将其添加到<span class="heti-skip"><span class="heti-spacing"> </span>Git<span class="heti-spacing"> </span></span>的管理中。</p>
+<p>同时，我们在<span class="heti-skip"><span class="heti-spacing"> </span>VSCode<span class="heti-spacing"> </span></span>中也可以看见相关的小标识 <code>U</code>。</p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../images/image-2.png"><img alt="Untracked" src="../images/image-2.png"/></a></p>
+<p>那么接下来，我们就可以使用 <code>git add</code> 命令来将其添加到<span class="heti-skip"><span class="heti-spacing"> </span>Git<span class="heti-spacing"> </span></span>的管理中。</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-6-1"><a href="#__codelineno-6-1" id="__codelineno-6-1" name="__codelineno-6-1"></a>git<span class="w"> </span>add<span class="w"> </span>hello.c
+</span></code></pre></div>
+<blockquote>
+<p>如果我们要取消一个新文件的暂存，可以使用 <code>git rm --cached &lt;file&gt;</code> 命令来完成。</p>
+</blockquote>
+<h4 id="提交更改">提交更改<a class="headerlink" href="#提交更改" title="Permanent link">⚓︎</a></h4>
+<p>接下来，我们需要提交这个文件的更改信息，使用 <code>git commit</code> 命令来完成。具体来说：</p>
+<p></p><div class="language-bash highlight"><pre><span></span><code><span id="__span-7-1"><a href="#__codelineno-7-1" id="__codelineno-7-1" name="__codelineno-7-1"></a>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">"feat: add hello.c"</span>
+</span></code></pre></div>
+这里的 <code>-m</code> 参数表示我们要添加一个提交信息，后面的字符串就是我们要添加的提交信息。
+<div class="admonition note">
+<p class="admonition-title">注意</p>
+<p>这里提交的信息是需要一些规范的，大致来说，可以使用 <code>&lt;type&gt;(&lt;scope&gt;): &lt;subject&gt;</code> 的格式来进行提交信息的书写。
+其中，<code>&lt;type&gt;</code> 表示提交的类型，比如 <code>feat</code>、<code>fix</code>、<code>docs</code> 等等；<code>&lt;scope&gt;</code> 表示提交的范围，比如 <code>core</code>、<code>ui</code> 等等；<code>&lt;subject&gt;</code> 表示提交的主题，比如 <code>add hello.c</code>。</p>
+<p>进行规范的意图是为了让我们在查看提交历史时，能够快速地了解每次做出相关修改的一些信息，便于我们进行控制和合作。</p>
+</div>
+<p>在我们提交之后，会有一个标识符 <code>commit id</code> 来标识这个提交，这个提交<span class="heti-skip"><span class="heti-spacing"> </span>id<span class="heti-spacing"> </span></span>是一个 <code>SHA-1</code> 哈希值，我们可以使用前几位来代表这次提交。使用 <code>git show &lt;commit id&gt;</code> 命令可以查看这次提交的详细信息。</p>
+<p>我们可以使用 <code>git log</code> 命令来查看提交历史，同时，此命令还有一些额外可以添加的参数来帮助我们更好地查看。比如有：</p>
+<ul>
+<li><code>--oneline</code>：以单行的形式查看提交历史；</li>
+<li><code>--graph</code>：显示分支结构；</li>
+<li><code>--all</code>：查看所有的提交历史；</li>
+</ul>
+<p>此外，还需要我们注意的有 <code>git diff &lt;A&gt; &lt;B&gt;</code> 命令，这里的 <code>&lt;A&gt;</code> 和 <code>&lt;B&gt;</code> 可以是提交<span><span class="heti-spacing"> </span>id</span>，也可以是分支名，文件名等，表示我们要查看这两个东西之间的差异。直接 使用 <code>git diff</code> 命令可以查看当前工作区和暂存区之间的差异。</p>
+<h4 id="分支管理">分支管理<a class="headerlink" href="#分支管理" title="Permanent link">⚓︎</a></h4>
+<p>分支是<span class="heti-skip"><span class="heti-spacing"> </span>Git<span class="heti-spacing"> </span></span>的一个重要特性，它允许我们在同一个仓库中进行多条线的开发。下面介绍一系列的分支管理命令。</p>
+<ul>
+<li>创建分支</li>
+<li><code>git branch &lt;branch_name&gt;</code>：创建一个新的分支，基于当前 <code>head</code> 所在位置；</li>
+<li><code>git branch &lt;branch_name&gt; &lt;commit_id&gt;</code>：创建一个新的分支，基于指定的提交<span class="heti-skip"><span class="heti-spacing"> </span>id<span class="heti-spacing"> </span></span>所在位置；</li>
+<li>查看分支</li>
+<li><code>git branch</code>：查看当前的分支情况；</li>
+<li><code>git branch -a</code>：查看所有的分支情况，包括远程分支；</li>
+<li><code>git show branch</code>：更详细的分支情况；</li>
+<li>切换分支（检出）</li>
+<li><code>git checkout &lt;branch_name&gt;</code>：切换到指定的分支；</li>
+<li><code>git checkout -b &lt;branch_name&gt;</code>：创建一个新的分支并切换到这个分支；</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">关于<span><span class="heti-spacing"> </span>checkout</span></p>
+<p>对于这个命令，我们需要特别注意一些事情，主要是 <em>Detached HEAD</em> 的问题。当我们使用 <code>git checkout &lt;commit_id&gt;</code> 这个命令的时候，就会出现这个问题。如下图所示，大家可以比较直观地理解到这个事情。</p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../images/image-3.png"><img alt="图片引自 https://slides.tonycrane.cc/PracticalSkillsTutorial/2023-spring-cs/lec2/#/2/6" src="../images/image-3.png"/></a></p>
+<p>所以说，<code>git checkout &lt;commit_id&gt;</code> 这个命令，我们通常用它来查看旧版本，一般不直接在此基础上直接修改提交。</p>
+<p>如果我们希望在这个基础上进行修改提交，我们可以回到这个旧版本的时候，再使用 <code>git checkout -b &lt;branch_name&gt;</code> 来创建一个新的分支，这样就不会出现 <em>Detached HEAD</em> 的问题了。</p>
+</div>
+<ul>
+<li>删除分支</li>
+<li><code>git branch -d &lt;branch_name&gt;</code>：删除指定的分支；</li>
+<li><code>git branch -D &lt;branch_name&gt;</code>：强制删除指定的分支；</li>
+<li>合并分支</li>
+<li><code>git merge &lt;branch_name&gt;</code>：将指定的分支合并到当前分支；</li>
+<li>如果有冲突，会提示我们进行解决，需要手动处理冲突，解决完后需要使用 <code>git add</code> 命令来将其添加到暂存区，然后使用 <code>git commit</code> 命令来提交；</li>
+</ul>
+<h4 id="一些其他命令">一些其他命令<a class="headerlink" href="#一些其他命令" title="Permanent link">⚓︎</a></h4>
+<ul>
+<li>修改提交历史</li>
+<li><code>git revert &lt;commit_id&gt;</code>：撤销指定的提交，生成一个新的提交（此次更改的补集<heti-adjacent class="heti-adjacent-half">）</heti-adjacent>，但历史的提交不变；</li>
+<li><code>git commit --amend</code>：修改上一次提交的提交信息；</li>
+<li><code>git reset &lt;commit_id&gt;</code>：回到之前某一提交；<ul>
+<li><code>git reset --hard &lt;commit_id&gt;</code>：修改 <code>HEAD</code> 指针，暂存区和工作区（完全回退<heti-adjacent class="heti-adjacent-half">）</heti-adjacent>；</li>
+<li><code>git reset --soft &lt;commit_id&gt;</code>：只修改 <code>HEAD</code> 指针，保留工作区和暂存区的修改；</li>
+<li><code>git reset --mixed &lt;commit_id&gt;</code>：修改 <code>HEAD</code> 指针和暂存区，保留工作区的修改（默认<heti-adjacent class="heti-adjacent-half">）</heti-adjacent>；</li>
+</ul>
+</li>
+</ul>
+<p><span>??? tip "AI<span class="heti-spacing"> </span></span>解释<span><span class="heti-spacing"> </span>"</span></p>
+<div class="language-text highlight"><pre><span></span><code>  下面附上一段 AI 解释的文字，供大家参考。
+
+  `git reset` 命令用于将当前分支的 HEAD 指针移动到指定的提交，同时根据不同的模式，它还会影响暂存区和工作区的内容。以下是三种主要模式的详细讲解：
+
+   1. **`git reset --soft &lt;commit_id&gt;`**
+      - **HEAD 指针**：移动到指定的 `&lt;commit_id&gt;`。这意味着你之后的提交历史在 `git log` 中将不再可见（除非你切换到其他包含这些提交的分支）。
+      - **暂存区 (Index)**：**保持不变**。也就是说，在 `&lt;commit_id&gt;` 和你原来 `HEAD` 位置之间的所有更改，现在都会出现在暂存区中，显示为“Changes to be committed”。
+      - **工作区 (Working Directory)**：**保持不变**。你本地文件的内容不会有任何变化。
+      - **用途**：当你提交后发现提交信息有误，或者想把最近的几次提交合并成一个新的提交时，这个模式非常有用。你可以回退 `HEAD`，然后重新 `git commit` 并附上新的提交信息或合并内容。
+
+   2. **`git reset --mixed &lt;commit_id&gt;` (这是默认模式)**
+      - **HEAD 指针**：移动到指定的 `&lt;commit_id&gt;`。
+      - **暂存区 (Index)**：**被重置**。暂存区的内容会更新为 `&lt;commit_id&gt;` 所指向的快照。也就是说，在 `&lt;commit_id&gt;` 和你原来 `HEAD` 位置之间的所有更改，现在都会从暂存区移出，显示为工作区中的“Changes not staged for commit”（未暂存的更改）。
+      - **工作区 (Working Directory)**：**保持不变**。你本地文件的内容不会有任何变化，但这些更改现在是未暂存状态。
+      - **用途**：当你提交后，发现有些更改不应该包含在内，或者想重新组织暂存区的内容时使用。它会保留工作目录的更改，但撤销了 `git add` 的操作，允许你重新选择要暂存和提交的文件。
+
+   3. **`git reset --hard &lt;commit_id&gt;`**
+      - **HEAD 指针**：移动到指定的 `&lt;commit_id&gt;`。
+      - **暂存区 (Index)**：**被重置**。暂存区的内容会更新为 `&lt;commit_id&gt;` 所指向的快照。
+      - **工作区 (Working Directory)**：**被重置**。工作区的文件内容会完全恢复到 `&lt;commit_id&gt;` 时的状态。**这意味着所有在 `&lt;commit_id&gt;` 之后所做的更改（无论是已暂存还是未暂存的）都会丢失！**
+      - **用途**：当你确定要彻底丢弃某次提交之后的所有本地更改时使用。这是一个具有破坏性的操作，因为工作区的更改会丢失且通常无法恢复（除非你有其他备份或通过 `git reflog` 尝试恢复，但这并不总是可行）。**请谨慎使用此命令。**
+
+    总结来说：
+      - `--soft`：只动 `HEAD`。
+      - `--mixed`：动 `HEAD` 和暂存区。
+      - `--hard`：动 `HEAD`、暂存区和工作区。
+
+    在使用 `git reset` 时，特别是 `--hard` 模式，请确保你清楚其后果，因为它可能会导致数据丢失。
+</code></pre></div>
 <h3 id="gitignore-文件"><span>.gitignore<span class="heti-spacing"> </span></span>文件<a class="headerlink" href="#gitignore-文件" title="Permanent link">⚓︎</a></h3>
+<p><code>.gitignore</code> 文件是一个文本文件，用于告诉<span class="heti-skip"><span class="heti-spacing"> </span>Git<span class="heti-spacing"> </span></span>哪些文件或目录应该被忽略，不进行版本控制。它通常位于项目的根目录下。</p>
+<p>在 <code>.gitignore</code> 文件中，我们可以使用一些通配符来匹配文件和目录，比如：</p>
+<ul>
+<li><code>*</code>：匹配任意字符；</li>
+<li><code>**</code>：匹配中间目录，例如 <code>a/**/b</code> 匹配 <code>a/b</code>、<code>a/x/b</code>、<code>a/x/y/b</code> 等；</li>
+<li><code>/</code>：开头只匹配根目录，否则匹配任意目录；</li>
+<li><code>!</code>：表示不忽略；</li>
+<li><code>#</code>：表示注释；</li>
+</ul>
+<h3 id="vscode-集成-git"><span>VSCode<span class="heti-spacing"> </span></span>集成<span><span class="heti-spacing"> </span>Git</span><a class="headerlink" href="#vscode-集成-git" title="Permanent link">⚓︎</a></h3>
+<p>我们在前面已经简单地看过一些<span class="heti-skip"><span class="heti-spacing"> </span>VSCode<span class="heti-spacing"> </span></span>集成<span class="heti-skip"><span class="heti-spacing"> </span>Git<span class="heti-spacing"> </span></span>的功能了，这里我们再简单地介绍一下。</p>
+<ul>
+<li>版本控制：在左侧的活动栏中，点击 <code>Source Control</code> 图标，可以查看当前的版本控制状态，里面提供了比较直观的图形化界面，里面集成了非常多的功能，方便我们进行管理操作；</li>
+<li>提交：在 <code>Source Control</code> 中，可以直接进行提交操作；</li>
+<li>分支管理：在 <code>Source Control</code> 中，可以直接进行分支的创建、切换、删除等操作；</li>
+<li>比较差异：我们可以直观看到具体什么地方产生了变动；</li>
+<li>...</li>
+<li>在工作区，每一个文件的状态会有相关的颜色和标识，来表明此时这个文件所处的状态</li>
+<li>在文件内部，也会有相应的一些颜色标识在行号右面，来注明到底是什么地方进行了修改，比如有绿色实线表示新增的行，蓝色虚线表示修改的行等。</li>
+<li>此外，还可以使用 <strong>GitLens</strong> 插件来增强<span class="heti-skip"><span class="heti-spacing"> </span>VSCode<span class="heti-spacing"> </span></span>的<span class="heti-skip"><span class="heti-spacing"> </span>Git<span class="heti-spacing"> </span></span>功能，提供了更多的功能，可以具体看到每一行的修改历史、作者、时间等信息，方便我们进行版本控制和协作开发。</li>
+</ul>
 <h2 id="github-介绍"><span>Github<span class="heti-spacing"> </span></span>介绍<a class="headerlink" href="#github-介绍" title="Permanent link">⚓︎</a></h2>
 <h3 id="远程版本库">远程版本库<a class="headerlink" href="#远程版本库" title="Permanent link">⚓︎</a></h3>
+<p>我们如何用<span class="heti-skip"><span class="heti-spacing"> </span>Git<span class="heti-spacing"> </span></span>来实现多人合作呢？这就需要我们使用远程版本库了。远程版本库是一个托管在网络上的<span class="heti-skip"><span class="heti-spacing"> </span>Git<span class="heti-spacing"> </span></span>仓库，允许多个开发者进行协作开发，来实现同步协作功能。那么<span class="heti-skip"><span class="heti-spacing"> </span>Github<span class="heti-spacing"> </span></span>就是我们最常用的远程版本库之一。</p>
+<p>远程版本库也是一个普通的<span class="heti-skip"><span class="heti-spacing"> </span>Git<span class="heti-spacing"> </span></span>版本库，可以简单理解为本地的一个 <code>origin/main</code> 分支。我们可以使用 <code>git remote</code> 命令来查看远程版本库的情况。</p>
+<ul>
+<li><code>git clone &lt;SRC&gt; &lt;DEST&gt;</code>：克隆远程版本库到本地，会自动建立<span class="heti-skip"><span class="heti-spacing"> </span>remote<span class="heti-spacing"> </span></span>和<span class="heti-skip"><span class="heti-spacing"> </span>local<span class="heti-spacing"> </span></span>的关联，可以通过 <code>git remote</code> 来管理；</li>
+<li><code>git push</code>：将本地的提交推送到远程版本库；</li>
+<li><code>git pull</code>：从远程版本库拉取最新的提交到本地，等价于<code>fetch</code><span><span class="heti-spacing"> </span>+</span> <code>merge</code>；</li>
+</ul>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../images/image-4.png"><img alt="图片引自 https://ckc-agc.bowling233.top/programming/24fall/lec3/#_10" src="../images/image-4.png"/></a></p>
+<p>我们可以使用 <code>ssh</code> 协议来连接远程版本库，这里就不再多说了。</p>
 <h3 id="github-简介"><span>GitHub<span class="heti-spacing"> </span></span>简介<a class="headerlink" href="#github-简介" title="Permanent link">⚓︎</a></h3>
+<p><span>Github<span class="heti-spacing"> </span></span>是一个基于<span class="heti-skip"><span class="heti-spacing"> </span>Git<span class="heti-spacing"> </span></span>的代码托管平台，提供了<span class="heti-skip"><span class="heti-spacing"> </span>Git<span class="heti-spacing"> </span></span>的远程版本库服务。它允许我们将本地的<span class="heti-skip"><span class="heti-spacing"> </span>Git<span class="heti-spacing"> </span></span>仓库推送到远程仓库，并且可以从远程仓库拉取代码到本地。同时，它也是全球最大的代码托管平台，拥有大量的开源项目和开发者。</p>
+<p>关于<span class="heti-skip"><span class="heti-spacing"> </span>github<span class="heti-spacing"> </span></span>的<span><span class="heti-spacing"> </span>repo</span>，可以看下面的图片：</p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../images/image-5.png"><img alt="图片引自 https://slides.tonycrane.cc/PracticalSkillsTutorial/2023-spring-cs/lec2/#/4/2)" src="../images/image-5.png"/></a></p>
+<ul>
+<li>issues:</li>
+<li>用于记录项目中的<span class="heti-skip"><span class="heti-spacing"> </span>bug<span class="heti-spacing"> </span></span>和功能请求，也可以寻求帮助并进行讨论；</li>
+<li>一般使用<span class="heti-skip"><span class="heti-spacing"> </span>markdown<span class="heti-spacing"> </span></span>语言来书写；</li>
+<li>pull requests:</li>
+<li>用于提交代码的请求，可以进行代码审查和讨论，来更好地构建这个项目；</li>
+</ul>
+<p>进行协作一般的流程为：</p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../images/image-6.png"><img alt="图片引自 https://slides.tonycrane.cc/PracticalSkillsTutorial/2023-spring-cs/lec2/#/4/4" src="../images/image-6.png"/></a></p>
 <h2 id="开源项目基础">开源项目基础<a class="headerlink" href="#开源项目基础" title="Permanent link">⚓︎</a></h2>
 <h3 id="许可证">许可证<a class="headerlink" href="#许可证" title="Permanent link">⚓︎</a></h3>
-<h3 id="开源协议">开源协议<a class="headerlink" href="#开源协议" title="Permanent link">⚓︎</a></h3>
+<p>常见软件开源许可证有：</p>
+<ul>
+<li>MIT：最宽松的开源许可证，允许任何人使用、修改和分发代码；</li>
+<li>Apache 2.0：允许使用、修改和分发代码，但要求保留原作者的版权声明和许可证；</li>
+<li>GPL：要求任何修改后的代码也必须开源，并且使用相同的许可证；</li>
+<li>...</li>
+</ul>
+<p>还有知识共享类（Creative Commons）许可证，主要用于非软件类的开源项目，比如文档、图片等。</p>
+<ul>
+<li>CC BY：允许使用、修改和分发代码，但要求保留原作者的版权声明；</li>
+<li>CC BY-SA：允许使用、修改和分发代码，但要求保留原作者的版权声明，并且使用相同的许可证；</li>
+<li>CC BY-NC：允许使用、修改和分发代码，但要求保留原作者的版权声明，并且不能用于商业用途；</li>
+<li>CC BY-NC-SA：允许使用、修改和分发代码，但要求保留原作者的版权声明，并且不能用于商业用途，并且使用相同的许可证；</li>
+<li>CC BY-ND：允许使用代码，但要求保留原作者的版权声明，并且不能分发和修改代码；</li>
+<li>CC 0：放弃所有版权，允许任何人使用、修改和分发代码；</li>
+</ul>
 <h2 id="参考资料">参考资料<a class="headerlink" href="#参考资料" title="Permanent link">⚓︎</a></h2>
+<ul>
+<li><a href="https://slides.tonycrane.cc/PracticalSkillsTutorial/2023-spring-cs/lec2/#/" target="_blank"><span>xg<span class="heti-spacing"> </span></span>的<span><span class="heti-spacing"> </span>PPT</span></a>；</li>
+<li><a href="https://ckc-agc.bowling233.top/programming/24fall/lec3/" target="_blank">辅学计划讲义</a>；</li>
+<li><a href="https://git-scm.com/book/zh/v2" target="_blank">Pro Git</a>；</li>
+</ul>
 <aside class="md-source-file">
 <span class="md-source-file__fact">
 <span class="md-icon" title="最后更新">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg>
 </span>
-<span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime" title="2025年5月3日 12:19:52">2025年5月3日 12:19:52</span>
+<span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime" title="2025年5月9日 20:05:07">2025年5月9日 20:05:07</span>
 </span>
 <span class="md-source-file__fact">
 <span class="md-icon" title="创建日期">
@@ -1034,6 +1451,34 @@
 </button>
 </main>
 <footer class="md-footer">
+<nav aria-label="页脚" class="md-footer__inner md-grid">
+<a aria-label="上一页: MkDocs" class="md-footer__link md-footer__link--prev" href="../mkdocs/">
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256l137.3-137.4c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"></path></svg>
+</div>
+<div class="md-footer__title">
+<span class="md-footer__direction">
+                上一页
+              </span>
+<div class="md-ellipsis">
+                MkDocs
+              </div>
+</div>
+</a>
+<a aria-label="下一页: Life" class="md-footer__link md-footer__link--next" href="../../Life/">
+<div class="md-footer__title">
+<span class="md-footer__direction">
+                下一页
+              </span>
+<div class="md-ellipsis">
+                Life
+              </div>
+</div>
+<div class="md-footer__button md-icon">
+<svg viewbox="0 0 320 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"></path></svg>
+</div>
+</a>
+</nav>
 <div class="md-footer-meta md-typeset">
 <div class="md-footer-meta__inner md-grid">
 <div class="md-copyright">
