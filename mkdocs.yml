@@ -186,6 +186,11 @@ nav:
       - Computer Science/DLD/Chap07.md
       - Computer Science/DLD/glossary.md
       - Computer Science/DLD/words.md
+    - 前端:
+      - Computer Science/FrontEnd/index.md
+      - Computer Science/FrontEnd/html.md
+      - Computer Science/FrontEnd/css.md
+      - Computer Science/FrontEnd/js.md
   - Other Courses: 
     - OtherCourses/index.md
     - 数学相关:

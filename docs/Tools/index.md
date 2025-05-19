@@ -23,8 +23,9 @@ h6::before {
 
 这里是已经有的一些内容~
 
-- [LaTeX](./LaTeX.md){target="_blank"}
-- [MkDocs](./mkdocs.md){target="_blank"}
+- [LaTeX](./LaTeX.md)
+- [MkDocs](./mkdocs.md)
+- [Git & GitHub](./Git.md)
 
 ## To Do List
 
@@ -32,8 +33,6 @@ h6::before {
 
 !!! success "To Do List"
 
-    - [ ] Markdown
     - [ ] Linux基础 Shell
-    - [ ] Git/GitHub
     - [ ] Typst
     - [ ] Web基础
